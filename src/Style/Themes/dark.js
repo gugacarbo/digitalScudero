@@ -5,7 +5,7 @@ export default {
     text: "#fff",
     inverseText: "#444",
     main: {
-      color: "#ff9900",
+      color: "#ff6600",
       dark: "#ff6600",
       darker: "#ff2200",
       light: "#ffcc00",
