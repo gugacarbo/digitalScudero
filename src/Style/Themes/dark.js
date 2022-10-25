@@ -5,9 +5,9 @@ export default {
     text: "#fff",
     inverseText: "#444",
     main: {
-      color: "#65f32b",
-      dark: "#4FBF22",
-      darker: "#2F7315",
+      color: "#ff6600",
+      dark: "#E8440C",
+      darker: "#CC5200",
       light: "#ffcc00",
       complement: "#00F1FF",
       triad: ["#2EFF19", "#3319FF"],
