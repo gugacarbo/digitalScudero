@@ -29,10 +29,10 @@ ${({ done }) =>
 export const StyledLogo = styled(Logo)`
 position: absolute;
 
-width: 90%;
-height: 90%;
-max-width: 550px;
-max-height: 550px;
+width: 70%;
+height: 70%;
+max-width: 450px;
+max-height: 450px;
 transition: ${({ theme }) => theme.transition.slow};
 stroke-dasharray: 1045;
 stroke-dashoffset: 1045;

@@ -28,10 +28,10 @@ const GlobalStyle = createGlobalStyle`
            
         }
         &::-webkit-scrollbar-thumb:hover {
-            background-color: ${({ theme }) => theme.color.main.light};
+            background-color: ${({ theme }) => theme.color.main.dark};
         }
         &::-webkit-scrollbar-thumb:active {
-            background-color: ${({ theme }) => theme.color.main.dark};
+            background-color: ${({ theme }) => theme.color.main.darker};
         }
     }
 `;

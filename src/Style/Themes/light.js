@@ -1,16 +1,16 @@
 export default {
   name: "dark",
-  background: "#231C26",
+  background: "#222",
   color: {
     text: "#fff",
     inverseText: "#444",
     main: {
-      color: "#ff9900",
-      dark: "#ff6600",
-      darker: "#ff2200",
+      color: "#ff6600",
+      dark: "#E8440C",
+      darker: "#CC5200",
       light: "#ffcc00",
-      complement: "#0066B3",
-      triad: ["#19FF65", "#8C19FF"],
+      complement: "#00F1FF",
+      triad: ["#2EFF19", "#3319FF"],
       shadow: ["#804D00", "#E68A00", "#402600"],
     },
 

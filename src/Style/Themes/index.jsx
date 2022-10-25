@@ -8,6 +8,6 @@ export default {
   },
   light: {
     ...common,
-    ...light,
+    ...dark,
   },
 };
