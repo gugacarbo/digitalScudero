@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 210.40835">
+    <defs>
+
+    </defs>
+    <g class="ToggleTop">
+        <rect  width="239.95196" height="33.86709" rx="3.46266" />
+        <circle  cx="283.06645" cy="16.93355" r="16.93355" />
+    </g>
+    
+    <g class="ToggleMid">
+        <rect  y="88.27063" width="300" height="33.86709" rx="3.46266" />
+    </g>
+    
+    <g class="ToggleBottom">
+        <rect  x="60.04804" y="176.54126" width="239.95196" height="33.86709" rx="3.46266" transform="translate(360.04804 386.94961) rotate(-180)" />
+        <circle  cx="16.93355" cy="193.47481" r="16.93355" />
+    </g>
+</svg>
