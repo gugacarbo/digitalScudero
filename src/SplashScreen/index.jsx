@@ -1,10 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-    SplashContainer,
-    StyledLogo,
-    StyledText,
-} from "./Styled"
-
+import { SplashContainer, StyledLogo, StyledText } from "./Styled";
 
 const MyComponent = () => {
   const [Loaded, setLoaded] = useState(0);
@@ -27,16 +22,18 @@ const MyComponent = () => {
     }
   }, []);
   useEffect(() => {
-    setTimeout(() => {
-      setCloseSplash(1);
-      document.body.style.overflowY = "scroll";
-    }, 1500);
+    if (Loaded) {
+      setTimeout(() => {
+        setCloseSplash(1);
+        document.body.style.overflowY = "scroll";
+      }, 1500);
+    }
   }, [Loaded]);
 
   return (
     <SplashContainer loaded={Loaded} done={CloseSplash}>
-      <StyledLogo loaded={Loaded} />
-      <StyledText loaded={Loaded} />
+      <StyledLogo loaded={Loaded ? 1 : 0} />
+      <StyledText loaded={Loaded ? 1 : 0} />
     </SplashContainer>
   );
 };

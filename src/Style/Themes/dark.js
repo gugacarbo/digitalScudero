@@ -3,7 +3,9 @@ export default {
   background: "#222",
   color: {
     text: "#fff",
-    inverseText: "#444",
+    inverseText: "#222",
+    black: "#222",
+    white: "#fefefe",
     main: {
       color: "#ff6600",
       dark: "#E8440C",

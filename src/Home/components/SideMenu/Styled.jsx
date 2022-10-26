@@ -6,13 +6,16 @@ export const SideMenuContainer = styled(Div100vh)`
   top: 0;
   right: 0;
   z-index: 100;
-  width: 10px;
-  background-color: #000;
-
+  background-color: ${({ theme }) => theme.color.black};
+  padding: 2rem;
+  width: 40vh;
+  transition: ${({ theme }) => theme.transition.x2};
   ${({ open }) =>
     !open &&
     `
-    transform: translateX(100%);
-    
+      transform: translateX(100%);  
     `}
+
+  display: flex;
+  flex-direction: column;
 `;

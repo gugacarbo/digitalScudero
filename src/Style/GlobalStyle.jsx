@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Poppins', sans-serif;
         background-color: ${({ theme }) => theme.background};
-        color: ${({ theme }) => theme.color.text};
+        color: ${({ theme }) => theme.color.white};
         overflow-x: hidden;
 
         &::-webkit-scrollbar {

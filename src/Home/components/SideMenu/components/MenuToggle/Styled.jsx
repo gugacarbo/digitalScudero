@@ -5,7 +5,9 @@ export const MenuToggleBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
   gap: 0.5rem;
   margin-left: 2rem;
   cursor: pointer;
@@ -15,20 +17,8 @@ export const MenuToggleBox = styled.div`
   }
 `;
 
-export const MenuToggleText = styled.span`
-  font-size: 0.9rem;
-  transition: ${({ theme }) => theme.transition.slow};
-  ${({ scrolled }) =>
-    scrolled &&
-    `
-    opacity: 0;
-    transform: translateX(100%);
-   
-    `}
-`;
-
 export const MenuTogglerIcon = styled(MenuToggleSvg)`
-  width: 1.5rem;
+  width: 2.1rem;
   margin: auto 0;
   fill: ${({ theme }) => theme.color.white};
   overflow: visible;
