@@ -1,14 +1,24 @@
 import { IconsBox, SocialsContainer, SocialsTitle } from "./Styled";
 import SocialIcon from "./SocialIcon";
 import BlogButton from "../BlogButton";
-
+import { useDetectClickOutside } from "react-detect-click-outside";
 import { ReactComponent as FacebookIcon } from "../../../../../assets/socials/facebook.svg";
 import { ReactComponent as InstagramIcon } from "../../../../../assets/socials/instagram.svg";
 import { ReactComponent as LinkedinIcon } from "../../../../../assets/socials/linkedin.svg";
 import { ReactComponent as BehanceIcon } from "../../../../../assets/socials/behance.svg";
 import { ReactComponent as PinterestIcon } from "../../../../../assets/socials/pinterest.svg";
+import MenuContext from "../../../../../context/MenuContext/MenuContext";
+import { useContext } from "react";
 
 function Socials() {
+  const { open, setOpen } = useContext(MenuContext);
+  function handleClose() {
+    if (!open) {
+      setOpen(false);
+    }
+  }
+  const ref = useDetectClickOutside({ onTriggered: handleClose() });
+
   return (
     <SocialsContainer>
       <SocialsTitle>ACESSE NOSSAS REDES SOCIAIS</SocialsTitle>
