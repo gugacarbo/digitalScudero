@@ -20,7 +20,7 @@ export const MenuText = styled.div`
   margin: auto 0;
   margin-left: 1rem;
 
-  transform: translateY(15%) translateX(-100%);
+  transform: translateY(15%) translateX(-130%);
   opacity: 0;
 
   .Digital {
