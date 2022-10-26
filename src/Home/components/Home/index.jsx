@@ -24,7 +24,7 @@ const HomeContainer = styled(MainContainer)`
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 15% 50% 23% 12%;
-  grid-template-rows: 10% 10% 40% 10% 5% 15% 10%;
+  grid-template-rows: 10% 10% 40% 10% 7% 13% 10%;
   grid-template-areas:
     ". . . ."
     ". . . Socials"

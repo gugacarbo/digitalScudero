@@ -13,8 +13,8 @@ export default SubText;
 
 const SText = styled.p`
   grid-area: SubText;
-  width: 60%;
-  font-size: 1.1rem;
+  width: 65%;
+  font-size: 1.3rem;
   font-weight: 200;
   color: ${({ theme }) => theme.color.white};
 `;

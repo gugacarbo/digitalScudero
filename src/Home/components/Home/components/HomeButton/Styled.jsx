@@ -8,7 +8,7 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.color.main.color};
   padding: 0.3rem 5rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   border-radius: 30px;
   font-weight: 300;
   transition: ${({ theme }) => theme.transition.main};
