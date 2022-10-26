@@ -23,7 +23,9 @@ export const MainContainer = styled(Div100vh)`
       
       background-color: ${bg == "white" ? theme.color.white : theme.background};
       
-
+  & *{
+    z-index: 5;
+  }
     &::before, &::after {
       content: "";
       position: absolute;

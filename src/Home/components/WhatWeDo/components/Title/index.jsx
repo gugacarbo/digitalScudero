@@ -16,6 +16,7 @@ const TitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 `;
 const TitleH1 = styled.h1`
   font-size: 4rem;
@@ -34,7 +35,8 @@ const SubTitle = styled.h2`
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 0.051rem;
   font-weight: 300;
-  margin: 1rem 0;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
 `;
 
 export default Title;
