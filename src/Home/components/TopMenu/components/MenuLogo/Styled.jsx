@@ -22,6 +22,8 @@ export const MenuText = styled.div`
 
   transform: translateY(15%) translateX(-130%);
   opacity: 0;
+  text-shadow: 0px 0 1px ${({ theme }) => theme.color.black},
+    0px 0 2px ${({ theme }) => theme.color.black};
 
   .Digital {
     font-size: 0.4em;
@@ -30,25 +32,26 @@ export const MenuText = styled.div`
     top: -0.3em;
     position: absolute;
   }
-  
+
   ${({ scrolled }) =>
     scrolled &&
     `
     opacity: 1;
     transform: translateY(15%) translateX(-20%);
     `}
-
-
 `;
 
 export const MenuIcon = styled(LogoSvg)`
   height: 50px;
   margin: auto 0;
   cursor: pointer;
+
   fill: ${({ theme }) => theme.color.white};
   transition: ${({ theme }) => theme.transition.x3};
+  overflow: visible;
   * {
-    fill: ${({ theme }) => theme.color.white};
+    stroke-width: 2px;
+    stroke: ${({ theme }) => theme.color.black};
   }
   ${({ scrolled }) =>
     scrolled &&

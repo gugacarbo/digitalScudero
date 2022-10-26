@@ -2,6 +2,8 @@ import styled from "styled-components";
 import HomeScreen from "./components/Home";
 import TopMenu from "./components/TopMenu";
 import SideMenu from "./components/SideMenu";
+import WhoIs from "./components/WhoIs";
+import WhatWeDo from "./components/WhatWeDo";
 
 function Home() {
   return (
@@ -9,7 +11,8 @@ function Home() {
       <TopMenu />
       <SideMenu />
       <HomeScreen />
-      <HomeScreen />
+      <WhoIs />
+      <WhatWeDo />
     </AppContainer>
   );
 }

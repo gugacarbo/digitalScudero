@@ -18,6 +18,9 @@ export const MenuToggleBox = styled.div`
 export const MenuToggleText = styled.span`
   font-size: 0.9rem;
   transition: ${({ theme }) => theme.transition.slow};
+  text-shadow: 0px 0 1px ${({ theme }) => theme.color.black},
+    0px 0 2px ${({ theme }) => theme.color.black};
+
   ${({ scrolled }) =>
     scrolled &&
     `
@@ -40,6 +43,12 @@ export const MenuTogglerIcon = styled(MenuToggleSvg)`
   .ToggleBottom {
     position: relative;
     overflow: visible;
+    pointer-events: none;
+    * {
+      stroke-width: 5px;
+      stroke: ${({ theme }) => theme.color.black};
+    }
+
     transition: ${({ theme }) => theme.transition.slow};
   }
   .ToggleTop {
@@ -48,7 +57,7 @@ export const MenuTogglerIcon = styled(MenuToggleSvg)`
   .ToggleBottom {
     transform-origin: 100% bottom;
   }
-  
+
   ${({ open }) =>
     open &&
     `
