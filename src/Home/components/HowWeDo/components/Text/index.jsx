@@ -23,7 +23,7 @@ const TextContainer = styled.div`
 
 const TextP = styled.p`
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   letter-spacing: 0.1rem;
   color: ${({ theme }) => theme.color.white};

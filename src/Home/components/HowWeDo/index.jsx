@@ -21,7 +21,7 @@ function HowDo() {
 const Dots = styled(DotsSvg)`
   width: 25%;
   opacity: 0.5;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 `;
 
 export default HowDo;
