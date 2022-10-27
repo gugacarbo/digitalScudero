@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
             font-size: 14px;
         }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1350px) {
         html{
             font-size: 13px;
         }

@@ -6,6 +6,7 @@ import WhoIs from "./components/WhoIs";
 import WhatWeDo from "./components/WhatWeDo";
 import HowDo from "./components/HowWeDo";
 import Mailing_Contact from "./components/Mailing_Contact";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <WhatWeDo />
       <HowDo />
       <Mailing_Contact />
+      <Footer />
     </AppContainer>
   );
 }

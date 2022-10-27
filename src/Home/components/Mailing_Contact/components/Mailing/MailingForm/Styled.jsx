@@ -39,7 +39,8 @@ export const LabelTitle = styled.span`
 
 export const StyledInput = styled(BaseInput)`
   border: 2px solid ${({ theme }) => theme.color.white};
-
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.color.black};
   ${({ error, theme }) =>
     error &&
     `
@@ -81,8 +82,13 @@ export const StyledForm = styled.form`
 
 export function CheckBoxBlog({ title, ...props }) {
   return (
-    <BlogLabel >
-      <Field type="checkbox" name={props.name} as={Field} htmlFor={props.htmlFor} />
+    <BlogLabel>
+      <Field
+        type="checkbox"
+        name={props.name}
+        as={Field}
+        htmlFor={props.htmlFor}
+      />
       <BlogTitle>{title}</BlogTitle>
     </BlogLabel>
   );

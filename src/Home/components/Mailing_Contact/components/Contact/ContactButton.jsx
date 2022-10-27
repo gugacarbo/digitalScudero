@@ -24,9 +24,7 @@ const Button = styled.button`
   transition: transform ${({ theme }) => theme.transition.x4},
     background-color ${({ theme }) => theme.transition.slow},
     color ${({ theme }) => theme.transition.slow};
-  border: 1px solid
-    ${({ theme, black }) =>
-      black ? theme.color.black : theme.color.main.color};
+  border: 1px solid ${({ theme, black }) => theme.color.main.color};
   cursor: pointer;
 
   &:hover {
