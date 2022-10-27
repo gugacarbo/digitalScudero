@@ -6,6 +6,7 @@ export default {
     inverseText: "#222",
     black: "#222",
     white: "#fefefe",
+    lightGray: "#ccc",
     main: {
       color: "#ff6600",
       dark: "#E8440C",

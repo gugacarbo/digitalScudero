@@ -1,18 +1,18 @@
 import { MainContainer } from "../../Styled";
 import Button from "./components/Button";
-import ServiceIcons from "./components/ServiceIcons";
+import HowDoIcons from "./components/HowDoIcons";
 import Text from "./components/Text";
 import Title from "./components/Title";
 import { ReactComponent as DotsSvg } from "../../../assets/services/ServiceDots.svg";
 import styled from "styled-components";
 
-function WhatWeDo() {
+function HowDo() {
   return (
-    <MainContainer bg="white">
+    <MainContainer bg="black">
       <Title />
       <Text />
       <Dots />
-      <ServiceIcons />
+      <HowDoIcons />
       <Button />
     </MainContainer>
   );
@@ -20,7 +20,8 @@ function WhatWeDo() {
 
 const Dots = styled(DotsSvg)`
   width: 25%;
-  margin: 2rem 0;
+  opacity: 0.5;
+  margin: 3rem 0;
 `;
 
-export default WhatWeDo;
+export default HowDo;

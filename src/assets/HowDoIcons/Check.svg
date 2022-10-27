@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.64706 173.64706">
+    <defs>
+        <style>.CheckSvg-1{fill:#f26722;}.CheckSvg-2{fill:#fff;}</style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <circle class="CheckSvg-1" cx="86.82353" cy="86.82353" r="84.93679"/>
+        <g id="REsult">
+            <rect class="CheckSvg-2" x="60.07692" y="106.93088" width="6.5676" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="56.18348" y="111.51518" width="65.63535" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="64.72626" y="86.38274" width="7.44545" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="74.90278" y="90.38183" width="7.44545" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="85.31503" y="81.82282" width="7.44545" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="95.81668" y="76.13307" width="7.44545" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="106.38337" y="69.17532" width="7.44545" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="70.25344" y="106.93088" width="6.5676" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="80.65756" y="106.93088" width="6.5676" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="91.02917" y="106.93088" width="6.5676" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="101.4658" y="106.93088" width="6.5676" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="111.91055" y="106.93088" width="6.5676" height="1.85323" rx="0.29259"/>
+            <rect class="CheckSvg-2" x="64.72626" y="86.38275" width="1.91826" height="22.40136" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="70.25344" y="86.38275" width="1.91826" height="22.40136" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="74.90278" y="90.38183" width="1.91826" height="18.40228" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="80.42997" y="90.38183" width="1.91826" height="18.40228" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="85.31503" y="81.91191" width="1.91826" height="26.8722" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="90.85742" y="81.91191" width="1.91826" height="26.8722" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="95.81668" y="76.13307" width="1.91826" height="32.56195" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="101.28239" y="76.13307" width="1.91826" height="32.56195" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="106.11513" y="69.17532" width="1.91826" height="39.51971" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="111.91055" y="69.26441" width="1.91826" height="39.51971" rx="0.30286"/>
+            <rect class="CheckSvg-2" x="56.1835" y="66.14318" width="1.91826" height="47.22525" rx="0.30286"/>
+            <polygon class="CheckSvg-2" points="121.819 108.712 123.103 112.442 121.819 116.172 127.832 112.442 121.819 108.712"/>
+            <polygon class="CheckSvg-2" points="53.413 66.143 57.143 64.859 60.873 66.143 57.143 60.13 53.413 66.143"/>
+            <polygon class="CheckSvg-2" points="105.447 60.697 109.305 61.524 111.835 64.551 111.748 57.475 105.447 60.697"/>
+            <path class="CheckSvg-2" d="M65.88374,79.14689c4.67655.155,26.00273-.11037,41.28057-16.61265a.904.904,0,0,1,1.23738-.09229l.15571.12755a.90107.90107,0,0,1,.10706,1.29656c-2.93814,3.30635-16.66261,16.97843-42.8017,17.0926a.9087.9087,0,0,1-.90891-.90765h0A.90153.90153,0,0,1,65.88374,79.14689Z"/>
+        </g>
+    </g>
+</svg>

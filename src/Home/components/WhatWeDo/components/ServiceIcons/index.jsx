@@ -47,7 +47,7 @@ const IconBox = styled.div`
   width: 18%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 70% 30%;
   place-items: center;
   svg {
     width: 100%;

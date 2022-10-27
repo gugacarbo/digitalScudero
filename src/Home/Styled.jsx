@@ -78,3 +78,16 @@ export const BaseButton = styled.button`
     color: ${({ theme }) => theme.color.main.color};
   }
 `;
+
+export const BaseInput = styled.input`
+  background-color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.main.color};
+  border: none;
+  border-radius: 120px;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  transition: ${({ theme }) => theme.transition.main};
+  border: 1px solid ${({ theme }) => theme.color.main.color};
+  cursor: pointer;
+`;

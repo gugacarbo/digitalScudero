@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.64706 173.64706">
+    <defs>
+        <style>.SearchSvg-1{fill:#fba919;}.SearchSvg-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3.47509px;}.SearchSvg-3{fill:#fff;}</style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <circle class="SearchSvg-1" cx="86.82353" cy="86.82353" r="84.93679"/>
+        <g id="Search_icon" data-name="Search icon">
+            <circle class="SearchSvg-2" cx="79.85297" cy="79.89722" r="20.82166"/>
+            <path class="SearchSvg-3" d="M81.23837,67.31787c3.12441.71443,9.6832,3.05653,9.98466,10.15953a1.54722,1.54722,0,0,0,1.55456,1.46453h0a1.55715,1.55715,0,0,0,1.55517-1.6565c-.21757-3.40544-1.90218-11.043-12.43949-13.06917a1.56347,1.56347,0,0,0-1.802,1.10762l-.01442.05121A1.56061,1.56061,0,0,0,81.23837,67.31787Z"/>
+            <rect class="SearchSvg-3" x="102.85326" y="94.52693" width="5.55726" height="22.12141" rx="0.61139" transform="translate(-43.72287 105.61891) rotate(-44.99999)"/>
+        </g>
+    </g>
+</svg>

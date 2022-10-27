@@ -4,8 +4,8 @@ function Text() {
   return (
     <TextContainer>
       <TextP>
-        Para alavancar seu negócio, aplicamos estratégias inteligentes de
-        Publicidade, Marketing e Negócios.
+        Nosso processo de criação e execução é divido em quatro etapas que nos
+        auxiliam a tomar as melhores decisões para o seu marketing digital.
       </TextP>
     </TextContainer>
   );
@@ -26,7 +26,10 @@ const TextP = styled.p`
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.1rem;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.white};
   width: 80%;
+  span {
+    color: ${({ theme }) => theme.color.main.color};
+  }
 `;
 export default Text;

@@ -4,6 +4,8 @@ import TopMenu from "./components/TopMenu";
 import SideMenu from "./components/SideMenu";
 import WhoIs from "./components/WhoIs";
 import WhatWeDo from "./components/WhatWeDo";
+import HowDo from "./components/HowWeDo";
+import Mailing_Contact from "./components/Mailing_Contact";
 
 function Home() {
   return (
@@ -13,6 +15,8 @@ function Home() {
       <HomeScreen />
       <WhoIs />
       <WhatWeDo />
+      <HowDo />
+      <Mailing_Contact />
     </AppContainer>
   );
 }
