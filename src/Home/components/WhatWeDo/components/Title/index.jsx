@@ -23,6 +23,8 @@ const TitleH1 = styled.h1`
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 0.1rem;
   font-weight: 500;
+  text-align: center;
+
   b {
     font-size: 3.9rem;
     font-weight: 600;

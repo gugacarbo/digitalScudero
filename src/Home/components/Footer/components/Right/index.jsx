@@ -16,6 +16,8 @@ const FooterRigth = styled.div`
   grid-column: 4/5;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 70% 30%;
+  height: 70%;
+  place-items: center;
 
 `;

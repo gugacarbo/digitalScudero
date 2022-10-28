@@ -8,7 +8,7 @@ import Socials from "./components/Socials";
 
 function HomeScreen() {
   return (
-    <HomeContainer>
+    <HomeContainer id="Home">
       <HomeText />
       <SubText />
       <HomeButton />

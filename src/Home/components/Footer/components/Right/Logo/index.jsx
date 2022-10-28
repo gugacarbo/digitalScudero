@@ -1,9 +1,10 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import { ReactComponent as LogoSvg } from "../../../../../../assets/Logo.svg";
 
 function Logo() {
   return (
-    <LogoContent>
+    <LogoContent to="Home" spy={true} smooth={true} offset={0} duration={850}>
       <StyledLogo />
       <BrandName>
         <span className="Digital">Digital</span>
@@ -13,19 +14,19 @@ function Logo() {
   );
 }
 
-const LogoContent = styled.div`
+const LogoContent = styled(Link)`
   display: grid;
   width: 100%;
   height: 100%;
-
+  cursor: pointer;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   place-items: center;
 `;
 
 const StyledLogo = styled(LogoSvg)`
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   fill: ${({ theme }) => theme.color.white};
 `;
 

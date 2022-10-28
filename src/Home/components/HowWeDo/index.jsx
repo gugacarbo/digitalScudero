@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 function HowDo() {
   return (
-    <MainContainer bg="black">
+    <MainContainer bg="black" id="HowWeDo">
       <Title />
       <Text />
       <Dots />

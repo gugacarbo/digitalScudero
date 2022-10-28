@@ -1,14 +1,37 @@
+import { useContext } from "react";
 import { List, MenuItem } from "./Styled";
-
+import MenuContext from "../../../../../context/MenuContext";
 function MenuList() {
-  return <List>
-    <MenuItem className="Selected">HOME</MenuItem>
-    <MenuItem>QUEM SOMOS</MenuItem>
-    <MenuItem>O QUE FAZEMOS</MenuItem>
-    <MenuItem>COMO FAZEMOS</MenuItem>
-    <MenuItem>NOSSOS CASES</MenuItem>
-    <MenuItem>CONTATO</MenuItem>
-  </List>;
+  return (
+    <List>
+      <Item to="Home">HOME</Item>
+      <Item to="WhoIs">QUEM SOMOS</Item>
+      <Item to="WhatWeDo">O QUE FAZEMOS</Item>
+      <Item to="HowWeDo">COMO FAZEMOS</Item>
+      <Item to="#">NOSSOS CASES</Item>
+      <Item to="Mailing">CONTATO</Item>
+    </List>
+  );
 }
+
+const Item = ({ children, to, props }) => {
+  const { setOpen } = useContext(MenuContext);
+
+  return (
+    <MenuItem
+      {...props}
+      activeClass="Selected"
+      to={to}
+      spy={true}
+      smooth={'easeInOutCubic'}
+      offset={0}
+      duration={850}
+      isDynamic={true}
+      onClick={() => setOpen(false)}
+    >
+      {children}
+    </MenuItem>
+  );
+};
 
 export default MenuList;

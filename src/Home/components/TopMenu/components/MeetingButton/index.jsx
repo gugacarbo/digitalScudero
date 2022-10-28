@@ -1,7 +1,11 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 function MeetingButton({ scrolled }) {
-  return <Button scrolled={scrolled}>Agende uma reunião</Button>;
+  return (
+    <Button as={Link} to="contato/reuniao" scrolled={scrolled ? 1 : 0}>
+      Agende uma reunião
+    </Button>
+  );
 }
 
 export default MeetingButton;
@@ -14,8 +18,9 @@ const Button = styled.button`
   padding: 0.2rem 4rem;
   font-size: 0.9rem;
   margin: auto 2rem;
-  
-  transition: transform ${({ theme }) => theme.transition.x4},  background-color ${({ theme }) => theme.transition.slow};
+  text-decoration: none;
+  transition: transform ${({ theme }) => theme.transition.x4},
+    background-color ${({ theme }) => theme.transition.slow};
   border: 1px solid ${({ theme }) => theme.color.white};
   cursor: pointer;
 

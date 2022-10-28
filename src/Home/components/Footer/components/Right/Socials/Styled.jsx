@@ -30,8 +30,4 @@ export const SocialsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: auto;
-  margin-bottom: 60%;
-  margin-top: 20%;
-
 `;

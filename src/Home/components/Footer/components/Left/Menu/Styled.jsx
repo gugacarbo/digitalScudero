@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 export const List = styled.ul`
@@ -9,7 +10,7 @@ export const List = styled.ul`
   gap: 1rem;
 `;
 
-export const MenuItem = styled.li`
+export const MenuItem = styled(Link)`
   font-size: 1rem;
   font-weight: 300;
   color: ${({ theme }) => theme.color.white};
@@ -20,8 +21,5 @@ export const MenuItem = styled.li`
   &:hover {
     color: ${({ theme }) => theme.color.main.color};
   }
-  &.Selected {
-    color: ${({ theme }) => theme.color.main.color};
-    border-bottom: 2px solid ${({ theme }) => theme.color.main.color};
-  }
+
 `;

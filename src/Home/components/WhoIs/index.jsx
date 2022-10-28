@@ -4,7 +4,7 @@ import Text from "./components/Text";
 import Title from "./components/Title";
 function WhoIs() {
   return (
-    <MainContainer bg="black">
+    <MainContainer bg="black" id="WhoIs">
       <Title />
       <Text />
       <Button />

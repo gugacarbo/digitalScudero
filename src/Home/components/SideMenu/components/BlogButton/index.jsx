@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BaseButton } from "../../../../Styled";
 function BlogButton({ scrolled }) {
-  return <Button scrolled={scrolled}>VISITE NOSSO BLOG</Button>;
+  return <Button scrolled={scrolled ?1 : 0}>VISITE NOSSO BLOG</Button>;
 }
 
 export default BlogButton;

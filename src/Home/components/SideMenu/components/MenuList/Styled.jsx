@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const List = styled.ul`
+export const List = styled.div`
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -11,19 +11,20 @@ export const List = styled.ul`
   margin-top: 10rem;
 `;
 
-export const MenuItem = styled.li`
+import { Link } from "react-scroll";
+export const MenuItem = styled(Link)`
   font-size: 1.1rem;
   font-weight: 300;
   color: ${({ theme }) => theme.color.white};
   cursor: pointer;
   transition: ${({ theme }) => theme.transition.main};
   border-bottom: 2px solid transparent;
+  text-decoration: none;
 
   &:hover {
     color: ${({ theme }) => theme.color.main.color};
   }
   &.Selected {
-
     color: ${({ theme }) => theme.color.main.color};
     border-bottom: 2px solid ${({ theme }) => theme.color.main.color};
   }

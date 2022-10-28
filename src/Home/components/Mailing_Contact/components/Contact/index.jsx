@@ -27,6 +27,7 @@ const ButtonsContainer = styled.div`
 const Title = styled.h1`
   font-size: 3rem;
   color: ${({ theme }) => theme.color.black};
+  margin-top: 5%;
   b {
     color: ${({ theme }) => theme.color.main.color};
   }
@@ -36,7 +37,7 @@ const ContactContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `;
 
