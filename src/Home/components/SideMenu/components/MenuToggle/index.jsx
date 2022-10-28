@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { MenuTogglerIcon,  MenuToggleBox } from "./Styled";
-import MenuContext from "../../../../../context/MenuContext/MenuContext";
+import MenuContext from "../../../../../context/MenuContext";
 
 function MenuToggle({ scrolled }) {
   const { toggle, open } = useContext(MenuContext);

@@ -21,15 +21,16 @@ const Button = styled.button`
   padding: 15%;
   font-weight: thin;
   letter-spacing: 0.05rem;
-  transition: transform ${({ theme }) => theme.transition.x4},
-    background-color ${({ theme }) => theme.transition.slow},
-    color ${({ theme }) => theme.transition.slow};
-  border: 1px solid ${({ theme, black }) => theme.color.main.color};
+  transition: ${({ theme }) => theme.transition.slow};
+  border: 1px solid
+    ${({ theme, black }) =>
+      black ? theme.color.black : theme.color.main.color};
   cursor: pointer;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.white};
     color: ${({ theme }) => theme.color.main.color};
+    border-color: ${({ theme }) => theme.color.main.color};
   }
 `;
 export default ContactButton;

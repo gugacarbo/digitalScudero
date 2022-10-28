@@ -1,15 +1,15 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
-import AppContext from "./context/AppContext";
+import AppContextProvider from "./context/AppContextProvider";
 import SplashScreen from "./SplashScreen";
 function App() {
   return (
-    <AppContext>
-      <SplashScreen />
+    <AppContextProvider>
+      {/* <SplashScreen /> */}
       <Router>
         <Routes />
       </Router>
-    </AppContext>
+    </AppContextProvider>
   );
 }
 

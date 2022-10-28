@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from "react";
-import MenuContext from "../../../context/MenuContext/MenuContext";
+import MenuContext from "../../../context/MenuContext";
 import ClientAreaButton from "./components/ClientAreaButton";
 import MenuList from "./components/MenuList";
 import { SideMenuContainer } from "./Styled";

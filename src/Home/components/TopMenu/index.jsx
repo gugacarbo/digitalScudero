@@ -4,7 +4,7 @@ import Lenguage from "./components/Lenguage";
 import { TopMenuContainer, TopMenuContent } from "./Styled";
 import MeetingButton from "./components/MeetingButton";
 import MenuLogo from "./components/MenuLogo";
-import MenuContext from "../../../context/MenuContext/MenuContext";
+import MenuContext from "../../../context/MenuContext";
 
 function TopMenu() {
   const [isScrolled, setIsScrolled] = useState(true);
