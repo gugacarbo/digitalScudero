@@ -14,8 +14,8 @@ const Button = styled(BaseButton)`
   padding: 0.3rem 0;
   font-size: 0.85rem;
   font-weight: 600;
-  margin-top: 80%;
-  margin-bottom: 10%;
+  margin-top: auto;
+  margin-bottom: 5%;
   width: 70%;
   height: 1.8rem;
   &:hover {
