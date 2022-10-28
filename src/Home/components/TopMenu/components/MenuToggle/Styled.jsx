@@ -34,8 +34,7 @@ export const MenuToggleText = styled.span`
 export const MenuTogglerIcon = styled(MenuToggleSvg)`
   width: 1.5rem;
   margin: auto 0;
-  fill: ${({ theme }) => theme.color.white};
-  fill: #aaa;
+  fill: ${({ theme }) => theme.color.mediumGray};
   overflow: visible;
   transition: ${({ theme }) => theme.transition.slow};
   position: relative;

@@ -7,6 +7,8 @@ export default {
     black: "#222",
     white: "#fefefe",
     lightGray: "#ccc",
+    mediumGray: "#999",
+    darkGray: "#666",
     main: {
       color: "#ff6600",
       dark: "#E8440C",

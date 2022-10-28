@@ -22,8 +22,8 @@ export const MenuText = styled.div`
 
   transform: translateY(15%) translateX(-130%);
   opacity: 0;
-  text-shadow: 0px 0 1px ${({ theme }) => theme.color.black},
-    0px 0 2px ${({ theme }) => theme.color.black};
+  text-shadow: 0px 0 1px ${({ theme }) => theme.color.darkGray},
+    0px 0 2px ${({ theme }) => theme.color.mediumGray};
 
   .Digital {
     font-size: 0.4em;
@@ -50,8 +50,8 @@ export const MenuIcon = styled(LogoSvg)`
   transition: ${({ theme }) => theme.transition.x3};
   overflow: visible;
   * {
-    stroke-width: 2px;
-    stroke: ${({ theme }) => theme.color.black};
+    stroke-width: 1px;
+    stroke: ${({ theme }) => theme.color.darkGray};
   }
   ${({ scrolled }) =>
     scrolled &&

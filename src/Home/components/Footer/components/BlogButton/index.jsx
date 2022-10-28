@@ -20,10 +20,6 @@ const Button = styled(BaseButton)`
   height: 1.8rem;
   &:hover {
     background-color: ${({ theme }) => theme.color.main.color};
+    color: ${({ theme }) => theme.color.white};
   }
-  ${({ scrolled }) =>
-    scrolled &&
-    `
-    transform: translateY(-400%);
-    `}
 `;
