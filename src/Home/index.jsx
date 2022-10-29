@@ -20,7 +20,7 @@ function Home() {
       transition={{ duration: theme.screen.transition.x2 }}
     >
       <TopMenu />
-      <SideMenu />
+      <SideMenu home />
       <HomeScreen />
       <WhoIs />
       <WhatWeDo />

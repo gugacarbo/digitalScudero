@@ -14,16 +14,20 @@ function MenuList() {
   );
 }
 
+import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
 const Item = ({ children, to, props }) => {
   const { setOpen } = useContext(MenuContext);
+  const location = useLocation();
 
   return (
     <MenuItem
       {...props}
+      as={location == "/" ? ScrollLink : Link}
       activeClass="Selected"
       to={to}
       spy={true}
-      smooth={'easeInOutCubic'}
+      smooth={"easeInOutCubic"}
       offset={0}
       duration={850}
       isDynamic={true}
