@@ -4,9 +4,9 @@ import { ReactComponent as UsaSvg } from "../../../../../assets/flags/usa.svg";
 import { ReactComponent as SpainSvg } from "../../../../../assets/flags/spain.svg";
 
 import { LenaguageContainer, Icon } from "./Styled";
-function Lenguage() {
+function Lenguage({ hide }) {
   return (
-    <LenaguageContainer>
+    <LenaguageContainer hide={hide}>
       <Icon as={BrasilSvg} selected />
       <Icon as={SpainSvg} />
       <Icon as={UsaSvg} />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function ContactButton({ children, onlick, ...props }) {
@@ -8,10 +9,11 @@ function ContactButton({ children, onlick, ...props }) {
   );
 }
 
-const Button = styled.button`
+const Button = styled(Link)`
   width: 90%;
   aspect-ratio: 2;
-
+  text-decoration: none;
+  text-align: center;
   background-color: ${({ theme, black }) =>
     black ? theme.color.black : theme.color.main.color};
   color: ${({ theme }) => theme.color.white};

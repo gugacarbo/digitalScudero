@@ -34,7 +34,7 @@ function TopMenu() {
       <TopMenuContent>
         <MenuLogo scrolled={!isScrolled} />
         <MeetingButton scrolled={!isScrolled} />
-        <Lenguage />
+        <Lenguage hide={false} />
         <MenuToggle scrolled={!isScrolled} />
       </TopMenuContent>
     </TopMenuContainer>

@@ -21,5 +21,7 @@ export const TopMenuContent = styled.div`
   justify-content: flex-end;
   padding: 0 5%;
   padding-top: 1rem;
+  z-index: 55;
+
 `;
 

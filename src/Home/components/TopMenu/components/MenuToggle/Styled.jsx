@@ -8,6 +8,8 @@ export const MenuToggleBox = styled.div`
   position: relative;
   gap: 0.5rem;
   margin-left: 2rem;
+  z-index: 55;
+
   cursor: pointer;
   &:hover span {
     opacity: 1;
@@ -32,7 +34,7 @@ export const MenuToggleText = styled.span`
 `;
 
 export const MenuTogglerIcon = styled(MenuToggleSvg)`
-  width: 1.5rem;
+  width: 1.8rem;
   margin: auto 0;
   fill: ${({ theme }) => theme.color.mediumGray};
   overflow: visible;

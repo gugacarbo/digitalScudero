@@ -6,6 +6,11 @@ export const LenaguageContainer = styled.div`
   justify-content: center;
   gap: 0.8rem;
   margin: 0 2rem;
+  ${({ hide }) =>
+    hide &&
+    `
+    display: none;  
+    `}
 `;
 
 export const Icon = styled.div`

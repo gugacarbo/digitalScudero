@@ -9,8 +9,12 @@ function Contact() {
       </Title>
       <Dots />
       <ButtonsContainer>
-        <ContactButton>Quero conversar sobre minha marca</ContactButton>
-        <ContactButton black>Quero tirar minhas dúvidas</ContactButton>
+        <ContactButton to="/contato/minhaMarca">
+          Quero conversar sobre minha marca
+        </ContactButton>
+        <ContactButton to="/contato/duvida" black={1}>
+          Quero tirar minhas dúvidas
+        </ContactButton>
       </ButtonsContainer>
     </ContactContainer>
   );

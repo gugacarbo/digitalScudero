@@ -13,4 +13,12 @@ export default {
     x3: "0.9s",
     x4: "1.2s",
   },
+  screen: {
+    transition: {
+      main: 0.3,
+      x2: 0.6,
+      x3: 0.9,
+      x4: 1.2,
+    },
+  },
 };

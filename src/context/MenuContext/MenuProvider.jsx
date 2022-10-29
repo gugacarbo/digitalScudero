@@ -25,6 +25,7 @@ export default ({ children }) => {
       setOpen(false);
     }
   }
+
   return (
     <MenuContext.Provider
       value={{

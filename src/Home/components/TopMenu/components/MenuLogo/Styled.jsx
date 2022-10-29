@@ -20,6 +20,7 @@ export const MenuText = styled.div`
   font-size: 1.3rem;
   margin: auto 0;
   margin-left: 1rem;
+  z-index: 55;
 
   transform: translateY(15%) translateX(-130%);
   opacity: 0;
