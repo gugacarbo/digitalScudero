@@ -30,7 +30,7 @@ const Button = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.white};
+    background-color: transparent;
     color: ${({ theme }) => theme.color.main.color};
     border-color: ${({ theme }) => theme.color.main.color};
   }

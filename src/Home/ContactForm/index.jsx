@@ -1,24 +1,18 @@
 import { motion } from "framer-motion";
-import { useContext, useState } from "react";
 import Div100vh from "react-div-100vh";
 import styled from "styled-components";
-import MenuContext from "../../../context/MenuContext";
-
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-};
-
+import Header from "./components/Header";
 function ContactForm() {
-  const open = false;
   return (
     <ContactFormMotion
-      initial={variants.closed}
-      transition={{ duration: 1 }}
-      animate={open ? "open" : "closed"}
-      variants={variants}
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "-100%" }}
+      transition={{ duration: 0.5 }}
     >
-      <ContactFormModal></ContactFormModal>
+      <ContactFormModal>
+        <Header />
+      </ContactFormModal>
     </ContactFormMotion>
   );
 }

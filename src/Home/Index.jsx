@@ -8,10 +8,6 @@ import HowDo from "./components/HowWeDo";
 import Mailing_Contact from "./components/Mailing_Contact";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
-import ContactForm from "./components/ContactForm";
-import { useParams } from "react-router-dom";
-import { useContext, useEffect } from "react";
-import MenuContext from "../context/MenuContext";
 
 const Home = function () {
   const theme = useTheme();
@@ -31,7 +27,6 @@ const Home = function () {
       <HowDo />
       <Mailing_Contact />
       <Footer />
-      <ContactForm />
     </AppContainer>
   );
 };
