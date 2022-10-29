@@ -47,7 +47,6 @@ export const IconItem = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: ${({ theme }) => theme.transition.main};
 
   svg {
     width: 1.4rem;

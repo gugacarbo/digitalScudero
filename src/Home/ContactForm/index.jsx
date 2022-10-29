@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import Div100vh from "react-div-100vh";
 import styled from "styled-components";
+import FormContent from "./components/FormContent";
 import Header from "./components/Header";
 function ContactForm() {
+
   return (
     <ContactFormMotion
       initial={{ x: "100%" }}
@@ -12,6 +14,7 @@ function ContactForm() {
     >
       <ContactFormModal>
         <Header />
+        <FormContent />
       </ContactFormModal>
     </ContactFormMotion>
   );

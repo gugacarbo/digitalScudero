@@ -67,10 +67,10 @@ export const BaseButton = styled.button`
   letter-spacing: 0.05rem;
   width: 40%;
   max-width: 900px;
-  transition: transform ${({ theme }) => theme.transition.x4},
-    background-color ${({ theme }) => theme.transition.slow},
-    color ${({ theme }) => theme.transition.slow};
+  transition: ${({ theme }) => theme.transition.slow};
   border: 1px solid ${({ theme }) => theme.color.main.color};
+  outline: none;
+
   cursor: pointer;
 
   &:hover {
@@ -80,6 +80,8 @@ export const BaseButton = styled.button`
 `;
 
 export const BaseInput = styled.input`
+  outline: none;
+
   background-color: ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.main.color};
   border: none;
@@ -90,4 +92,7 @@ export const BaseInput = styled.input`
   transition: ${({ theme }) => theme.transition.main};
   border: 1px solid ${({ theme }) => theme.color.main.color};
   cursor: pointer;
+  &:focus {
+    border-color: ${({ theme }) => theme.color.main.light};
+  }
 `;

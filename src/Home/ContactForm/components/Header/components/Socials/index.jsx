@@ -12,14 +12,14 @@ function Socials() {
     open: {
       height: "auto",
       transition: {
-        duration: 0.3,
+        duration: 0.4,
         delay: 0.2,
       },
     },
     closed: {
       height: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.8,
       },
     },
   };

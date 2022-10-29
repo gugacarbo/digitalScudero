@@ -9,6 +9,8 @@ export default {
     lightGray: "#ccc",
     mediumGray: "#999",
     darkGray: "#666",
+    green: "#2ecc71",
+    red: "#e74c3c",
     main: {
       color: "#ff6600",
       dark: "#E8440C",
