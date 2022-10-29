@@ -5,7 +5,7 @@ import SplashScreen from "./SplashScreen";
 function App() {
   return (
     <AppContextProvider>
-      <SplashScreen />
+      {/* <SplashScreen /> */}
       <Router>
         <Routes />
       </Router>

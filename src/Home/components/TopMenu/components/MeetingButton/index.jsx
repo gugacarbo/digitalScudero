@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 function MeetingButton({ scrolled }) {
   return (
-    <Button as={Link} to="contato/reuniao" scrolled={scrolled ? 1 : 0}>
+    <Button as={Link} to="/contato/reuniao" scrolled={scrolled ? 1 : 0}>
       Agende uma reunião
     </Button>
   );

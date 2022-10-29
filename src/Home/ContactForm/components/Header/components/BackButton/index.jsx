@@ -4,7 +4,7 @@ import { ReactComponent as LeftArrowsSvg } from "../../../../../../assets/LeftAr
 
 function BackButton() {
   return (
-    <BackLink to="/">
+    <BackLink to={-1}>
       <LeftArrowsSvg />
       <span>Voltar</span>
     </BackLink>

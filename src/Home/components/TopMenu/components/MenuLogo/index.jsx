@@ -2,7 +2,7 @@ import { MenuTopLogoContent, MenuIcon, MenuText } from "./Styled";
 function MenuLogo({ scrolled }) {
   return (
     <MenuTopLogoContent
-      to="Home"
+      to="/"
       spy={true}
       smooth={true}
       offset={0}

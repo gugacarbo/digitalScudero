@@ -4,7 +4,6 @@ import styled from "styled-components";
 import FormContent from "./components/FormContent";
 import Header from "./components/Header";
 function ContactForm() {
-
   return (
     <ContactFormMotion
       initial={{ x: "100%" }}

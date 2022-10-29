@@ -70,6 +70,11 @@ export const BaseButton = styled.button`
   transition: ${({ theme }) => theme.transition.slow};
   border: 1px solid ${({ theme }) => theme.color.main.color};
   outline: none;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
 

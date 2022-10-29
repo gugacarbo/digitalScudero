@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { ReactComponent as LogoSvg } from "../../../../../assets/Logo.svg";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 export const MenuTopLogoContent = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-right: auto;
-
+  text-decoration: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.color.white};
 `;
 
 export const MenuText = styled.div`
