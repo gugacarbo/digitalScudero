@@ -9,7 +9,7 @@ import Mailing_Contact from "./components/Mailing_Contact";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
 
-const Home = function () {
+function Home() {
   const theme = useTheme();
 
   return (
@@ -29,7 +29,7 @@ const Home = function () {
       <Footer />
     </AppContainer>
   );
-};
+}
 
 export default Home;
 
