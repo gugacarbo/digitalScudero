@@ -25,6 +25,9 @@ function Home() {
         smooth: "easeInOutCubic",
         offset: 0,
       });
+      let h = history;
+      h.state.to = null;
+      window.history.replaceState(h, document.title)
     } else {
       scroller.scrollTo("Home", {
         duration: 500,
