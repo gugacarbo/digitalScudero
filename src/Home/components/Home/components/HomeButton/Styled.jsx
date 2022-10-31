@@ -11,6 +11,7 @@ export const Button = styled.button`
   font-size: 1.1rem;
   border-radius: 30px;
   font-weight: 300;
+  text-decoration: none;
   transition: ${({ theme }) => theme.transition.main};
   display: flex;
   justify-content: center;

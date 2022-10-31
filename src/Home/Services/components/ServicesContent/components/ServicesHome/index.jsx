@@ -7,7 +7,7 @@ import { ReactComponent as DotsSvg } from "../../../../../../assets/services/Ser
 
 function ServicesHome() {
   return (
-    <ServicesHomeContainer>
+    <ServicesHomeContainer id="ServicesHome">
       <Socials />
       <ServicesBox>
         <Logo />

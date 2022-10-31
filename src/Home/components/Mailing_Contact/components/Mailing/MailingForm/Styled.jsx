@@ -33,7 +33,7 @@ export const LabelTitle = styled.span`
     font-size: 0.9rem;
     margin-left: 1rem;
     font-weight: 400;
-    color: ${({ theme }) => theme.color.main.complement};
+    color: ${({ theme }) => theme.color.white};
   }
 `;
 
@@ -44,7 +44,7 @@ export const StyledInput = styled(BaseInput)`
   ${({ error, theme }) =>
     error &&
     `
-    border: 2px solid ${theme.color.main.complement};
+    border: 2px solid ${theme.color.red};
   `}
 `;
 

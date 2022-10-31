@@ -76,9 +76,9 @@ function Services() {
 }
 
 const ServiceBox = styled.div`
-  width: 80%;
+  width: 70%;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
   grid-template-rows: 20% 80%;
   grid-template-areas:
     "icon title"
@@ -86,9 +86,9 @@ const ServiceBox = styled.div`
 `;
 const ServiceTitle = styled.h1`
   grid-area: title;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   letter-spacing: 0.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: ${({ theme }) => theme.color.main.color};
 `;
 const ServiceIcon = styled.div`
@@ -97,6 +97,8 @@ const ServiceIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+
   &::before {
     z-index: -1;
     content: "";
@@ -108,9 +110,8 @@ const ServiceIcon = styled.div`
     box-shadow: 0 0 5em 2.5rem ${({ theme }) => theme.color.main.color};
   }
   svg {
-    width: 17rem;
-    height: 17rem;
-    margin: auto;
+    width: 100%;
+    height: 100%;
     .SVG_ServicesMarketing4 {
       stroke: ${({ theme }) => theme.background};
     }
@@ -126,11 +127,12 @@ const ServiceIcon = styled.div`
 `;
 const ServiceText = styled.p`
   grid-area: text;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: 0.08rem;
   line-height: 2.4rem;
   color: ${({ theme }) => theme.color.white};
   font-weight: 400;
+  text-align: justify;
   margin-top: 1rem;
   b {
     color: ${({ theme }) => theme.color.main.color};
@@ -144,7 +146,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  gap: 15rem;
+  gap: 6rem;
 `;
 
 export default Services;

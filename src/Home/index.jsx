@@ -8,9 +8,32 @@ import HowDo from "./components/HowWeDo";
 import Mailing_Contact from "./components/Mailing_Contact";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
+import { useEffect } from "react";
 
 function Home() {
   const theme = useTheme();
+
+  let history = useLocation();
+
+  useEffect(() => {
+    if (history?.state?.to) {
+      scroller.scrollTo(history.state.to, {
+        duration: 850,
+        delay: 200,
+        smooth: "easeInOutCubic",
+        offset: 0,
+      });
+    } else {
+      scroller.scrollTo("Home", {
+        duration: 500,
+        delay: 100,
+        smooth: "easeInOutCubic",
+        offset: 0,
+      });
+    }
+  }, []);
 
   return (
     <AppContainer
@@ -20,7 +43,7 @@ function Home() {
       transition={{ duration: theme.screen.transition.x2 }}
     >
       <TopMenu />
-      <SideMenu home />
+      <SideMenu />
       <HomeScreen />
       <WhoIs />
       <WhatWeDo />

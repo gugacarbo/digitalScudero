@@ -1,4 +1,6 @@
 import { List, MenuItem } from "./Styled";
+import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
 
 function Menu() {
   return (
@@ -14,16 +16,25 @@ function Menu() {
 }
 
 const Item = ({ children, to, props }) => {
+  const location = useLocation();
+  var LinkConfig = {};
+  if (location.pathname == "/") {
+    LinkConfig = {
+      as: ScrollLink,
+      to: to,
+      smooth: "easeInOutCubic",
+      offset: 0,
+      duration: 850,
+    };
+  } else {
+    LinkConfig = {
+      as: Link,
+      to: "/",
+      state: { to: to },
+    };
+  }
   return (
-    <MenuItem
-      {...props}
-      to={to}
-      spy={true}
-      smooth={'easeInOutCubic'}
-      isDynamic={true}
-      offset={0}
-      duration={1500}
-    >
+    <MenuItem {...LinkConfig} {...props}>
       {children}
     </MenuItem>
   );

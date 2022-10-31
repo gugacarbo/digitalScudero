@@ -13,6 +13,7 @@ export const List = styled.ul`
 export const MenuItem = styled(Link)`
   font-size: 1rem;
   font-weight: 300;
+  text-decoration: none;
   color: ${({ theme }) => theme.color.white};
   cursor: pointer;
   transition: ${({ theme }) => theme.transition.main};

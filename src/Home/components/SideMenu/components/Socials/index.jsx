@@ -29,11 +29,11 @@ function Socials() {
           icon={<LinkedinIcon />}
           href="https://www.linkedin.com/"
         />
-        <SocialIcon
+        {/* <SocialIcon
           color={"#1769ff"}
           icon={<BehanceIcon />}
           href="https://www.behance.net/"
-        />
+        /> */}
         <SocialIcon
           color={"#e60023"}
           icon={<PinterestIcon />}

@@ -1,10 +1,30 @@
-import { Link } from "react-scroll";
 import styled from "styled-components";
 import { ReactComponent as LogoSvg } from "../../../../../../assets/Logo.svg";
 
+import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
+
 function Logo() {
+  const location = useLocation();
+  var LinkConfig = {};
+  if (location.pathname == "/") {
+    LinkConfig = {
+      as: ScrollLink,
+      activeClass: "Selected",
+      to: "Home",
+      smooth: "easeInOutCubic",
+      offset: 0,
+      duration: 850,
+    };
+  } else {
+    LinkConfig = {
+      as: Link,
+      to: "/",
+     
+    };
+  }
   return (
-    <LogoContent to="Home" spy={true} smooth={true} offset={0} duration={850}>
+    <LogoContent {...LinkConfig}>
       <StyledLogo />
       <BrandName>
         <span className="Digital">Digital</span>
@@ -21,6 +41,8 @@ const LogoContent = styled(Link)`
   cursor: pointer;
   grid-template-columns: 100%;
   grid-template-rows: auto;
+  color: ${({ theme }) => theme.color.white};
+  text-decoration: none;
   place-items: center;
 `;
 
