@@ -1,7 +1,7 @@
 import styled, { useTheme } from "styled-components";
 import TopMenu from "../components/TopMenu";
 import SideMenu from "../components/SideMenu";
-import ServicesContent from "./components/ServicesContent";
+import ServicesContent from "./ServicesContent";
 
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";

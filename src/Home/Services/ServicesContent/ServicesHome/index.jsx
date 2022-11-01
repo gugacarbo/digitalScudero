@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { MainContainer } from "../../../../../Styled";
-import Socials from "../../../../../components/Home/components/Socials";
-import BackgroundImage from "../../../../../../assets/Home-Background.jpg";
-import { ReactComponent as LogoSvg } from "../../../../../../assets/Logo.svg";
-import { ReactComponent as DotsSvg } from "../../../../../../assets/services/ServiceDots.svg";
+import { MainContainer } from "../../../Styled";
+import Socials from "../../../components/Home/components/Socials";
+import BackgroundImage from "../../../../assets/Home-Background.jpg";
+import { ReactComponent as LogoSvg } from "../../../../assets/Logo.svg";
+import { ReactComponent as DotsSvg } from "../../../../assets/services/ServiceDots.svg";
 
 function ServicesHome() {
   return (

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { MainContainer } from "../../../../../Styled";
-import Socials from "../../../../../components/Home/components/Socials";
-import BackgroundImage from "../../../../../../assets/Home-Background.jpg";
-import { ReactComponent as LogoSvg } from "../../../../../../assets/Logo.svg";
-import { ReactComponent as DotsSvg } from "../../../../../../assets/services/ServiceDots.svg";
+import { MainContainer } from "../../../Styled";
+import Socials from "../../../components/Home/components/Socials";
+import BackgroundImage from "../../../../assets/Home-Background.jpg";
+import { ReactComponent as LogoSvg } from "../../../../assets/Logo.svg";
+import { ReactComponent as DotsSvg } from "../../../../assets/services/ServiceDots.svg";
 
 function CasesHome() {
   return (
@@ -12,7 +12,7 @@ function CasesHome() {
       <CasesBox>
         <Logo />
         <Title>
-          Nossos <b>Serviços</b>
+          Nossos <b>Cases</b>
         </Title>
         <Text>
           Conheça nosso portfolio e descubra o que fizemos para aumentar as

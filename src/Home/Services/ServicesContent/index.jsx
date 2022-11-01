@@ -1,23 +1,25 @@
 import { useEffect } from "react";
 import { scroller } from "react-scroll";
 import styled from "styled-components";
-import CasesHome from "./components/CasesHome";
+import Services from "./Services";
+import ServicesHome from "./ServicesHome";
 
-function CasesContent() {
+function ServicesContent() {
   useEffect(() => {
-    scroller.scrollTo("CasesHome", {
+    scroller.scrollTo("ServicesHome", {
       duration: 0,
     });
   }, []);
 
   return (
-    <CasesContainer>
-      <CasesHome />
-    </CasesContainer>
+    <ServicesContainer>
+      <ServicesHome />
+      <Services />
+    </ServicesContainer>
   );
 }
 
-const CasesContainer = styled.div`
+const ServicesContainer = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -26,4 +28,4 @@ const CasesContainer = styled.div`
   height: 100%;
 `;
 
-export default CasesContent;
+export default ServicesContent;

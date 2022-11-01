@@ -1,14 +1,14 @@
 export default {
   name: "dark",
-  background: "#222",
+  background: "#222222",
   color: {
     text: "#fefefe",
-    inverseText: "#222",
-    black: "#222",
+    inverseText: "#222222",
+    black: "#222222",
     white: "#fefefe",
-    lightGray: "#ccc",
-    mediumGray: "#999",
-    darkGray: "#666",
+    lightGray: "#cccccc",
+    mediumGray: "#999999",
+    darkGray: "#666666",
     green: "#2ecc71",
     red: "#e74c3c",
     main: {

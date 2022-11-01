@@ -27,7 +27,7 @@ function Home() {
       });
       let h = history;
       h.state.to = null;
-      window.history.replaceState(h, document.title)
+      window.history.replaceState(h, document.title);
     } else {
       scroller.scrollTo("Home", {
         duration: 500,
