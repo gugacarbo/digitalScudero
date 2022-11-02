@@ -5,7 +5,7 @@ function Cases() {
   return (
     <CasesContainer>
       <BackButton />
-      <CasesBox>asdasd</CasesBox>
+      <CasesBox />
     </CasesContainer>
   );
 }
@@ -21,8 +21,9 @@ const CasesContainer = styled.div`
 
   display: grid;
   grid-template-columns: 100%;
-  padding: 5vh 0;
-  grid-template-rows: 20vh 20vh auto;
+  padding-top: 5vh;
+  padding-bottom: 25vh;
+  grid-template-rows: 20vh 15vh auto;
 
   &::before {
     content: "";

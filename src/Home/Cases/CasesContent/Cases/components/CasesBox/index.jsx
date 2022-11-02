@@ -6,10 +6,54 @@ import { ReactComponent as CarbomaqLogo } from "../../../../../../assets/Logo.sv
 function CasesBox() {
   return (
     <BoxContent>
-      <CaseItem title="Desenvolvimento de Website" img={CarbomaqSquareImg} logo={CarbomaqLogo}></CaseItem>
-      <CaseItem title="Identidade Visual" img={CarbomaqSquareImg} logo={CarbomaqLogo}></CaseItem>
-      <CaseItem title="Criação de Arte Para  Postagens" img={CarbomaqSquareImg} logo={CarbomaqLogo}></CaseItem>
-      <CaseItem title="Manual de Identidade de Marca" img={CarbomaqSquareImg} logo={CarbomaqLogo}></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Desenvolvimento de Website"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Identidade Visual"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Criação de Arte Para  Postagens"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Manual de Identidade de Marca"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Desenvolvimento de Website"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Identidade Visual"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Criação de Arte Para  Postagens"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
+      <CaseItem
+        to="carbomaq-website"
+        title="Manual de Identidade de Marca"
+        img={CarbomaqSquareImg}
+        logo={CarbomaqLogo}
+      ></CaseItem>
     </BoxContent>
   );
 }
@@ -19,10 +63,10 @@ export default CasesBox;
 const BoxContent = styled.div`
   width: 80%;
   height: 100%;
-  background-color: ${({ theme }) => theme.color.darkGray};
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   place-items: center;
+  gap: 0.1rem;
 `;

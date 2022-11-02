@@ -1,10 +1,21 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-function IndexItem({ img, logo, title }) {
+function IndexItem({ img, logo, title, to }) {
   return (
-    <BoxItem img={img} whileHover={{}}>
-      <BoxItemContent>
+    <BoxItem
+      img={img}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.65, delay: 0.2 },
+      }}
+      exit={{ opacity: 0, scale: 0.2, transition: { duration: 0.5 } }}
+      viewport={{ once: true }}
+    >
+      <BoxItemContent to={to}>
         <CaseTitle>{title}</CaseTitle>
         <BrandLogo as={logo} />
       </BoxItemContent>
@@ -19,7 +30,6 @@ const BrandLogo = styled.svg`
   margin: 2rem 0;
   fill: ${({ theme }) => theme.color.white};
   transition: ${({ theme }) => theme.transition.x3};
-
 `;
 
 const CaseTitle = styled.h1`
@@ -43,19 +53,12 @@ const CaseTitle = styled.h1`
     max-width: 50%;
     height: 1.8px;
     transition: ${({ theme }) => theme.transition.x3};
-    background-color: ${({ theme }) => theme.color.main.color};
   }
 `;
 
 const BoxItem = styled(motion.div)`
   width: 100%;
   aspect-ratio: 1;
-  background-color: ${({ theme }) => theme.color.main.dark};
-  transition: ${({ theme }) => theme.transition.x3};
-
-  &:nth-child(even) {
-    background-color: ${({ theme }) => theme.color.main.light};
-  }
 
   background-image: url(${({ img }) => img});
   background-size: cover;
@@ -99,11 +102,12 @@ const BoxItem = styled(motion.div)`
   }
 `;
 
-const BoxItemContent = styled.div`
+const BoxItemContent = styled(Link)`
   position: relative;
   width: 100%;
   height: 100%;
   z-index: 10;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;

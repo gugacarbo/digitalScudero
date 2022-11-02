@@ -5,11 +5,11 @@ import CasesHome from "./CasesHome";
 import Cases from "./Cases";
 
 function CasesContent() {
-  useEffect(() => {
-    scroller.scrollTo("CasesHome", {
-      duration: 0,
-    });
-  }, []);
+  // useEffect(() => {
+  //   scroller.scrollTo("CasesHome", {
+  //     duration: 0,
+  //   });
+  // }, []);
 
   return (
     <CasesContainer>
