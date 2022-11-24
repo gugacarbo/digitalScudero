@@ -57,9 +57,12 @@ const ShowPartnersContainer = styled.div`
   padding-top: 5vh;
   padding-bottom: 25vh;
 
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export default ShowPartners;
+
+
