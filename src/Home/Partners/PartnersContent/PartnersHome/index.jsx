@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { MainContainer } from "../../../Styled";
 import Socials from "../../../components/Home/components/Socials";
 import { ReactComponent as LogoSvg } from "../../../../assets/Logo.svg";
+import { Link } from "react-router-dom";
 
 function PartnersHome() {
   return (
