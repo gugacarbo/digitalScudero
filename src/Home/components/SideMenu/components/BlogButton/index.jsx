@@ -18,6 +18,8 @@ const Button = styled(BaseButton)`
   margin-top: 1rem;
   &:hover {
     background-color: ${({ theme }) => theme.color.main.color};
+  color: ${({ theme }) => theme.color.white};
+
   }
   ${({ scrolled }) =>
     scrolled &&

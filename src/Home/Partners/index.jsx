@@ -1,12 +1,12 @@
 import styled, { useTheme } from "styled-components";
 import TopMenu from "../components/TopMenu";
 import SideMenu from "../components/SideMenu";
-import CasesContent from "./CasesContent";
 
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import PartnersContent from "./PartnersContent";
 
-function Cases() {
+function Partners() {
   const theme = useTheme();
 
   return (
@@ -18,13 +18,14 @@ function Cases() {
     >
       <TopMenu />
       <SideMenu />
-      <CasesContent />
+      <PartnersContent />
+
       <Footer />
     </AppContainer>
   );
 }
 
-export default Cases;
+export default Partners;
 
 const AppContainer = styled(motion.div)`
   display: grid;

@@ -31,13 +31,15 @@ export const Dots = styled(SocialDots)`
   fill: ${({ theme }) => theme.color.white};
   transition: ${({ theme }) => theme.transition.main};
   ${({ rotate }) => rotate && `transform: rotate(180deg);`}
+  stroke: transparent;
+  stroke-width: 0;
 `;
 
 export const SocialsContainer = styled.div`
   grid-area: Socials;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30% auto  30%;
+  grid-template-rows: 30% auto 30%;
   overflow: hidden;
   height: 90%;
   place-items: center;

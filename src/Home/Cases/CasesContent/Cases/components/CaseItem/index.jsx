@@ -15,7 +15,7 @@ function IndexItem({ img, logo, title, to }) {
       exit={{ opacity: 0, scale: 0.2, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
     >
-      <BoxItemContent to={to}>
+      <BoxItemContent to={"/case/"+to}>
         <CaseTitle>{title}</CaseTitle>
         <BrandLogo as={logo} />
       </BoxItemContent>
@@ -34,9 +34,9 @@ const BrandLogo = styled.svg`
 
 const CaseTitle = styled.h1`
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.08rem;
   color: ${({ theme }) => theme.color.main.color};
   position: relative;
   display: flex;
@@ -75,8 +75,8 @@ const BoxItem = styled(motion.div)`
     height: 100%;
     background-image: linear-gradient(
       to bottom,
-      ${({ theme }) => theme.background + "6a"} 0%,
-      ${({ theme }) => theme.background + "ee"} 90%
+      ${({ theme }) => theme.background + "4a"} 0%,
+      ${({ theme }) => theme.background + "be"} 90%
     );
     transition: ${({ theme }) => theme.transition.x3};
 
