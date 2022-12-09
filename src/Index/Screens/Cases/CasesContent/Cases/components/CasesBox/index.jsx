@@ -1,59 +1,22 @@
 import styled from "styled-components";
-import CaseItem from "../CaseItem";
-import CarbomaqSquareImg from "../../../../../../../assets/carbomaq.png";
-import { ReactComponent as CarbomaqLogo } from "../../../../../../../assets/Logo.svg";
+import CaseItem from "./CaseItem";
+
+import { getCases } from "../../../../../../util/api";
 
 function CasesBox() {
+  const cases = getCases();
+
   return (
     <BoxContent id="CasesContainer">
-      <CaseItem
-        to="carbomaq-website"
-        title="Desenvolvimento de Website"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Identidade Visual"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Criação de Arte Para  Postagens"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Manual de Identidade de Marca"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Desenvolvimento de Website"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Identidade Visual"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Criação de Arte Para  Postagens"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
-      <CaseItem
-        to="carbomaq-website"
-        title="Manual de Identidade de Marca"
-        img={CarbomaqSquareImg}
-        logo={CarbomaqLogo}
-      ></CaseItem>
+      {cases.map((value, index, array) => (
+        <CaseItem
+          key={value.title + index}
+          to={value.to}
+          title={value.title}
+          img={value.bg}
+          logo={value.logo}
+        />
+      ))}
     </BoxContent>
   );
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MainContainer } from "../../../../Styled";
-import Socials from "../../../../components//Socials";
+import Socials from "../../../../components/Socials";
 import BackgroundImage from "../../../../../assets/Home-Background.jpg";
 import { ReactComponent as LogoSvg } from "../../../../../assets/Logo.svg";
 import { ReactComponent as DotsSvg } from "../../../../../assets/services/ServiceDots.svg";

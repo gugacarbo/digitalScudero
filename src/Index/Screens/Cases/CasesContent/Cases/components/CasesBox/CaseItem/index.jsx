@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function CaseItem({ img, logo, title, to }) {
+  const bg = img.startsWith("https")
+    ? img.slice(6)
+    : img.startsWith("http")
+    ? img.slice(5)
+    : img;
+
   return (
     <BoxItem
-      img={img}
       initial={{ opacity: 0, y: 200 }}
       whileInView={{
         opacity: 1,
@@ -15,8 +20,12 @@ function CaseItem({ img, logo, title, to }) {
       exit={{ opacity: 0, scale: 0.2, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
     >
+      <BackgroundImage src={bg} />
       <BoxItemContent to={"/case/" + to}>
         <CaseTitle>{title}</CaseTitle>
+        <BrandLogo>
+          <img src={logo} />
+        </BrandLogo>
       </BoxItemContent>
     </BoxItem>
   );
@@ -24,11 +33,20 @@ function CaseItem({ img, logo, title, to }) {
 
 export default CaseItem;
 
-const BrandLogo = styled.svg`
-  height: 2rem;
-  margin: 2rem 0;
+const BrandLogo = styled.div`
+  height: 20%;
+  max-width: 70%;
+  margin-bottom: 2rem;
   fill: ${({ theme }) => theme.color.white};
   transition: ${({ theme }) => theme.transition.x3};
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 90%;
+    width: 90%;
+  }
 `;
 
 const CaseTitle = styled.h1`
@@ -43,7 +61,8 @@ const CaseTitle = styled.h1`
   justify-content: center;
   max-width: 90%;
   transition: ${({ theme }) => theme.transition.x3};
-
+  margin-bottom: 2rem;
+  z-index: 2;
   &::after {
     content: "";
     position: absolute;
@@ -52,6 +71,7 @@ const CaseTitle = styled.h1`
     max-width: 50%;
     height: 1.8px;
     transition: ${({ theme }) => theme.transition.x3};
+    background-color: ${({ theme }) => theme.color.main.color};
   }
 `;
 
@@ -59,13 +79,13 @@ const BoxItem = styled(motion.div)`
   width: 100%;
   aspect-ratio: 1;
 
-  background-image: url(${({ img }) => img});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: ${({ theme }) => theme.background};
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -74,18 +94,18 @@ const BoxItem = styled(motion.div)`
     height: 100%;
     background-image: linear-gradient(
       to bottom,
-      ${({ theme }) => theme.background + "4a"} 0%,
-      ${({ theme }) => theme.background + "be"} 90%
+      ${({ theme }) => theme.background + "6a"},
+      ${({ theme }) => theme.background + "ee"}
     );
     transition: ${({ theme }) => theme.transition.x3};
 
     opacity: 1;
-    backdrop-filter: blur(0.1rem);
+    backdrop-filter: blur(0.05rem);
   }
   &:hover {
-    &::before {
-      backdrop-filter: blur(0.05rem);
-      opacity: 0.9;
+    &::after {
+      backdrop-filter: blur(0rem);
+      opacity: 0.8;
     }
     & ${CaseTitle} {
       color: ${({ theme }) => theme.color.white};
@@ -101,6 +121,12 @@ const BoxItem = styled(motion.div)`
   }
 `;
 
+const BackgroundImage = styled.img`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+`;
+
 const BoxItemContent = styled(Link)`
   position: relative;
   width: 100%;
@@ -114,6 +140,7 @@ const BoxItemContent = styled(Link)`
   //backdrop-filter: blur(1px);
   cursor: pointer;
   transition: ${({ theme }) => theme.transition.x2};
+  overflow: hidden;
   &:hover {
     backdrop-filter: blur(0);
   }

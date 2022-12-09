@@ -3,31 +3,10 @@ import BackButton from "./components/BackButton";
 import CasesBox from "./components/CasesBox";
 
 function Cases() {
-  const casesArray = [
-    {
-      bg: "https://cdn5.vectorstock.com/i/1000x1000/32/14/abstract-square-background-vector-4683214.jpg",
-      title: "Title1",
-      to: "/Case1",
-      logo: "https://digitalscudero.com.br/assets/logo.186b23bf.svg",
-    },
-    {
-      bg: "https://cdn5.vectorstock.com/i/1000x1000/32/14/abstract-square-background-vector-4683214.jpg",
-      title: "Title2",
-      to: "/Case1",
-      logo: "https://digitalscudero.com.br/assets/logo.186b23bf.svg",
-    },
-    {
-      bg: "https://cdn5.vectorstock.com/i/1000x1000/32/14/abstract-square-background-vector-4683214.jpg",
-      title: "Title3",
-      to: "/Case1",
-      logo: "https://digitalscudero.com.br/assets/logo.186b23bf.svg",
-    },
-  ];
-
   return (
     <CasesContainer>
       <BackButton />
-      <CasesBox cases={casesArray} />
+      <CasesBox />
     </CasesContainer>
   );
 }

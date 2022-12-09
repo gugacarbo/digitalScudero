@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import styled from "styled-components";
 import carbomaqCaseBg from "../../../../assets/carbomaqCaseBg.jpg";
 
-function ShowCase() {
+function ShowCase({ img }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <Content>
-      <img src={carbomaqCaseBg} alt="" />
+      <img src={img} alt="" />
     </Content>
   );
 }
@@ -21,7 +21,7 @@ const Content = styled.div`
   position: relative;
   display: flex;
   img {
-    height: 100%;
+    width: 100%;
   }
   &::after,
   &::before {

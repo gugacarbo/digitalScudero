@@ -4,7 +4,7 @@ import styled from "styled-components";
 import CaseHome from "./CaseHome";
 import ShowCase from "./ShowCase";
 
-function CaseContent() {
+function CaseContent({ caseItem }) {
   // useEffect(() => {
   //   scroller.scrollTo("CaseHome", {
   //     duration: 0,
@@ -13,8 +13,14 @@ function CaseContent() {
 
   return (
     <CaseContainer>
-      <CaseHome />
-      <ShowCase />
+      <CaseHome
+        text={caseItem.text}
+        title={caseItem.title}
+        projectLink={caseItem.link}
+        logo={caseItem.logo}
+        
+      />
+      <ShowCase img={caseItem.caseImage} />
     </CaseContainer>
   );
 }

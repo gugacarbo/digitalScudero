@@ -25,9 +25,9 @@ function CasesHome() {
           to="CasesContainer"
           spy={true}
           smooth={true}
-          offset={-50}
-          duration={1000}
-          delay={100}
+          offset={-100}
+          duration={1100}
+          delay={120}
         >
           <ArrowDown />
         </Link>

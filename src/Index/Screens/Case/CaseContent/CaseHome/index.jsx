@@ -5,31 +5,30 @@ import { ReactComponent as LogoSvg } from "../../../../../assets/Logo.svg";
 import { ReactComponent as DotsSvg } from "../../../../../assets/services/ServiceDots.svg";
 import { ReactComponent as LeftArrowsSvg } from "../../../../../assets/LeftArrows.svg";
 import { Link } from "react-router-dom";
+import { stringToBoldElement } from "../../../../util/text";
 
-function CaseHome() {
+function CaseHome({ text, title, logo, projectLink }) {
+  console.log(projectLink);
   return (
     <CaseHomeContainer id="CaseHome">
       <Socials />
       <CaseBox>
-        <BackLink to={'/cases'}>
+        <BackLink to={"/cases"}>
           <LeftArrowsSvg /> Voltar
         </BackLink>
-        <Logo />
+        <Logo>
+          <img src={logo} alt="" />
+        </Logo>
         <Title>
-          <b>Desenvolvimento de Website</b>
+          <b>{title}</b>
         </Title>
         <Dots />
-        <GoToProject>Visite o Projeto</GoToProject>
-        <Text>
-          Com foco em prestar serviços de usinagem, soldas,
-          manutenção,fabricação de peças e equipamentos, a Carbomaq precisava de
-          um website moderno, prático e simples, para aumentar sua proximidade
-          com seus clientes em potencial.
-        </Text>
-        <Text>
-          A partir do estudo de caso da Carbomaq, desenvolvemos um site com
-          interface simples e acessivel para melhor exposição de seus serviços.
-        </Text>
+        <GoToProject href={projectLink} target="blank">
+          Visite o Projeto
+        </GoToProject>
+        {text.map((value, index, array) => (
+          <Text key={index}>{stringToBoldElement(value)}</Text>
+        ))}
       </CaseBox>
     </CaseHomeContainer>
   );
@@ -37,7 +36,7 @@ function CaseHome() {
 
 export default CaseHome;
 
-const GoToProject = styled(Link)`
+const GoToProject = styled.a`
   color: ${({ theme }) => theme.color.main.color};
   font-size: 1.5rem;
   text-decoration: none;
@@ -107,12 +106,16 @@ const Text = styled.p`
   font-weight: 400;
   width: 90%;
   text-align: justify;
+  b {
+    font-weight: 500;
+    color: ${({ theme }) => theme.color.main.color};
+  }
   &::first-letter {
     font-size: 1.05em;
 
     padding-left: 2rem;
     font-weight: 500;
-    color: ${({ theme }) => theme.color.main.light};
+    color: ${({ theme }) => theme.color.main.color};
   }
 `;
 const Title = styled.h1`
@@ -126,8 +129,16 @@ const Title = styled.h1`
     color: ${({ theme }) => theme.color.main.color};
   }
 `;
-const Logo = styled(LogoSvg)`
-  width: 12%;
+const Logo = styled.div`
+  width: 15%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 95%;
+    width: 95%;
+  }
   fill: ${({ theme }) => theme.color.white};
 `;
 const CaseHomeContainer = styled(MainContainer)`

@@ -5,8 +5,17 @@ import SideMenu from "../../components/SideMenu";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import CaseContent from "./CaseContent";
+import { getCases } from "../../util/api";
+import { useParams } from "react-router-dom";
 
 function Case() {
+  const cases = getCases();
+  const { caseName } = useParams();
+
+  const caseItem = cases.find((item) => {
+    return item.to == caseName;
+  });
+
   const theme = useTheme();
 
   return (
@@ -18,7 +27,7 @@ function Case() {
     >
       <TopMenu />
       <SideMenu />
-      <CaseContent />
+      <CaseContent caseItem={caseItem} />
 
       <Footer />
     </CaseContainer>
