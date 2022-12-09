@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BaseTitle } from "../../../HomeStyled";
 
 function Title() {
   return (
@@ -17,9 +18,9 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const TitleH1 = styled.h1`
-  font-size: 4rem;
-  color: ${({ theme }) => theme.color.black};
+
+
+const TitleH1 = styled(BaseTitle)`
   letter-spacing: 0.1rem;
   font-weight: 500;
   text-align: center;

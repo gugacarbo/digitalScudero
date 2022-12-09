@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as DotsSvg } from "../../../../../../../assets/services/ServiceDots.svg";
 import ContactButton from "./ContactButton";
+import { BaseTitle } from "../../../HomeStyled";
+
 function Contact() {
   return (
     <ContactContainer>
@@ -38,8 +40,7 @@ const ButtonsContainer = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 3.5rem;
+const Title = styled(BaseTitle)`
   color: ${({ theme }) => theme.color.black};
   margin-top: 2%;
   b {
@@ -54,7 +55,6 @@ const Title = styled.h1`
   @media (max-width: 414px) {
     margin-top: 0;
     font-size: 3rem;
-
   }
 `;
 const ContactContainer = styled.div`

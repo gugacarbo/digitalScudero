@@ -13,9 +13,9 @@ export default SubText;
 
 const SText = styled.p`
   grid-area: SubText;
-  width: 70%;
+  width: 80%;
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 400;
   color: ${({ theme }) => theme.color.white};
   @media (max-width: 768px) {
     margin: 0 auto;

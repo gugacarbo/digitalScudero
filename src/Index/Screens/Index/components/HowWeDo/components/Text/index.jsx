@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BaseText } from "../../../HomeStyled";
 
 function Text() {
   return (
@@ -21,19 +22,7 @@ const TextContainer = styled.div`
   gap: 1rem;
 `;
 
-const TextP = styled.p`
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0.1rem;
+const TextP = styled(BaseText)`
   color: ${({ theme }) => theme.color.white};
-  width: 80%;
-  span {
-    color: ${({ theme }) => theme.color.main.color};
-  }
-
-  @media (max-width: 414px) {
-    width: 90%;
-  }
 `;
 export default Text;
