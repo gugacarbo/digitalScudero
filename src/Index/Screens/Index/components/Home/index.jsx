@@ -19,6 +19,9 @@ function HomeScreen() {
 
 const HomeContainer = styled(MainContainer)`
   background-image: url(${BackgroundImage});
+  @media (max-width: 520px) {
+    background-image: none;
+  }
   background-size: 95%;
   background-position: right;
   background-repeat: no-repeat;
@@ -33,6 +36,22 @@ const HomeContainer = styled(MainContainer)`
     ". HomeButton . Socials"
     ".     .      . Socials"
     ".     .      . .";
+
+  @media (max-width: 768px) {
+    grid-template-columns: 15% auto 5% 12%;
+  }
+
+  @media (max-width: 520px) {
+    grid-template-columns: 7% 1fr 7%;
+    grid-template-rows: 10% 40% 18% 17% 10% 1fr;
+    grid-template-areas:
+      ".     .      . "
+      ".  HomeText  . "
+      ".  SubText   . "
+      ". HomeButton . "
+      ".  Socials   . "
+      ".     .      . ";
+  }
 `;
 
 export default HomeScreen;

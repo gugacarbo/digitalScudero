@@ -24,9 +24,14 @@ const TitleH1 = styled.h1`
   text-align: center;
 
   b {
-    font-size: 3.9rem;
+    font-size: 4rem;
     font-weight: 600;
     color: ${({ theme }) => theme.color.main.color};
+  }
+
+  @media (max-width: 414px) {
+    font-weight: 600;
+    font-size: 5rem;
   }
 `;
 

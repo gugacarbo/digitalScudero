@@ -13,7 +13,7 @@ export const MenuTopLogoContent = styled(Link)`
 `;
 
 export const MenuText = styled.div`
-  position: relative;
+  position: absolute;
   transition: ${({ theme }) => theme.transition.x3};
   font-family: BDPBIRGULA, Poppins;
   display: flex;
@@ -23,6 +23,7 @@ export const MenuText = styled.div`
   margin: auto 0;
   margin-left: 1rem;
   z-index: 55;
+  right: -80%;
 
   transform: translateY(15%) translateX(-130%);
   opacity: 0;
@@ -49,9 +50,15 @@ export const MenuText = styled.div`
 `;
 
 export const MenuIcon = styled(LogoSvg)`
-  height: 50px;
+  height: 4rem;
   margin: auto 0;
   cursor: pointer;
+  @media (max-width: 620px) {
+    height: 4rem;
+  }
+  @media (max-width: 414px) {
+    height: 3.5rem;
+  }
 
   fill: ${({ theme }) => theme.color.white};
   transition: ${({ theme }) => theme.transition.x3};

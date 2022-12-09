@@ -29,29 +29,61 @@ function ServiceIcons() {
   );
 }
 const IconsContainer = styled.div`
+  width: 65%;
   display: flex;
-  width: 60%;
   justify-content: space-between;
+  column-gap: 5%;
+  @media (max-width: 620px) {
+    column-gap: 4%;
+    width: 80%;
+  }
+  @media (max-width: 414px) {
+    column-gap: 0;
+    width: 100%;
+    height: auto;
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 const IconText = styled.span`
+  width: 95%;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
   color: ${({ theme }) => theme.color.main.color};
   margin: 1rem auto;
   margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 620px) {
+    font-size: 1.1rem;
+  }
+  @media (max-width: 414px) {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 `;
 
 const IconBox = styled.div`
-  width: 18%;
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 70% 30%;
   place-items: center;
+  overflow: hidden;
+
   svg {
     width: 100%;
     height: 100%;
+  }
+  @media (max-width: 414px) {
+    width: 80%;
+    height: 80%;
+    grid-template-rows: auto 5rem;
   }
 `;
 

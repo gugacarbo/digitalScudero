@@ -24,6 +24,26 @@ const Button = styled.button`
   border: 1px solid ${({ theme }) => theme.color.white};
   cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 0.3rem 3rem;
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: 620px) {
+    padding: 0.3rem 2rem;
+    font-size: 1rem;
+    margin: auto 1rem;
+  }
+  @media (max-width: 414px) {
+    padding: 0.2rem 1rem;
+    margin: auto;
+    width: 45%;
+  }
   &:hover {
     background-color: ${({ theme }) => theme.color.main.color};
   }

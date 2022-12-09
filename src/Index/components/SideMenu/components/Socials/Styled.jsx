@@ -15,6 +15,9 @@ export const IconsBox = styled.div`
   justify-content: space-around;
   margin-top: 1rem;
   width: 100%;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Icon = styled.a`
@@ -30,7 +33,7 @@ export const Icon = styled.a`
   align-items: center;
   svg {
     fill: ${({ theme }) => theme.color.white};
-  transition: ${({ theme }) => theme.transition.main};
+    transition: ${({ theme }) => theme.transition.main};
 
     width: 80%;
     height: 80%;
@@ -43,6 +46,11 @@ export const Icon = styled.a`
     }
     border-color: ${({ color, theme }) => color || theme.color.main.color};
   }
+  @media (max-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4rem;
+  }
 `;
 
 export const SocialsTitle = styled.span`
@@ -50,4 +58,7 @@ export const SocialsTitle = styled.span`
   font-weight: 200;
   letter-spacing: 0.051rem;
   color: ${({ theme }) => theme.color.white};
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;

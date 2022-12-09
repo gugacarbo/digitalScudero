@@ -23,6 +23,10 @@ export const Icon = styled.a`
       fill: ${({ color, theme }) => color || theme.color.main.color};
     }
   }
+  @media screen and (max-width: 520px) {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
 `;
 
 export const SocialsContainer = styled.div`

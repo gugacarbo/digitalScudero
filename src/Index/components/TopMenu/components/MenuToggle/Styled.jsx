@@ -15,14 +15,18 @@ export const MenuToggleBox = styled.div`
     opacity: 1;
     transform: translateX(0%);
   }
+  @media (max-width: 620px) {
+    margin-left: 1rem;
+  }
 `;
 
 export const MenuToggleText = styled.span`
   font-size: 0.9rem;
   transition: ${({ theme }) => theme.transition.slow};
-  /* text-shadow: 0px 0 1px ${({ theme }) => theme.color.black},
-    0px 0 2px ${({ theme }) => theme.color.black}; */
   color: #aaa;
+  @media (max-width: 768px) {
+    font-size: 1.05rem;
+  }
 
   ${({ scrolled }) =>
     scrolled &&
@@ -41,6 +45,10 @@ export const MenuTogglerIcon = styled(MenuToggleSvg)`
   transition: ${({ theme }) => theme.transition.slow};
   position: relative;
   mix-blend-mode: difference;
+
+  @media (max-width: 768px) {
+    width: 2.25rem;
+  }
 
   .ToggleTop,
   .ToggleMid,

@@ -30,6 +30,11 @@ const CopyText = styled.span`
   font-size: 0.75rem;
   font-weight: 200;
   text-align: center;
+  
+  @media screen and (max-width: 520px) {
+  font-size: 1rem;
+
+  }
 `;
 
 const CopyLink = styled.a`

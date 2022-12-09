@@ -11,15 +11,15 @@ function MenuList() {
       <Item to="WhoIs">QUEM SOMOS</Item>
       <Item to="WhatWeDo">O QUE FAZEMOS</Item>
       <Item to="HowWeDo">COMO FAZEMOS</Item>
-      <MenuItem to="/cases" as={Link}>
+      <Item isLink={true} to="/cases" as={Link}>
         NOSSOS CASES
-      </MenuItem>
+      </Item>
       <Item to="Mailing">CONTATO</Item>
     </List>
   );
 }
 
-const Item = ({ children, to, props }) => {
+export const Item = ({ children, to, isLink = false, ...props }) => {
   const { setOpen } = useContext(MenuContext);
   const location = useLocation();
   var LinkConfig = {};
@@ -37,13 +37,24 @@ const Item = ({ children, to, props }) => {
       as: Link,
       to: "/",
       state: { to: to },
-      onClick: () => {
-        setOpen(false);
-      },
+    };
+  }
+
+  if (isLink) {
+    LinkConfig = {
+      as: Link,
+      to,
     };
   }
   return (
-    <MenuItem {...LinkConfig} {...props}>
+    <MenuItem
+      {...LinkConfig}
+      {...props}
+      onClick={(e) => {
+        setOpen(false);
+        props?.onClick && props.onClick();
+      }}
+    >
       {children}
     </MenuItem>
   );

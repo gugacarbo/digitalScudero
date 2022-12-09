@@ -18,9 +18,12 @@ export const TopMenuContent = styled.div`
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 0 5%;
-  padding-top: 1rem;
+  padding: 1rem 5%;
   z-index: 55;
-
+  @media (max-width: 620px) {
+    padding: 2rem 5%;
+  }
+  @media (max-width: 414px) {
+    padding: 1rem 5%;
+  }
 `;
-

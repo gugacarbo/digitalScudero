@@ -12,6 +12,7 @@ export const MainContainer = styled(Div100vh)`
   z-index: 5;
   position: relative;
   overflow: hidden;
+
   ${({ theme, bg }) =>
     bg &&
     `
@@ -53,6 +54,14 @@ export const MainContainer = styled(Div100vh)`
 
         }
 `}
+  @media (max-width: 520px) {
+    ${({ bg }) =>
+      bg &&
+      `
+    background-size: 130%;
+    background-position-x: 15%;
+    `}
+  }
 `;
 
 export const BaseButton = styled.button`
@@ -63,7 +72,7 @@ export const BaseButton = styled.button`
   padding: 0.4rem 3rem;
   font-size: 1.2rem;
   margin: 0 auto;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.05rem;
   width: 40%;
   max-width: 900px;
@@ -81,6 +90,21 @@ export const BaseButton = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.color.white};
     color: ${({ theme }) => theme.color.main.color};
+  }
+  @media (max-width: 768px) {
+    width: 55%;
+    padding: 0.6rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  @media (max-width: 620px) {
+    width: 70%;
+  }
+  @media (max-width: 414px) {
+    width: 85%;
+  }
+  @media (max-width: 300px) {
+    width: 95%;
   }
 `;
 

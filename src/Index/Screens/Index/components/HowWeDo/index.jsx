@@ -22,6 +22,12 @@ const Dots = styled(DotsSvg)`
   width: 25%;
   opacity: 0.5;
   margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    width: 35%;
+  }
+  @media (max-width: 414px) {
+    width: 65%;
+  }
 `;
 
 export default HowDo;

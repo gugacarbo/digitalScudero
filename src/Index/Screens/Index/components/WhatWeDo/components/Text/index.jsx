@@ -28,5 +28,10 @@ const TextP = styled.p`
   letter-spacing: 0.1rem;
   color: ${({ theme }) => theme.color.black};
   width: 80%;
+
+  @media (max-width: 414px) {
+    font-size: 1.4rem;
+    width: 90%;
+  }
 `;
 export default Text;

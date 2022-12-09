@@ -9,6 +9,10 @@ export const List = styled.div`
   gap: 1rem;
   width: 100%;
   margin-top: 10rem;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
 `;
 
 import { Link } from "react-scroll";
@@ -27,5 +31,8 @@ export const MenuItem = styled(Link)`
   &.Selected {
     color: ${({ theme }) => theme.color.main.color};
     border-bottom: 2px solid ${({ theme }) => theme.color.main.color};
+  }
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
   }
 `;

@@ -6,6 +6,7 @@ function BlogButton({ scrolled }) {
 
 export default BlogButton;
 const Button = styled(BaseButton)`
+  display: none;
   grid-column: 3/4;
   grid-row: 1/2;
   background-color: transparent;

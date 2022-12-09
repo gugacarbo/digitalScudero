@@ -8,19 +8,33 @@ import styled from "styled-components";
 
 function WhatWeDo() {
   return (
-    <MainContainer bg="white" id="WhatWeDo">
+    <WhatWeDoContainer bg="white" id="WhatWeDo">
       <Title />
       <Text />
       <Dots />
       <ServiceIcons />
       <Button />
-    </MainContainer>
+    </WhatWeDoContainer>
   );
 }
 
 const Dots = styled(DotsSvg)`
-  width: 25%;
-  margin: 2rem 0;
+  width: 32%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  @media (max-width: 414px) {
+    width: 60%;
+  }
 `;
 
+const WhatWeDoContainer = styled(MainContainer)`
+  justify-content: space-evenly;
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+  @media (max-width: 414px) {
+    gap: 0rem;
+  }
+`;
 export default WhatWeDo;

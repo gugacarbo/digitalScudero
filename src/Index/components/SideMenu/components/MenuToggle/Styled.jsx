@@ -15,6 +15,7 @@ export const MenuToggleBox = styled.div`
     opacity: 1;
     transform: translateX(0%);
   }
+
 `;
 
 export const MenuTogglerIcon = styled(MenuToggleSvg)`
@@ -24,6 +25,10 @@ export const MenuTogglerIcon = styled(MenuToggleSvg)`
   overflow: visible;
   transition: ${({ theme }) => theme.transition.slow};
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 3rem;
+  }
 
   .ToggleTop,
   .ToggleMid,

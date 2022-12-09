@@ -30,6 +30,7 @@ const AppContainer = styled(motion.div)`
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  overflow: hidden;
   width: 100vw;
   min-height: 100vh;
   height: 100%;

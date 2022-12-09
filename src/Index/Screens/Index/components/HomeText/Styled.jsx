@@ -12,6 +12,12 @@ export const TypingText = styled(ReactTypingEffect)`
   font-size: 4rem;
   font-weight: bolder;
   color: ${({ theme }) => theme.color.main.color};
+  @media (max-width: 520px) {
+    font-size: 4.5rem;
+  }
+  @media (max-width: 414px) {
+    font-size: 4.2rem;
+  }
 `;
 export const Semicolon = styled.b`
   color: ${({ theme }) => theme.color.white};

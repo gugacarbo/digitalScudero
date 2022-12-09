@@ -13,8 +13,16 @@ export default SubText;
 
 const SText = styled.p`
   grid-area: SubText;
-  width: 65%;
+  width: 70%;
   font-size: 1.3rem;
   font-weight: 200;
   color: ${({ theme }) => theme.color.white};
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 `;

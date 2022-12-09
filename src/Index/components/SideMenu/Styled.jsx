@@ -18,4 +18,7 @@ export const SideMenuContainer = styled(Div100vh)`
 
   display: flex;
   flex-direction: column;
+  @media (max-width: 420px) {
+    width: 100vw;
+  }
 `;

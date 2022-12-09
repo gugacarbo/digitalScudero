@@ -10,17 +10,4 @@ export const List = styled.ul`
   gap: 1rem;
 `;
 
-export const MenuItem = styled(Link)`
-  font-size: 1rem;
-  font-weight: 300;
-  text-decoration: none;
-  color: ${({ theme }) => theme.color.white};
-  cursor: pointer;
-  transition: ${({ theme }) => theme.transition.main};
-  border-bottom: 2px solid transparent;
 
-  &:hover {
-    color: ${({ theme }) => theme.color.main.color};
-  }
-
-`;

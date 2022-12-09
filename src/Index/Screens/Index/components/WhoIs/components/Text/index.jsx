@@ -30,8 +30,11 @@ const TextContainer = styled.div`
 
 const TextP = styled.p`
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   width: 80%;
+  @media (max-width: 520px) {
+    width: 90%;
+  }
 `;
 export default Text;

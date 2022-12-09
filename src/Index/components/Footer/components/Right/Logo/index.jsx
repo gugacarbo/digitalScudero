@@ -20,7 +20,6 @@ function Logo() {
     LinkConfig = {
       as: Link,
       to: "/",
-     
     };
   }
   return (
@@ -37,7 +36,6 @@ function Logo() {
 const LogoContent = styled(Link)`
   display: grid;
   width: 100%;
-  height: 100%;
   cursor: pointer;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -50,6 +48,10 @@ const StyledLogo = styled(LogoSvg)`
   width: 60%;
   height: 60%;
   fill: ${({ theme }) => theme.color.white};
+  @media screen and (max-width: 520px) {
+    width: 65%;
+    height: 65%;
+  }
 `;
 
 const BrandName = styled.span`
@@ -60,8 +62,10 @@ const BrandName = styled.span`
   justify-content: center;
   font-size: 5rem;
   position: relative;
-  height: 100%;
 
+  @media screen and (max-width: 520px) {
+    font-size: 3rem;
+  }
   .Digital {
     font-size: 0.4em;
     font-family: "Gothan";

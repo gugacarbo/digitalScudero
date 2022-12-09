@@ -10,7 +10,7 @@ function ContactButton({ children, onlick, ...props }) {
 }
 
 const Button = styled(Link)`
-  width: 90%;
+  width: 45%;
   aspect-ratio: 2;
   text-decoration: none;
   text-align: center;
@@ -18,9 +18,9 @@ const Button = styled(Link)`
     black ? theme.color.black : theme.color.main.color};
   color: ${({ theme }) => theme.color.white};
   border: none;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  padding: 15%;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  padding: 0 3%;
   font-weight: thin;
   letter-spacing: 0.05rem;
   transition: ${({ theme }) => theme.transition.slow};
@@ -29,10 +29,22 @@ const Button = styled(Link)`
       black ? theme.color.black : theme.color.main.color};
   cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: transparent;
     color: ${({ theme }) => theme.color.main.color};
     border-color: ${({ theme }) => theme.color.main.color};
+  }
+
+  @media (max-width: 520px) {
+    width: initial;
+    aspect-ratio: initial;
+    width: 100%;
+    height: 47%;
+    border-radius: 1rem;
+    font-size: 1.5rem;
   }
 `;
 export default ContactButton;

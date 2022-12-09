@@ -4,16 +4,78 @@ const GlobalStyle = createGlobalStyle`
     html{
         font-size: 16px;
     }
-    @media (max-width: 1800px) {
+
+    //* BreakPoints
+
+    @media (max-width: 1600px) {
         html{
             font-size: 14px;
         }
     }
-    @media (max-width: 1350px) {
+
+    @media (max-width: 1440px) {
         html{
             font-size: 13px;
         }
     }
+
+    @media (max-width: 1280px) {
+        html{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 1276px) {
+        html{
+            font-size: 12px;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        html{
+            font-size: 11px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        html{
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        html{
+            font-size: 9px;
+        }
+    }
+
+
+    @media (max-width: 520px) {
+        html{
+            font-size: 9px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        html{
+            font-size: 10px;
+        }
+    }
+    
+   
+    
+    @media (max-width: 300px) {
+        html{
+            font-size: 9px;
+        }
+    }
+
+    @media (max-width: 280px) {
+        html{
+            font-size: 8px;
+        }
+    }
+
     * {
         margin: 0;
         padding: 0;

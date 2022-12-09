@@ -6,6 +6,10 @@ export const LenaguageContainer = styled.div`
   justify-content: center;
   gap: 0.8rem;
   margin-right: auto;
+
+  @media screen and (max-width: 520px) {
+    gap: 1.2rem;
+  }
 `;
 
 export const Icon = styled.div`
@@ -20,5 +24,8 @@ export const Icon = styled.div`
   `}
   &:hover {
     filter: grayscale(0%);
+  }
+  @media screen and (max-width: 520px) {
+    height: 1.6rem;
   }
 `;

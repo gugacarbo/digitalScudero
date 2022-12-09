@@ -6,6 +6,8 @@ function BlogButton({ scrolled }) {
 
 export default BlogButton;
 const Button = styled(BaseButton)`
+  display: none;
+
   background-color: transparent;
   color: ${({ theme }) => theme.color.white};
 

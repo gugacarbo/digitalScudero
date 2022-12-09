@@ -32,11 +32,20 @@ const IconsContainer = styled.div`
   display: flex;
   width: 45%;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+  @media (max-width: 620px) {
+    width: 70%;
+  }
+  @media (max-width: 414px) {
+    width: 90%;
+  }
 `;
 
 const IconText = styled.span`
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   color: ${({ theme }) => theme.color.white};
   margin: 1rem auto;

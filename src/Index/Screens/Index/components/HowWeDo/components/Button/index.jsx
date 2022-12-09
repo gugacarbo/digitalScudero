@@ -6,6 +6,7 @@ function Button() {
 
 const Btn = styled(BaseButton)`
   margin-top: 5rem;
+  
 `;
 
 export default Button;

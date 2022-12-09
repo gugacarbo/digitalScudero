@@ -18,6 +18,10 @@ export const ClientButton = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.color.main.color};
   }
+  @media (max-width: 768px) {
+    padding: 0.5rem 0;
+    width: 60%;
+  }
 `;
 
 export const LoginIcon = styled(LoginSvg)`
@@ -25,4 +29,8 @@ export const LoginIcon = styled(LoginSvg)`
   height: 1rem;
   margin-left: 0.5rem;
   fill: ${({ theme }) => theme.color.white};
+  @media (max-width: 768px) {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 `;

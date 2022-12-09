@@ -6,6 +6,14 @@ export const LenaguageContainer = styled.div`
   justify-content: center;
   gap: 0.8rem;
   margin: 0 2rem;
+
+  @media (max-width: 620px) {
+    margin: 0 1rem;
+  }
+  @media (max-width: 520px) {
+    margin: 0 0.5rem;
+    display: none;
+  }
   ${({ hide }) =>
     hide &&
     `
@@ -25,5 +33,9 @@ export const Icon = styled.div`
   `}
   &:hover {
     filter: grayscale(0%);
+  }
+
+  @media (max-width: 768px) {
+    height: 1.2rem;
   }
 `;
