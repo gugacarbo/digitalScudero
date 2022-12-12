@@ -2,7 +2,9 @@
 
 
 Todo:
-[] 1
-[] 2
-[] 3
-[] 4
+- [ ] Responsivo Home
+- [ ] Responsivo Contato
+- [ ] Responsivo Serviços
+- [ ] Responsivo Cases
+- [ ] Responsivo Clientes
+
