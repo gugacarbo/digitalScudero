@@ -1,6 +1,6 @@
 # DigitalScudero
 
-<img src="https://digitalscudero.com.br/logo.svg" alt="DigitalScudero" style="width:79%;"/>
+<img src="https://digitalscudero.com.br/logo.svg" alt="DigitalScudero" style="width:79%; margin: 0 auto;"/>
 ### Todo:
 
 ---
