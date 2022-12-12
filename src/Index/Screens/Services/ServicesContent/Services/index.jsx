@@ -103,6 +103,25 @@ const ServiceBox = styled.div`
   grid-template-areas:
     "icon serviceData"
     "icon serviceData";
+
+  @media (max-width: 900px) {
+    width: 80%;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 620px) {
+    grid-template-columns: 30% 69%;
+  }
+  @media (max-width: 414px) {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+      "icon"
+      "serviceData";
+  }
 `;
 const ServiceTitle = styled.h1`
   grid-area: title;
@@ -110,6 +129,14 @@ const ServiceTitle = styled.h1`
   letter-spacing: 0.1rem;
   font-weight: 500;
   color: ${({ theme }) => theme.color.main.color};
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 520px) {
+  }
+  @media (max-width: 414px) {
+    font-size: 2.6rem;
+    text-align: center;
+  }
 `;
 const ServiceIcon = styled.div`
   grid-area: icon;
@@ -131,7 +158,13 @@ const ServiceIcon = styled.div`
   }
   svg {
     width: 100%;
-    height: 100%;
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 520px) {
+    }
+    @media (max-width: 414px) {
+      width: 50%;
+    }
     .SVG_ServicesMarketing4 {
       stroke: ${({ theme }) => theme.background};
     }
@@ -167,6 +200,7 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   gap: 6rem;
+  padding: 5rem 0;
 `;
 
 export default Services;

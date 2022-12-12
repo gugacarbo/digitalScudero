@@ -4,6 +4,8 @@ import Right from "./components/Right";
 import Copy from "./components/Copy";
 import BlogButton from "./components/BlogButton";
 
+import { setBrightness } from "../../util/color";
+
 function Footer() {
   return (
     <FooterContainer>
@@ -19,7 +21,7 @@ export default Footer;
 const FooterContainer = styled.div`
   width: 100%;
   height: 70vh;
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme }) => setBrightness(theme.background, -20)};
   display: grid;
   grid-template-columns: 15% 20% 30% 20% 15%;
   grid-template-rows: 90% 10%;

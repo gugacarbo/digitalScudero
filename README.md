@@ -6,7 +6,7 @@
 
 ---
 
-### Todo:
+## Todo:
 
 ### Componentes
 
@@ -19,7 +19,18 @@
   - [x] Responsivo
 
 - [x] **Rodapé**
+
   - [x] Responsivo
+
+- [ ] **Botão Voltar ao Topo**
+
+  - [ ] Responsivo
+
+- [ ] **Botão Ver Mais**
+  - [ ] Serviços
+  - [ ] Cases
+  - [ ] Parceiros
+  - [ ] Métodos
 
 ---
 
@@ -40,7 +51,7 @@
 
 - [x] **Página Serviços**
 
-  - [ ] Responsivo
+  - [x] Responsivo
 
 - [ ] **Página Métodos**
 

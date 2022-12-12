@@ -42,6 +42,8 @@ const HomeContainer = styled(MainContainer)`
   }
 
   @media (max-width: 520px) {
+    place-items: center;
+
     grid-template-columns: 7% 1fr 7%;
     grid-template-rows: 10% 40% 18% 17% 10% 1fr;
     grid-template-areas:

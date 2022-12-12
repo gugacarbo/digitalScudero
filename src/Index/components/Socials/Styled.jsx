@@ -25,8 +25,8 @@ export const Icon = styled.a`
     }
   }
   @media (max-width: 768px) {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 3rem;
+    height: 3rem;
   }
   @media (max-width: 520px) {
     width: 2.5rem;
@@ -73,9 +73,7 @@ export const Dots = styled(SocialDots)`
   @media (max-width: 414px) {
     margin: 0;
     height: 130%;
-    
   }
-  
 `;
 
 export const SocialsContainer = styled.div`
@@ -101,7 +99,7 @@ export const SocialsContainer = styled.div`
     grid-template-columns: 32% auto 32%;
     height: 100%;
     width: 110%;
-    transform: translateX(-5%);
+    //transform: translateX(-5%);
     margin: 0;
   }
   @media (max-width: 414px) {
