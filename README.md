@@ -1,5 +1,5 @@
-# Site DigitalScudero
-
+# DigitalScudero
+![](https://digitalscudero.com.br/logo.svg)
 ### Todo:
 
 ---
@@ -7,9 +7,11 @@
 ### Componentes
 
 - [x] **Menu Superior**
+
   - [x] Responsivo
 
 - [x] **Menu Lateral**
+
   - [x] Responsivo
 
 - [x] **Rodapé**
@@ -20,6 +22,7 @@
 ### Páginas
 
 - [x] **Página Home**
+
   - [x] Responsivo
   - [x] Home
   - [x] Quem Somos
@@ -28,15 +31,19 @@
   - [x] Contato
 
 - [x] **Página Contato**
+
   - [x] Responsivo
 
 - [x] **Página Serviços**
+
   - [ ] Responsivo
 
 - [ ] **Página Métodos**
+
   - [ ] Responsivo
 
 - [x] **Página Cases**
+
   - [ ] Responsivo
   - [x] **Página Ver Case**
     - [ ] Responsivo
