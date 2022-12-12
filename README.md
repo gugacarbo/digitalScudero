@@ -19,6 +19,7 @@
   - [x] Responsivo
 
 ---
+
 ### Páginas
 
 - [x] **Página Home**
@@ -50,5 +51,5 @@
 
 - [x] **Página Parceiros**
   - [ ] Responsivo Parceiros
-- [x] **Página Ver Parceiro**
-  - [ ] Responsivo
+    - [x] **Página Ver Parceiro**
+    - [ ] Responsivo
