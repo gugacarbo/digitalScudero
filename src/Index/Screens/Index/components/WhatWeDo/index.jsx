@@ -30,12 +30,18 @@ const Dots = styled(DotsSvg)`
 `;
 
 const WhatWeDoContainer = styled(MainContainer)`
-  justify-content: space-evenly;
   @media (max-width: 768px) {
     gap: 1rem;
   }
   @media (max-width: 414px) {
+    justify-content: space-evenly;
     gap: 0rem;
+  }
+  @media (max-width: 380px) {
+    justify-content: center;
+  }
+  @media (max-width: 280px) {
+    gap: 1rem;
   }
 `;
 export default WhatWeDo;

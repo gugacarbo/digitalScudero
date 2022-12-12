@@ -46,7 +46,7 @@ export function Select({ children, title, error, ...props }) {
 }
 export function TextArea({ children, title, error, ...props }) {
   return (
-    <Label style={{ gridColumn: "1/3" }}>
+    <Label textarea={1}>
       <LabelTitle>
         {title} <b>{error && error}</b>
       </LabelTitle>
@@ -115,6 +115,9 @@ const StyledTextArea = styled(StyledInput)`
   min-height: 8rem;
   resize: none;
   width: 100%;
+  @media (max-width: 414px) {
+    min-height: 3rem;
+  }
 `;
 
 export const SubmitButton = styled(BaseButton)`
@@ -235,12 +238,33 @@ const Label = styled.label`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 0.5rem;
+
+  ${({ textarea }) =>
+    textarea &&
+    `
+   grid-column: 1/3;
+   @media (max-width: 414px) {
+     grid-column: auto;
+  }
+  `}
 `;
 
 export const StyledForm = styled.form`
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   margin: auto 0;
   grid-template-rows: auto;
   gap: 1.5rem;
+  @media (max-width: 768px) {
+    gap: 3rem;
+  }
+  
+  @media (max-width: 414px) {
+    height: 100%;
+    flex: 1;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
 `;

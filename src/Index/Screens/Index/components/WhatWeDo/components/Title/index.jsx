@@ -7,7 +7,10 @@ function Title() {
       <TitleH1>
         O Que <b>Fazemos</b>?
       </TitleH1>
-      <SubTitle> Consultoria de Marketing / Posicionamento de Marca</SubTitle>
+      <SubTitle>
+        <span>Consultoria de Marketing /</span>
+        <span> Posicionamento de Marca</span>
+      </SubTitle>
     </TitleContainer>
   );
 }
@@ -21,8 +24,6 @@ const TitleContainer = styled.div`
 
 const TitleH1 = styled(BaseTitle)`
   margin-top: 2rem;
-
- 
 `;
 
 const SubTitle = styled.h2`
@@ -34,6 +35,13 @@ const SubTitle = styled.h2`
   margin-bottom: 1rem;
   text-align: center;
   max-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  span {
+    flex: 1;
+    width: fit-content;
+    white-space: nowrap;
+  }
 `;
 
 export default Title;

@@ -90,7 +90,7 @@ function FormContact() {
             value={values.email}
           />
           <Select
-            title="Tipo"
+            title="Você é"
             type="type"
             name="type"
             error={errors.type}
@@ -98,8 +98,10 @@ function FormContact() {
             onChange={handleChange}
             onBlur={handleBlur}
           >
-            <option value="Pessoa Jurídica">Pessoa Jurídica</option>
             <option value="Pessoa Física">Pessoa Física</option>
+            <option value="Pessoa Jurídica (Empresa)">
+              Pessoa Jurídica (Empresa)
+            </option>
           </Select>
           <TextArea
             title="Mensagem"

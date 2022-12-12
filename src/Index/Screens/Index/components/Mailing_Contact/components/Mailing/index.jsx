@@ -24,7 +24,9 @@ const MailingContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
   display: grid;
   grid-template-columns: 10% 35% 45% 10%;
   grid-template-rows: 1fr;
@@ -35,6 +37,14 @@ const MailingContainer = styled.div`
   @media screen and (max-width: 1200px) {
     grid-template-columns: 2.5% 40% 55% 2.5%;
   }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 2.5% 40% 55% 2.5%;
+  }
+
+  @media screen and (max-width: 720px) {
+    padding-top: 4rem;
+  }
   @media (max-width: 520px) {
     grid-template-rows: 1fr auto;
     grid-template-columns: 5% 90% 5%;
@@ -43,6 +53,10 @@ const MailingContainer = styled.div`
     grid-template-areas:
       ". MailingText ."
       ". MailingForm .";
+    padding-top: 6rem;
+  }
+  @media (max-width: 414px) {
+    padding-bottom: 1rem;
   }
 `;
 

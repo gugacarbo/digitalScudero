@@ -18,7 +18,7 @@ const Mailing_ContactContainer = styled(MainContainer)`
   grid-template-rows: 25% 75%;
 
   @media (max-width: 520px) {
-    grid-template-rows: auto 1fr ;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 100%;
   }
 `;

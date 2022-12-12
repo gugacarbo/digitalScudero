@@ -38,6 +38,12 @@ const ButtonsContainer = styled.div`
     margin-bottom: 3rem;
     margin-top: 1rem;
   }
+  @media (max-width: 414px) {
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
 `;
 
 const Title = styled(BaseTitle)`

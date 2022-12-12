@@ -30,5 +30,8 @@ const ContactFormMotion = styled(motion.div)`
   background-color: ${({ theme }) => theme.color.black};
 `;
 
-const ContactFormModal = styled(Div100vh)``;
+const ContactFormModal = styled(Div100vh)`
+  display: flex;
+  flex-direction: column;
+`;
 export default ContactForm;

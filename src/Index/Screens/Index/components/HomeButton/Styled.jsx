@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BaseButton } from "../../../../Styled";
+
 export const Button = styled(BaseButton)`
   grid-area: HomeButton;
   border-color: ${({ theme }) => theme.color.main.color};
@@ -8,7 +9,7 @@ export const Button = styled(BaseButton)`
 
   margin-left: 0;
   margin-right: auto;
-
+  width: 60%;
   &:hover {
     background-color: ${({ theme }) => theme.color.main.color};
     color: ${({ theme }) => theme.color.white};
@@ -19,7 +20,10 @@ export const Button = styled(BaseButton)`
     font-weight: 500;
   }
   @media (max-width: 520px) {
-    margin: 0 auto;
+    width: 80%;
+  }
+  @media (max-width: 414px) {
+    width: 90%;
   }
   @media (max-width: 300px) {
   }

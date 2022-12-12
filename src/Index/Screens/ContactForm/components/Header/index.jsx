@@ -15,7 +15,7 @@ function Header() {
 
 const HeaderContainer = styled.div`
   width: 100%;
-  padding: 2rem 8%;
+  padding: 2rem 3%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   place-items: center;
