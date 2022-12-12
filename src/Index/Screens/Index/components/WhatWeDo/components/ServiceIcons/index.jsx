@@ -39,12 +39,10 @@ const IconsContainer = styled.div`
   }
   @media (max-width: 414px) {
     column-gap: 0;
-    width: 100%;
+    width: 90%;
     height: auto;
     place-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-wrap: wrap;
   }
 `;
 
@@ -81,8 +79,8 @@ const IconBox = styled.div`
     height: 100%;
   }
   @media (max-width: 414px) {
-    width: 80%;
-    height: 80%;
+    width: 35%;
+    height: auto;
     grid-template-rows: auto 5rem;
   }
 `;

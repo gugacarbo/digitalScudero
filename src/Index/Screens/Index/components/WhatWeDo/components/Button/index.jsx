@@ -13,8 +13,9 @@ const Btn = styled(BaseButton)`
   margin-top: 5rem;
 
   @media (max-width: 414px) {
-    margin: 4rem 0;
+    margin: 1rem  0;
   }
+
 `;
 
 export default Button;

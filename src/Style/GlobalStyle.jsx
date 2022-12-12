@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
     
    
     
-    @media (max-width: 300px) {
+    @media (max-width: 320px) {
         html{
             font-size: 9px;
         }

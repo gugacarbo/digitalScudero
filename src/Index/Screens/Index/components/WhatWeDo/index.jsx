@@ -25,6 +25,7 @@ const Dots = styled(DotsSvg)`
 
   @media (max-width: 414px) {
     width: 60%;
+    margin: 0;
   }
 `;
 

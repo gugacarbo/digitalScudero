@@ -19,18 +19,10 @@ const TitleContainer = styled.div`
   justify-content: center;
 `;
 
-
 const TitleH1 = styled(BaseTitle)`
-  letter-spacing: 0.1rem;
-  font-weight: 500;
-  text-align: center;
   margin-top: 2rem;
 
-  b {
-    font-size: 3.9rem;
-    font-weight: 600;
-    color: ${({ theme }) => theme.color.main.color};
-  }
+ 
 `;
 
 const SubTitle = styled.h2`

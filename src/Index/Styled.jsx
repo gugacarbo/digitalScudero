@@ -58,8 +58,8 @@ export const MainContainer = styled(Div100vh)`
     ${({ bg }) =>
       bg &&
       `
-    background-size: 130%;
-    background-position-x: 15%;
+    background-size: 200%;
+    background-position-x: 50%;
     `}
   }
 `;

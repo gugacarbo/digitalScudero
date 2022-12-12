@@ -20,8 +20,10 @@ const TextContainer = styled.div`
   justify-content: center;
   margin: 2rem 0;
   gap: 1rem;
+  @media (max-width: 414px) {
+    margin: 0;
+  }
 `;
 
-const TextP = styled(BaseText)`
-`;
+const TextP = styled(BaseText)``;
 export default Text;

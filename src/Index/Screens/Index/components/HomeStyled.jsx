@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
 export const BaseTitle = styled.h1`
-  font-size: 4rem;
+  font-size: 3.9rem;
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 0.1rem;
-  font-weight: 500;
+  font-weight: 600;
   max-width: 95%;
   text-align: center;
-
+  line-height: 1em;
   b {
-    font-size: 4rem;
+    font-size: 1em;
     font-weight: 600;
     color: ${({ theme }) => theme.color.main.color};
   }
 
   i {
-    font-size: 4rem;
-
+    font-size: 1.05em;
     font-style: normal;
     font-family: "BDPBIRGULA";
   }

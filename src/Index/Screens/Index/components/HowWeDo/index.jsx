@@ -8,15 +8,21 @@ import styled from "styled-components";
 
 function HowDo() {
   return (
-    <MainContainer bg="black" id="HowWeDo">
+    <HowDoContainer bg="black" id="HowWeDo">
       <Title />
       <Text />
       <Dots />
       <HowDoIcons />
       <Button />
-    </MainContainer>
+    </HowDoContainer>
   );
 }
+
+const HowDoContainer = styled(MainContainer)`
+  @media (max-width: 414px) {
+    gap: 1rem;
+  }
+`;
 
 const Dots = styled(DotsSvg)`
   width: 25%;

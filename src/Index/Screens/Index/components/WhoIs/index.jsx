@@ -15,7 +15,10 @@ function WhoIs() {
 
 const WhoisContainer = styled(MainContainer)`
   @media (max-width: 768px) {
-    gap: 5rem;
+    gap: 3rem;
+  }
+  @media (max-width: 768px) {
+    gap: 0;
   }
 `;
 
