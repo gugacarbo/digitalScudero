@@ -13,7 +13,7 @@ Todo:
   - [x] Responsivo
 
 - [x] **Página Home**
-  - [x] Responsivo
+ - [x] Responsivo
   - [x] Home
   - [x] Quem Somos
   - [x] O Que Fazemos
