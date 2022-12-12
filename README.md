@@ -2,14 +2,12 @@
 
 Todo:
 
-- [x] Menu Superior
-- - [x] Responsivo
-
-- [x] Menu Lateral
-- - [x] Responsivo
-
-- [x] Rodapé
-- - [x] Responsivo
+- - [x] Menu Superior
+- - - [x] Responsivo
+- - [x] Menu Lateral
+- - - [x] Responsivo
+- - [x] Rodapé
+- - - [x] Responsivo
 
 - [x] Página Home
 - - [x] Responsivo
