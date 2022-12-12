@@ -1,6 +1,10 @@
 # Site DigitalScudero
 
-Todo:
+### Todo:
+
+---
+
+### Componentes
 
 - [x] **Menu Superior**
 
@@ -13,6 +17,9 @@ Todo:
 - [x] **Rodapé**
 
   - [x] Responsivo
+
+---
+### Páginas
 
 - [x] **Página Home**
 
@@ -27,6 +34,14 @@ Todo:
 
   - [x] Responsivo
 
+- [x] **Página Serviços**
+
+  - [ ] Responsivo
+
+- [ ] **Página Métodos**
+
+  - [ ] Responsivo
+
 - [x] **Página Cases**
 
   - [ ] Responsivo
@@ -36,12 +51,4 @@ Todo:
 - [x] **Página Parceiros**
   - [ ] Responsivo Parceiros
 - [x] **Página Ver Parceiro**
-
-  - [ ] Responsivo
-
-- [x] **Página Serviços**
-
-  - [ ] Responsivo
-
-- [ ] **Página Métodos**
   - [ ] Responsivo
