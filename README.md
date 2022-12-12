@@ -3,36 +3,45 @@
 Todo:
 
 - [x] **Menu Superior**
-- - [x] Responsivo
+
+  - [x] Responsivo
 
 - [x] **Menu Lateral**
-- - [x] Responsivo
+
+  - [x] Responsivo
 
 - [x] **Rodapé**
-- - [x] Responsivo
+
+  - [x] Responsivo
+
 - [x] **Página Home**
-- - [x] Responsivo
-- - [x] Home
-- - [x] Quem Somos
-- - [x] O Que Fazemos
-- - [x] Como Fazemos
-- - [x] Contato
+
+  - [x] Responsivo
+  - [x] Home
+  - [x] Quem Somos
+  - [x] O Que Fazemos
+  - [x] Como Fazemos
+  - [x] Contato
 
 - [x] **Página Contato**
-- - [x] Responsivo
+
+  - [x] Responsivo
 
 - [x] **Página Cases**
-- - [ ] Responsivo
-- - [x] Página Ver Case
-- - - [ ] Responsivo
+
+  - [ ] Responsivo
+  - [x] **Página Ver Case**
+    - [ ] Responsivo
 
 - [x] **Página Parceiros**
-- - [ ] Responsivo Parceiros
-- - [x] Página Ver Parceiro
-- - - [ ] Responsivo
+  - [ ] Responsivo Parceiros
+- [x] **Página Ver Parceiro**
+
+  - [ ] Responsivo
 
 - [x] **Página Serviços**
-- - [ ] Responsivo
+
+  - [ ] Responsivo
 
 - [ ] **Página Métodos**
-- - [ ] Responsivo
+  - [ ] Responsivo
