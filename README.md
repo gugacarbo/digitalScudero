@@ -2,37 +2,37 @@
 
 Todo:
 
-### - [x] Menu Superior
+- [x] **_ Menu Superior _**
 - - [x] Responsivo
 
-### - [x] Menu Lateral
+- [x] **_ Menu Lateral _**
 - - [x] Responsivo
 
-### - [x] Rodapé
+- [x] \*\*\* Rodapé
 - - [x] Responsivo
-### - [x] Página Home
+- [x] **_ Página Home _**
 - - [x] Responsivo
 - - [x] Home
 - - [x] Quem Somos
 - - [x] O Que Fazemos
 - - [x] Como Fazemos
 - - [x] Contato
- 
-### - [x] Página Contato
+
+- [x] **_ Página Contato _**
 - - [x] Responsivo
 
-### - [x] Página Cases
+- [x] **_ Página Cases _**
 - - [ ] Responsivo
 - - [x] Página Ver Case
 - - - [ ] Responsivo
 
-### - [x] Página Parceiros
+- [x] **_ Página Parceiros _**
 - - [ ] Responsivo Parceiros
 - - [x] Página Ver Parceiro
 - - - [ ] Responsivo
 
-### - [x] Página Serviços
+- [x] **_ Página Serviços _**
 - - [ ] Responsivo
 
-### - [ ] Página Métodos
+- [ ] **_ Página Métodos _**
 - - [ ] Responsivo
