@@ -22,7 +22,7 @@ function MyRoutes() {
         <Route path="/case/:caseName" element={<Case />} />
 
         <Route path="/parceiros" element={<Partners />} />
-        <Route path="/parceiro/:partner" element={<Partner />} />
+        <Route path="/parceiro/:partnerName" element={<Partner />} />
 
         <Route path="*" element={<Home />} />
       </Routes>

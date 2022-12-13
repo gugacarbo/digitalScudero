@@ -20,6 +20,7 @@ function ShowPartner() {
   );
 }
 
+
 const ItemName = styled.span`
   z-index: 1;
   position: relative;
@@ -30,6 +31,7 @@ const ItemName = styled.span`
   font-size: 1.2rem;
   max-width: 90%;
   font-weight: 600;
+  letter-spacing: 0.1rem;
   text-align: center;
   transition: ${({ theme }) => theme.transition.x2};
   transform: translateY(100%);
@@ -59,6 +61,14 @@ const Item = styled(Link)`
   position: relative;
   transition: ${({ theme }) => theme.transition.x2};
 
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 520px) {
+  }
+  @media (max-width: 414px) {
+    width: 45%;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -71,6 +81,13 @@ const Item = styled(Link)`
   }
 
   filter: grayscale(50%) opacity(0.8);
+
+  @media (max-width: 520px) {
+    filter: none;
+  }
+  @media (max-width: 414px) {
+    width: 45%;
+  }
 
   &:hover {
     filter: grayscale(0%);
@@ -94,6 +111,15 @@ const Content = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  @media (max-width: 520px) {
+    width: 85%;
+  }
+  @media (max-width: 414px) {
+    width: 90%;
+  }
 `;
 
 export default ShowPartner;

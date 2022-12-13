@@ -4,6 +4,8 @@ import PartnerContent from "./PartnerContent";
 import { animateScroll } from "react-scroll";
 import { useEffect } from "react";
 import ScreenComponents from "../../components/ScreenComponents";
+import { getPartners } from "../../util/api";
+import { useParams } from "react-router-dom";
 
 function Partner() {
   useEffect(() => {
@@ -12,7 +14,17 @@ function Partner() {
       offset: 0,
     });
   }, []);
+
   const theme = useTheme();
+
+  const partners = getPartners();
+  const { partnerName } = useParams();
+
+  const partnerItem = partners.find((item) => {
+    return item.to == partnerName;
+  });
+
+  console.log(partnerName);
 
   return (
     <PartnerContainer
@@ -21,7 +33,7 @@ function Partner() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <PartnerContent />
+      <PartnerContent partnerItem={partnerItem} />
       <ScreenComponents />
     </PartnerContainer>
   );

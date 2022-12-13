@@ -1,8 +1,4 @@
 import styled, { useTheme } from "styled-components";
-import TopMenu from "../../components/TopMenu";
-import SideMenu from "../../components/SideMenu";
-
-import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import CaseContent from "./CaseContent";
 import { getCases } from "../../util/api";

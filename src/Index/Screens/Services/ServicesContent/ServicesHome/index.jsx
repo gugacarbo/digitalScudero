@@ -8,7 +8,7 @@ import {
   Text,
   Title,
   Logo,
-  PatterPageContainer,
+  PatternPageContainer,
   PatterPageBox,
 } from "../../../PatternPageStyled";
 
@@ -42,6 +42,6 @@ function ServicesHome() {
 
 export default ServicesHome;
 
-const ServicesHomeContainer = styled(PatterPageContainer)``;
+const ServicesHomeContainer = styled(PatternPageContainer)``;
 
 const ServicesBox = styled(PatterPageBox)``;

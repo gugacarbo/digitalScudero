@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const TopMenuContainer = styled.div`
   position: fixed;
   top: 0;
+  pointer-events: none;
   z-index: 50;
   width: 100vw;
   transition: ${({ theme }) => theme.transition.slow};
@@ -15,6 +16,10 @@ export const TopMenuContainer = styled.div`
 
 export const TopMenuContent = styled.div`
   width: 100%;
+  pointer-events: none;
+  * {
+    pointer-events: all;
+  }
   height: 100%;
   display: flex;
   justify-content: flex-end;

@@ -56,13 +56,13 @@
 
   - [x] Responsivo
   - [x] **Página Ver Case**
-    - [ ] Responsivo
+    - [x] Responsivo
 
 - [x] **Página Parceiros**
 
   - [x] Responsivo Parceiros
   - [x] **Página Ver Parceiro**
-    - [ ] Responsivo
+    - [x] Responsivo
 
 - [ ] **Página Métodos**
 

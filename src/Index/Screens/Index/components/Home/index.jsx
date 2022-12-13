@@ -19,9 +19,7 @@ function HomeScreen() {
 
 const HomeContainer = styled(MainContainer)`
   background-image: url(${BackgroundImage});
-  @media (max-width: 520px) {
-    background-image: none;
-  }
+
   background-size: 95%;
   background-position: right;
   background-repeat: no-repeat;
@@ -37,11 +35,15 @@ const HomeContainer = styled(MainContainer)`
     ".     .      . Socials"
     ".     .      . .";
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    background-size: 170% 100%;
+    background-position: right 0vh;
     grid-template-columns: 15% auto 5% 12%;
   }
 
   @media (max-width: 520px) {
+    background-size: 180% 100%;
+    background-position: right 5vh;
     place-items: center;
 
     grid-template-columns: 7% 1fr 7%;

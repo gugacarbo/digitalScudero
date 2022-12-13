@@ -8,7 +8,7 @@ import {
   Text,
   Title,
   Logo,
-  PatterPageContainer,
+  PatternPageContainer,
   PatterPageBox,
 } from "../../../PatternPageStyled";
 
@@ -57,7 +57,7 @@ const PartnersTitle = styled(Title)`
   }
 `;
 
-const PartnersHomeContainer = styled(PatterPageContainer)`
+const PartnersHomeContainer = styled(PatternPageContainer)`
   grid-template-rows: 10% 60% 10% 1fr;
   
   @media (max-width: 520px) {

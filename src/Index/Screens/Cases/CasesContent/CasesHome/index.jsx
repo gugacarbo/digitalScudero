@@ -7,7 +7,7 @@ import {
   Text,
   Title,
   Logo,
-  PatterPageContainer,
+  PatternPageContainer,
   PatterPageBox,
 } from "../../../PatternPageStyled";
 
@@ -40,6 +40,8 @@ function CasesHome() {
   );
 }
 
-const CasesHomeContainer = styled(PatterPageContainer)``;
+const CasesHomeContainer = styled(PatternPageContainer)`
+  gap: 2rem;
+`;
 const CasesBox = styled(PatterPageBox)``;
 export default CasesHome;
