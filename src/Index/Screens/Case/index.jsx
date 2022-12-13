@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import CaseContent from "./CaseContent";
 import { getCases } from "../../util/api";
 import { useParams } from "react-router-dom";
+import ScreenComponents from "../../components/ScreenComponents";
 
 function Case() {
   const cases = getCases();
@@ -25,11 +26,8 @@ function Case() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <TopMenu />
-      <SideMenu />
       <CaseContent caseItem={caseItem} />
-
-      <Footer />
+      <ScreenComponents />
     </CaseContainer>
   );
 }

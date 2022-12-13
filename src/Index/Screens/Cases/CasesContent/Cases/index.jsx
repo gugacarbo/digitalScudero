@@ -19,13 +19,13 @@ const CasesContainer = styled.div`
   justify-content: center;
   background-color: ${({ theme }) => theme.color.white};
   position: relative;
-
+  place-items: center;
   display: grid;
   grid-template-columns: 100%;
-  padding-top: 5vh;
+  padding-top: 15vh;
   padding-bottom: 25vh;
-  grid-template-rows: 20vh 15vh auto;
-
+  grid-template-rows: auto auto auto;
+  row-gap: 4em;
   &::before {
     content: "";
     position: absolute;
@@ -39,6 +39,17 @@ const CasesContainer = styled.div`
       ${({ theme }) => theme.background},
       ${({ theme }) => theme.color.white + "00"}
     );
+  }
+
+  @media (max-width: 768px) {
+    row-gap: 2rem;
+
+    padding-bottom: 15vh;
+  }
+  @media (max-width: 520px) {
+    padding-bottom: 10vh;
+  }
+  @media (max-width: 414px) {
   }
 `;
 

@@ -5,6 +5,7 @@ import CasesContent from "./CasesContent";
 
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
+import ScreenComponents from "../../components/ScreenComponents";
 
 function Cases() {
   const theme = useTheme();
@@ -16,10 +17,8 @@ function Cases() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <TopMenu />
-      <SideMenu />
       <CasesContent />
-      <Footer />
+      <ScreenComponents />
     </AppContainer>
   );
 }

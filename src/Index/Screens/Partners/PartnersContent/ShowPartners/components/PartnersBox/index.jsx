@@ -20,6 +20,21 @@ function PartnersBox() {
           <Logo />
         </PartnerLogo>
       </Partner>
+      <Partner>
+        <PartnerLogo to="/parceiro/carbomaq">
+          <Logo />
+        </PartnerLogo>
+      </Partner>
+      <Partner>
+        <PartnerLogo to="/parceiro/carbomaq">
+          <Logo />
+        </PartnerLogo>
+      </Partner>
+      <Partner>
+        <PartnerLogo to="/parceiro/carbomaq">
+          <Logo />
+        </PartnerLogo>
+      </Partner>
     </PartnersBoxContent>
   );
 }
@@ -37,6 +52,19 @@ const PartnersBoxContent = styled.div`
   padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 900px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 520px) {
+  padding: 4rem 0;
+
+    width: 85%;
+  }
+  @media (max-width: 414px) {
+    width: 95%;
+  }
 `;
 const Partner = styled.div`
   width: 100%;

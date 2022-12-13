@@ -12,7 +12,7 @@ function Scroller() {
         <AvaliationItem>
           <AvaliationImage>
             <img
-              src="https://scontent.ffln13-1.fna.fbcdn.net/v/t39.30808-6/250685604_4811928245507137_4226467416076304143_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEX83V9cabrQk49k7usZPJu7F6PEfdgOMbsXo8R92A4xo0sQkQiNkjIt51RhofDS8T1D8rshhrXp8hqnLHPBj9w&_nc_ohc=xYdPblX-bqsAX-Z_vRU&_nc_ht=scontent.ffln13-1.fna&oh=00_AfDWXpJUWsKK6dtdzav_bpBZ58Q81o0sEX0lWzmAE1iFuQ&oe=63959FA3"
+              src="https://scontent.ffln13-1.fna.fbcdn.net/v/t39.30808-6/250685604_4811928245507137_4226467416076304143_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEX83V9cabrQk49k7usZPJu7F6PEfdgOMbsXo8R92A4xo0sQkQiNkjIt51RhofDS8T1D8rshhrXp8hqnLHPBj9w&_nc_ohc=ljM3Ptrla8gAX_HDvz3&_nc_ht=scontent.ffln13-1.fna&oh=00_AfCIT-mwfON5XFNsM5iIcbSk1YgdDBGceeVHUbxQK4-TRw&oe=639D88A3"
               alt=""
             />
           </AvaliationImage>
@@ -41,6 +41,19 @@ const ScrollerContainer = styled.div`
   display: grid;
   grid-template-columns: 15% 70% 15%;
   aspect-ratio: 3.5;
+  @media (max-width: 900px) {
+    aspect-ratio: 2.8;
+  }
+
+  @media (max-width: 768px) {
+    aspect-ratio: 2.2;
+  }
+  @media (max-width: 520px) {
+    aspect-ratio: 2;
+  }
+  @media (max-width: 414px) {
+    aspect-ratio: 1.8;
+  }
 `;
 
 const ScrollerButton = styled.button`
@@ -68,16 +81,16 @@ const ScrollerButton = styled.button`
     border-right: 1px solid ${theme.color.main.color};
     border-left: none;
     
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
     svg{
         transform:rotate(180deg);
   
   }`
       : `
       
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
       `}
 `;
 
@@ -97,7 +110,7 @@ const AvaliationItem = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   color: ${({ theme }) => theme.color.main.color};
@@ -137,8 +150,15 @@ const AvaliationText = styled.p`
   font-size: 1.5rem;
   text-align: center;
   width: 60%;
-  margin: 1rem 0;
   position: relative;
+
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 520px) {
+    width: 80%;
+  }
+  @media (max-width: 414px) {
+  }
 `;
 
 const TextMarkers = styled(TextMarkersSvg)`

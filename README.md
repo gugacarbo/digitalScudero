@@ -22,15 +22,14 @@
 
   - [x] Responsivo
 
-- [ ] **Botão Voltar ao Topo**
+- [x] **Botão Voltar ao Topo**
 
-  - [ ] Responsivo
+  - [x] Responsivo
 
-- [ ] **Botão Ver Mais**
-  - [ ] Serviços
-  - [ ] Cases
-  - [ ] Parceiros
-  - [ ] Métodos
+- [x] **Botão Ver Mais**
+  - [x] Serviços
+  - [x] Cases
+  - [x] Parceiros
 
 ---
 
@@ -53,17 +52,18 @@
 
   - [x] Responsivo
 
-- [ ] **Página Métodos**
-
-  - [ ] Responsivo
-
 - [x] **Página Cases**
 
-  - [ ] Responsivo
+  - [x] Responsivo
   - [x] **Página Ver Case**
     - [ ] Responsivo
 
 - [x] **Página Parceiros**
-  - [ ] Responsivo Parceiros
+
+  - [x] Responsivo Parceiros
   - [x] **Página Ver Parceiro**
     - [ ] Responsivo
+
+- [ ] **Página Métodos**
+
+  - [ ] Responsivo

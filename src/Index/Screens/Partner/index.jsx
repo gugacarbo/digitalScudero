@@ -1,12 +1,9 @@
 import styled, { useTheme } from "styled-components";
-import TopMenu from "../../components/TopMenu";
-import SideMenu from "../../components/SideMenu";
-
-import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import PartnerContent from "./PartnerContent";
 import { animateScroll } from "react-scroll";
 import { useEffect } from "react";
+import ScreenComponents from "../../components/ScreenComponents";
 
 function Partner() {
   useEffect(() => {
@@ -24,11 +21,8 @@ function Partner() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <TopMenu />
-      <SideMenu />
       <PartnerContent />
-
-      <Footer />
+      <ScreenComponents />
     </PartnerContainer>
   );
 }

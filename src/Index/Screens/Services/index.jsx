@@ -5,6 +5,7 @@ import ServicesContent from "./ServicesContent";
 
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
+import ScreenComponents from "../../components/ScreenComponents";
 
 function Home() {
   const theme = useTheme();
@@ -16,10 +17,8 @@ function Home() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <TopMenu />
-      <SideMenu />
       <ServicesContent />
-      <Footer />
+      <ScreenComponents />
     </AppContainer>
   );
 }

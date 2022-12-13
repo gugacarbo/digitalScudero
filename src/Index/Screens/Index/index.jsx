@@ -4,15 +4,13 @@ import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { useEffect } from "react";
 
-import SideMenu from "../../components/SideMenu";
-import TopMenu from "../../components/TopMenu";
-import Footer from "../../components/Footer";
-
 import HomeScreen from "./components/Home";
 import WhoIs from "./components/WhoIs";
 import WhatWeDo from "./components/WhatWeDo";
 import HowDo from "./components/HowWeDo";
 import Mailing_Contact from "./components/Mailing_Contact";
+
+import ScreenComponents from "../../components/ScreenComponents";
 
 function Home() {
   const theme = useTheme();
@@ -47,14 +45,12 @@ function Home() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <TopMenu />
-      <SideMenu />
       <HomeScreen />
       <WhoIs />
       <WhatWeDo />
       <HowDo />
       <Mailing_Contact />
-      <Footer />
+      <ScreenComponents />
     </AppContainer>
   );
 }

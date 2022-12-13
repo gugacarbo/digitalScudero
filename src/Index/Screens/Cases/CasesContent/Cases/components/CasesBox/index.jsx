@@ -32,4 +32,15 @@ const BoxContent = styled.div`
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+  }
+  @media (max-width: 520px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+  @media (max-width: 414px) {
+  }
 `;
