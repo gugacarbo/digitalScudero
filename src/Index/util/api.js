@@ -2,16 +2,17 @@ function api() {}
 export default api;
 
 import axios from "axios";
-
+const apiUrl = "https://scuderobot.tk";
 const delay = 1500;
 import { casesArray, PartnersArray } from "./api_data";
+
 const registerNewsletter = (data) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
-      axios.get(
-        "http://15.229.71.123:3333/notification?notification=" +
-          "Uma Pessoa se Registrou na Newsletter!"
-      );
+      console.log("sending Newsletter Notification");
+      axios.post(apiUrl + "/notification", {
+        notification: "Uma Pessoa se Registrou na Newsletter!",
+      });
       resolve({ status: 200 });
       resolve({ status: 300 });
     }, delay);
@@ -21,8 +22,10 @@ const sendContact = (data) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({ status: 200 });
-      axios.get(
-        "http://15.229.71.123:3333/notification?notification=" +
+      console.log("sending Contact Notification");
+      axios.post(
+        apiUrl +
+          "/notification?notification=" +
           "Uma Mensagem de Contato foi enviada pelo site!"
       );
       //resolve({ status: 300 });
