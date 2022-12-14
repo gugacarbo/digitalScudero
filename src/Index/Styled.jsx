@@ -91,6 +91,107 @@ export const BaseButton = styled.button`
     background-color: ${({ theme }) => theme.color.white};
     color: ${({ theme }) => theme.color.main.color};
   }
+
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0rem;
+    height: 3rem;
+    transform: scale(0.3);
+    overflow: visible;
+    background-color: transparent;
+    z-index: -1;
+
+    background-color: transparent;
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.main.color + "a0"},
+          0 0 0 0 ${({ theme }) => theme.color.main.color + "a0"};
+      }
+      40% {
+        box-shadow: 0 0 0 10rem ${({ theme }) => theme.color.main.color + "00"},
+          0 0 0 0 ${({ theme }) => theme.color.main.color + "a0"};
+      }
+      80% {
+        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.main.color + "00"},
+          0 0 0 30rem ${({ theme }) => theme.color.main.color + "00"};
+      }
+      100% {
+        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.main.color + "00"},
+          0 0 0 30rem ${({ theme }) => theme.color.main.color + "00"};
+      }
+    }
+
+    @keyframes animationSuccess {
+      0% {
+        /* box-shadow: 0 0 0 0 ${({ theme }) => theme.color.main.light + "a0"},
+          0 0 0 0 ${({ theme }) => theme.color.main.light + "a0"}; */
+        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.green},
+          0 0 0 0 ${({ theme }) => theme.color.green};
+      }
+
+      50% {
+        box-shadow: 0 0 0 20rem #00000000, 0 0 0 40rem #00000000;
+      }
+      100% {
+        box-shadow: 0 0 0 20rem #00000000, 0 0 0 40rem #00000000;
+      }
+    }
+    @keyframes animationError {
+      0% {
+        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.red},
+          0 0 0 0 ${({ theme }) => theme.color.red};
+      }
+
+      50% {
+        box-shadow: 0 0 0 20rem #00000000, 0 0 0 40rem #00000000;
+      }
+      100% {
+        box-shadow: 0 0 0 20rem #00000000, 0 0 0 40rem #00000000;
+      }
+    }
+  }
+
+  ${({ status, theme, isSubmitting }) => {
+    if (!isSubmitting) {
+      switch (status) {
+        case "success":
+          return `
+          pointer-events: none;
+          border-color: ${theme.color.green};
+          color: ${theme.color.white};
+          &::after {
+            background-color: ${theme.color.green};
+            animation: animationSuccess 2s forwards;
+          }
+          `;
+        case "error":
+          return `
+          pointer-events: none;
+          color: ${theme.color.white};
+          border-color: ${theme.color.red};
+          &::after {
+              background-color: ${theme.color.red};
+            animation: animationError 2s forwards;
+
+            }
+          `;
+      }
+    } else {
+      return `
+        pointer-events: none;
+        border-color: ${theme.color.main.dark};
+        color: ${theme.color.darkGray};
+        &::after {
+          animation: pulse 2s infinite;
+        }
+        `;
+    }
+  }}
+
   @media (max-width: 768px) {
     width: 55%;
     padding: 0.6rem 0;

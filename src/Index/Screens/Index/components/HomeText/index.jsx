@@ -21,7 +21,7 @@ function HomeText(props) {
           return (
             <>
               {text.split("").map((char, i) => {
-                const key = `${i}`;
+                const key = `${i}2${i}3${i}`;
                 if (char === ";") {
                   return <Semicolon key={i}>;</Semicolon>;
                 } else {

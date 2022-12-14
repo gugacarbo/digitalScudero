@@ -1,16 +1,8 @@
-import { useEffect } from "react";
-import { scroller } from "react-scroll";
 import styled from "styled-components";
 import CaseHome from "./CaseHome";
 import ShowCase from "./ShowCase";
 
 function CaseContent({ caseItem }) {
-  // useEffect(() => {
-  //   scroller.scrollTo("CaseHome", {
-  //     duration: 0,
-  //   });
-  // }, []);
-
   return (
     <CaseContainer>
       <CaseHome
@@ -18,7 +10,6 @@ function CaseContent({ caseItem }) {
         title={caseItem.title}
         projectLink={caseItem.link}
         logo={caseItem.logo}
-        
       />
       <ShowCase img={caseItem.caseImage} />
     </CaseContainer>

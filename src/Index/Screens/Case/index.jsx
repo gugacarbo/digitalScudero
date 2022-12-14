@@ -1,17 +1,30 @@
 import styled, { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 import CaseContent from "./CaseContent";
-import { getCases } from "../../util/api";
+import { getCase } from "../../util/api";
 import { useParams } from "react-router-dom";
 import ScreenComponents from "../../components/ScreenComponents";
+import { useState, useEffect } from "react";
 
 function Case() {
-  const cases = getCases();
+  const [caseItem, setCaseItem] = useState([]);
   const { caseName } = useParams();
 
-  const caseItem = cases.find((item) => {
-    return item.to == caseName;
-  });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    getCase(caseName)
+      .then(({ status, data }) => {
+        if (status == 200) {
+          setCaseItem(data);
+        } else {
+          alert("ERRO");
+        }
+      })
+      .catch(() => {
+        alert("ERRO");
+      });
+  }, []);
 
   const theme = useTheme();
 

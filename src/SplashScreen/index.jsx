@@ -5,19 +5,16 @@ const MyComponent = () => {
   const [Loaded, setLoaded] = useState(0);
   const [CloseSplash, setCloseSplash] = useState(0);
 
-  // This will run one time after the component mounts
   useEffect(() => {
     document.body.style.overflow = "hidden";
     const onPageLoad = () => {
       setLoaded(1);
     };
 
-    // Check if the page has already loaded
     if (document.readyState === "complete") {
       onPageLoad();
     } else {
       window.addEventListener("load", onPageLoad);
-      // Remove the event listener when component unmounts
       return () => window.removeEventListener("load", onPageLoad);
     }
   }, []);

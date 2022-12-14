@@ -1,11 +1,8 @@
 import { useEffect } from "react";
 import styled from "styled-components";
-import carbomaqCaseBg from "../../../../assets/carbomaqCaseBg.jpg";
 
 function ShowCase({ img }) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  
 
   return (
     <Content>

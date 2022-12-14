@@ -1,25 +1,21 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import carbomaqCaseBg from "../../../../assets/carbomaqCaseBg.jpg";
 
-function ShowPartner() {
+function ShowPartner({ partnerCases }) {
   useEffect(() => {
     //window.scrollTo(0, 0);
   }, []);
 
   return (
     <Content>
-      <Item bg={carbomaqCaseBg}>
-        <ItemName>Visite o Website</ItemName>
-      </Item>
-      <Item bg={carbomaqCaseBg}>
-        <ItemName>Veja a prévia da ID Visual</ItemName>
-      </Item>
+      {partnerCases.map((value, index, array) => (
+        <Item key={index + index + "2a"} bg={value.background} target="blank" href={value.to}>
+          <ItemName>{value.title}</ItemName>
+        </Item>
+      ))}
     </Content>
   );
 }
-
 
 const ItemName = styled.span`
   z-index: 1;
@@ -47,7 +43,7 @@ const ItemName = styled.span`
   }
 `;
 
-const Item = styled(Link)`
+const Item = styled.a`
   aspect-ratio: 1;
   display: flex;
   justify-content: center;

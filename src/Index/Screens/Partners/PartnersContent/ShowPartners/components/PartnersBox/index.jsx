@@ -1,40 +1,35 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as Logo } from "../../../../../../../assets/Logo.svg";
+import { getPartners } from "../../../../../../util/api";
 
 function PartnersBox() {
+  const [partners, setPartners] = useState([]);
+
+  useEffect(() => {
+    getPartners()
+      .then(({ status, data }) => {
+        if (status == 200) {
+          setPartners(data);
+        } else {
+          alert("ERRO");
+        }
+      })
+      .catch(() => {
+        alert("ERRO");
+      });
+  }, []);
   return (
     <PartnersBoxContent>
-      <Partner>
-        <PartnerLogo to="/parceiro/carbomaq">
-          <Logo />
-        </PartnerLogo>
-      </Partner>
-      <Partner>
-        <PartnerLogo to="/parceiro/carbomaq">
-          <Logo />
-        </PartnerLogo>
-      </Partner>
-      <Partner>
-        <PartnerLogo to="/parceiro/carbomaq">
-          <Logo />
-        </PartnerLogo>
-      </Partner>
-      <Partner>
-        <PartnerLogo to="/parceiro/carbomaq">
-          <Logo />
-        </PartnerLogo>
-      </Partner>
-      <Partner>
-        <PartnerLogo to="/parceiro/carbomaq">
-          <Logo />
-        </PartnerLogo>
-      </Partner>
-      <Partner>
-        <PartnerLogo to="/parceiro/carbomaq">
-          <Logo />
-        </PartnerLogo>
-      </Partner>
+      {partners.length > 0 &&
+        partners.map((part, index, array) => (
+          <Partner key={index}>
+            <PartnerLogo to={`/parceiro/${part.to}`}>
+              <img src={part.logo} alt="" />
+            </PartnerLogo>
+          </Partner>
+        ))}
     </PartnersBoxContent>
   );
 }
@@ -58,7 +53,7 @@ const PartnersBoxContent = styled.div`
   @media (max-width: 768px) {
   }
   @media (max-width: 520px) {
-  padding: 4rem 0;
+    padding: 4rem 0;
 
     width: 85%;
   }
@@ -73,6 +68,7 @@ const Partner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #444;
 `;
 const PartnerLogo = styled(Link)`
   display: flex;
@@ -81,7 +77,7 @@ const PartnerLogo = styled(Link)`
   filter: grayscale(100%);
   transition: ${({ theme }) => theme.transition.main};
 
-  svg {
+  img {
     width: 100%;
     fill: ${({ theme }) => theme.color.main.color};
   }

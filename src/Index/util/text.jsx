@@ -17,12 +17,10 @@ export const stringToBoldElement = (text) => {
   const textArray = withoutToBold.replaceAll("<b>", "").split("</b>");
 
   const BoldedElement = textArray.map((item, index) => (
-    <>
+    <span key={index}>
       {item}
-      {index !== textArray.length - 1 && (
-        <b key={index}>{shouldBeBold[index]}</b>
-      )}
-    </>
+      {index !== textArray.length - 1 && <b>{shouldBeBold[index]}</b>}
+    </span>
   ));
   return BoldedElement;
 };

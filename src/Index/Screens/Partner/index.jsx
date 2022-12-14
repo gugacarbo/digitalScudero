@@ -2,9 +2,9 @@ import styled, { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 import PartnerContent from "./PartnerContent";
 import { animateScroll } from "react-scroll";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ScreenComponents from "../../components/ScreenComponents";
-import { getPartners } from "../../util/api";
+import { getPartner } from "../../util/api";
 import { useParams } from "react-router-dom";
 
 function Partner() {
@@ -17,14 +17,23 @@ function Partner() {
 
   const theme = useTheme();
 
-  const partners = getPartners();
   const { partnerName } = useParams();
 
-  const partnerItem = partners.find((item) => {
-    return item.to == partnerName;
-  });
+  const [partner, setPartner] = useState({});
 
-  console.log(partnerName);
+  useEffect(() => {
+    getPartner(partnerName)
+      .then(({ status, data }) => {
+        if (status == 200) {
+          setPartner(data);
+        } else {
+          alert("ERRO");
+        }
+      })
+      .catch(() => {
+        alert("ERRO");
+      });
+  }, []);
 
   return (
     <PartnerContainer
@@ -33,7 +42,7 @@ function Partner() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
-      <PartnerContent partnerItem={partnerItem} />
+      <PartnerContent partnerItem={partner} />
       <ScreenComponents />
     </PartnerContainer>
   );

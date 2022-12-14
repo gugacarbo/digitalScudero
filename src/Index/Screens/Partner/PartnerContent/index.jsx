@@ -1,16 +1,17 @@
-import { useEffect } from "react";
-import { scroller } from "react-scroll";
+import { useContext } from "react";
 import styled from "styled-components";
 import PartnerHome from "./PartnerHome";
 import ShowPartner from "./ShowPartner";
+import LoadingContext from "../../../../context/LoadingContext";
 
 function PartnerContent({ partnerItem }) {
-  // useEffect(() => {
-  //   scroller.scrollTo("PartnerHome", {
-  //     duration: 0,
-  //   });
-  // }, []);
+  const { setLoading } = useContext(LoadingContext);
 
+  if (!partnerItem.to) {
+    setLoading(1);
+    return <></>;
+  }
+  setLoading(0);
 
   return (
     <PartnerContainer>
@@ -19,7 +20,7 @@ function PartnerContent({ partnerItem }) {
         title={partnerItem.title}
         logo={partnerItem.logo}
       />
-      <ShowPartner projectLink={partnerItem.link} />
+      <ShowPartner partnerCases={partnerItem.partnerCases} />
     </PartnerContainer>
   );
 }

@@ -80,9 +80,10 @@ export const SubmitButton = styled(BaseButton)`
   ${({ disabled, theme }) =>
     disabled &&
     `
-    background-color: ${theme.color.lightGray};
+    background-color: ${theme.color.gray};
     pointer-events: none;
     cursor: not-allowed;
+    color: ${theme.color.white};
     `}
 `;
 

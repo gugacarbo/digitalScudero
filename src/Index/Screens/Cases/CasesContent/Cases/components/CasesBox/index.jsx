@@ -2,21 +2,37 @@ import styled from "styled-components";
 import CaseItem from "./CaseItem";
 
 import { getCases } from "../../../../../../util/api";
+import { useEffect, useState } from "react";
 
 function CasesBox() {
-  const cases = getCases();
+  const [cases, setCases] = useState([]);
+
+  useEffect(() => {
+    getCases()
+      .then(({ status, data }) => {
+        if (status == 200) {
+          setCases(data);
+        } else {
+          alert("ERRO");
+        }
+      })
+      .catch(() => {
+        alert("ERRO");
+      });
+  }, []);
 
   return (
     <BoxContent id="CasesContainer">
-      {cases.map((value, index, array) => (
-        <CaseItem
-          key={value.title + index}
-          to={value.to}
-          title={value.title}
-          img={value.bg}
-          logo={value.logo}
-        />
-      ))}
+      {cases.length > 0 &&
+        cases.map((value, index, array) => (
+          <CaseItem
+            key={value.title + index}
+            to={value.to}
+            title={value.title}
+            img={value.background}
+            logo={value.logo}
+          />
+        ))}
     </BoxContent>
   );
 }

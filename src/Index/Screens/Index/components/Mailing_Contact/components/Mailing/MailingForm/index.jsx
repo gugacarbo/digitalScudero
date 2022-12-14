@@ -10,10 +10,9 @@ import {
   CheckBoxBlog,
 } from "./Styled";
 
+import { registerNewsletter } from "../../../../../../../util/api";
+
 function MailingForm() {
-  function t(val) {
-    return val;
-  }
   return (
     <Formik
       initialValues={{ email: "", name: "", blog: false }}
@@ -24,19 +23,31 @@ function MailingForm() {
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
         ) {
-          errors.email = t("Root.Contact.NewsLetter.Form.Error.Mail");
           errors.email = "Email Invalido";
         }
         if (!values.name) {
-          errors.name = t("Root.Contact.NewsLetter.Form.Error.NoName");
           errors.name = "Digite Seu Nome";
         }
 
         return errors;
       }}
-      onSubmit={(values, { setSubmitting, ...rest }) => {
-        console.log(values);
-        setSubmitting(false);
+      onSubmit={(values, { setSubmitting, setStatus, resetForm, ...rest }) => {
+        registerNewsletter(values)
+          .then((data) => {
+            if (data.status == 200) {
+              resetForm();
+              setStatus("success");
+            } else {
+              setStatus("error");
+            }
+          })
+          .catch((err) => {
+            setStatus("error");
+          })
+          .finally(() => {
+            setSubmitting(false);
+            setTimeout(() => setStatus(null), 4000);
+          });
       }}
     >
       {({
@@ -47,6 +58,7 @@ function MailingForm() {
         isSubmitting,
         errors,
         touched,
+        status,
       }) => (
         <StyledForm>
           <Input
@@ -79,15 +91,20 @@ function MailingForm() {
           <SubmitButton
             type="submit"
             error={errors.email || errors.name || 0}
-            onClick={handleSubmit}
             disabled={
               isSubmitting ||
               (errors.email && touched.email) ||
               (errors.name && touched.name) ||
+              status == "error" ||
               0
             }
+            onClick={handleSubmit}
+            isSubmitting={isSubmitting ? 1 : 0}
+            status={status}
           >
-            Assinar Newsletter
+            {!isSubmitting && !status && "Assinar Newsletter"}
+            {isSubmitting && "Enviando"}
+            {status && (status == "success" ? "Cadastrado!" : "Erro")}
           </SubmitButton>
         </StyledForm>
       )}

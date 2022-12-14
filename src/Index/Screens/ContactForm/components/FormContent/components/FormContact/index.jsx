@@ -1,10 +1,7 @@
 import { Formik } from "formik";
 import { SubmitButton, StyledForm, Input, Select, TextArea } from "./Styled";
-
+import { sendContact } from "../../../../../../util/api";
 function FormContact() {
-  function t(val) {
-    return val;
-  }
   return (
     <Formik
       initialValues={{ email: "", name: "", phone: "", type: "", message: "" }}
@@ -33,20 +30,22 @@ function FormContact() {
         return errors;
       }}
       onSubmit={(values, { setSubmitting, setStatus, resetForm, ...rest }) => {
-        console.log(values);
-        setStatus("");
-        setTimeout(() => {
-          setSubmitting(false);
-          setStatus("error");
-          setTimeout(() => {
-            setStatus("success");
-            setTimeout(() => {
-              // resetForm();
-
-              setStatus(null);
-            }, 2000);
-          }, 2000);
-        }, 2000);
+        sendContact(values)
+          .then((data) => {
+            if (data.status == 200) {
+              setStatus("success");
+              setTimeout(() => resetForm(), 4000);
+            } else {
+              setStatus("error");
+            }
+          })
+          .catch((err) => {
+            setStatus("error");
+          })
+          .finally(() => {
+            setSubmitting(false);
+            setTimeout(() => setStatus(null), 4000);
+          });
       }}
     >
       {({
@@ -114,8 +113,8 @@ function FormContact() {
           ></TextArea>
           <SubmitButton
             type="submit"
-            isSubmitting={isSubmitting ? 1 : 0}
             onClick={handleSubmit}
+            isSubmitting={isSubmitting ? 1 : 0}
             status={status}
           >
             {!isSubmitting && !status && "Enviar"}

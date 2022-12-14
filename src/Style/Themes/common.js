@@ -15,6 +15,7 @@ export default {
   },
   screen: {
     transition: {
+      fast: 0.2,
       main: 0.3,
       x2: 0.6,
       x3: 0.9,
