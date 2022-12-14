@@ -10,9 +10,19 @@ const registerNewsletter = (data) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("sending Newsletter Notification");
-      axios.post(apiUrl + "/notification", {
-        notification: "Uma Pessoa se Registrou na Newsletter!",
-      });
+
+      axios.post(
+        apiUrl + "/notification",
+        {
+          notification: "Uma Pessoa se Registrou na Newsletter!",
+        },
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
       resolve({ status: 200 });
       resolve({ status: 300 });
     }, delay);
@@ -23,11 +33,20 @@ const sendContact = (data) =>
     setTimeout(() => {
       resolve({ status: 200 });
       console.log("sending Contact Notification");
+
       axios.post(
-        apiUrl +
-          "/notification?notification=" +
-          "Uma Mensagem de Contato foi enviada pelo site!"
+        apiUrl + "/notification",
+        {
+          notification: "Uma Mensagem de Contato foi enviada pelo site!",
+        },
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
       );
+
       //resolve({ status: 300 });
       //reject(new Error("ERO"));
     }, delay);
