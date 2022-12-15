@@ -26,25 +26,25 @@ const CopyRight = styled.div`
 `;
 
 const CopyText = styled.span`
-  color: ${({ theme }) => theme.color.white};
-  font-size: 0.75rem;
-  font-weight: 200;
+  color: ${({ theme }) => theme.color.white}aa;
+  font-size: 0.9rem;
+  font-weight: 400;
   text-align: center;
-  
-  @media screen and (max-width: 520px) {
-  font-size: 1rem;
 
+  @media screen and (max-width: 520px) {
+    font-size: 1rem;
   }
 `;
 
 const CopyLink = styled.a`
   color: ${({ theme }) => theme.color.main.color};
-  font-size: 0.85rem;
+  font-size: 0.9em;
   text-decoration: none;
   transition: 0.3s;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   b {
+    font-size: 1.3em;
     font-weight: 300;
     font-family: "BDPBIRGULA";
   }

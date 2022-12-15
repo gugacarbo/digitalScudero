@@ -4,8 +4,8 @@ export const Icon = styled.a`
   cursor: pointer;
   transition: ${({ theme }) => theme.transition.main};
   padding: 0.2rem;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,8 +24,8 @@ export const Icon = styled.a`
     }
   }
   @media screen and (max-width: 520px) {
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 2.9rem;
+    height: 2.9rem;
   }
 `;
 

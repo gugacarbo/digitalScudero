@@ -15,7 +15,7 @@ function HomeText(props) {
         cursorRenderer={(cursor) => <Cursor>{cursor}</Cursor>}
         speed={70}
         eraseSpeed={50}
-        eraseDelay={10000}
+        eraseDelay={6000}
         typingDelay={800}
         displayTextRenderer={(text, i) => {
           return (
