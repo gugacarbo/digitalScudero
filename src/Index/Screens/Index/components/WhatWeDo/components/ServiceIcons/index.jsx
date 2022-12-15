@@ -26,7 +26,7 @@ function ServiceIcons() {
 
     scrollerRef.current.scroll({
       top: 0,
-      left: (wid / 3) * scrolling * 0.9,
+      left: (wid / 3) * scrolling,
       behavior: "smooth",
     });
   }
@@ -85,7 +85,7 @@ const IconsContainer = styled.div`
       left: 0;
       z-index: 10;
       top: 0;
-      width: 20%;
+      width: 25%;
       pointer-events: none;
       background-image: ${({ theme }) =>
         `linear-gradient(to right, ${theme.color.white}, transparent)`};
@@ -160,7 +160,7 @@ const ContainerScroller = styled.div`
     display: grid;
     padding-bottom: 0.5rem;
     grid-template-rows: 100%;
-    grid-template-columns: 10% 35% 35% 35% 35% 10%;
+    grid-template-columns: 10% 40% 40% 40% 40% 10%;
     overflow-x: scroll;
     overflow-y: hidden;
     column-gap: 0.5rem;

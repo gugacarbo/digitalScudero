@@ -31,4 +31,7 @@ export const TopMenuContent = styled.div`
   @media (max-width: 414px) {
     padding: 1rem 5%;
   }
+  @media screen and (max-width: 360px) {
+    padding: 1rem 3%;
+  }
 `;

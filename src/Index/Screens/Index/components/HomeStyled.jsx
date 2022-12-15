@@ -46,7 +46,7 @@ export const Dots = styled(DotsSvg)`
   }
   @media (max-width: 414px) {
     margin: 1rem 0;
-    width: 85%;
+    width: 65%;
     opacity: 1;
   }
   @media (max-width: 350px) {

@@ -38,8 +38,11 @@ const IconsContainer = styled.div`
   @media (max-width: 620px) {
     width: 70%;
   }
+  @media (max-width: 520px) {
+    width: 80%;
+  }
   @media (max-width: 414px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 

@@ -24,6 +24,11 @@ const TitleContainer = styled.div`
 
 const TitleH1 = styled(BaseTitle)`
   margin-top: 2rem;
+  @media (max-width: 414px) {
+    margin-top: 0rem;
+  }
+  @media (max-width: 380px) {
+  }
 `;
 
 const SubTitle = styled.h2`
