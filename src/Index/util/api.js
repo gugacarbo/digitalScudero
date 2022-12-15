@@ -64,7 +64,7 @@ const getCase = (caseName) =>
     data:
       casesArray.find((item) => {
         return item.to == caseName;
-      }) ?? false,
+      }) ?? null,
   });
 
 const getPartners = () =>
@@ -79,7 +79,7 @@ const getPartner = (partnerName) =>
     data:
       PartnersArray.find((item) => {
         return item.to == partnerName;
-      }) ?? false,
+      }) ?? null,
   });
 
 export {

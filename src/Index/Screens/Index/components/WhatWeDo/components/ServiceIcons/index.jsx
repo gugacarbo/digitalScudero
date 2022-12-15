@@ -4,36 +4,11 @@ import { ReactComponent as SearchSvg } from "../../../../../../../assets/service
 import { ReactComponent as PenSvg } from "../../../../../../../assets/services/Pen.svg";
 import { ReactComponent as WwwSvg } from "../../../../../../../assets/services/Www.svg";
 import { ReactComponent as FbIgSvg } from "../../../../../../../assets/services/FbIg.svg";
-import { ReactComponent as LeftArrowSvg } from "../../../../../../../assets/LeftArrow.svg";
-import { useEffect, useRef, useState } from "react";
 
 function ServiceIcons() {
-  const [scrolling, setScrolling] = useState(0);
-
-  const scrollerRef = useRef();
-
-  function scroll(side = "left") {
-    const wid =
-      scrollerRef.current.scrollWidth -
-      scrollerRef.current.parentElement.offsetWidth * 0.9;
-
-    if (side == "left") {
-      setScrolling(scrolling == 0 ? 3 : scrolling - 1);
-    }
-    if (side == "right") {
-      setScrolling(scrolling == 3 ? 0 : scrolling + 1);
-    }
-
-    scrollerRef.current.scroll({
-      top: 0,
-      left: (wid / 3) * scrolling,
-      behavior: "smooth",
-    });
-  }
-
   return (
     <IconsContainer>
-      <ContainerScroller ref={scrollerRef}>
+      <ContainerScroller >
         <MobileGap />
         <IconBox>
           <SearchSvg />
@@ -54,12 +29,6 @@ function ServiceIcons() {
         </IconBox>
         <MobileGap />
       </ContainerScroller>
-      <MobileButton>
-        <LeftArrowSvg onClick={() => scroll("left")} />
-      </MobileButton>
-      <MobileButton right>
-        <LeftArrowSvg onClick={() => scroll("right")} />
-      </MobileButton>
     </IconsContainer>
   );
 }

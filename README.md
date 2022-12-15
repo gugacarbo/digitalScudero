@@ -32,12 +32,13 @@
   - [x] Cases
   - [x] Parceiros
 
+- [x] **Alterar Mobile Ícones Serviços**
+
 - [ ] **Implementar Idiomas**
 
   - [ ] PT
   - [ ] EN
   - [ ] ES
-
 
 - [ ] **Bot Notificação Telegram**
 
@@ -51,7 +52,6 @@
   - [ ] **Banco de Dados**
   - [ ]
 
-- [ ] **Alterar Mobile Ícones Serviços**
 ---
 
 ### Páginas

@@ -31,16 +31,14 @@ export const LabelTitle = styled.span`
   font-size: 1rem;
   font-weight: 400;
   b {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-left: 1rem;
     font-weight: 500;
     color: ${({ theme }) => theme.color.white};
   }
   @media (max-width: 414px) {
     font-weight: 500;
-    font-size: 1.3rem;
     b {
-      font-size: 1.2rem;
     }
   }
 `;
