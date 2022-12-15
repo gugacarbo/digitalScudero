@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as DotsSvg } from "../../../../../../../assets/services/ServiceDots.svg";
 import ContactButton from "./ContactButton";
-import { BaseTitle } from "../../../HomeStyled";
+import { BaseTitle, Dots } from "../../../HomeStyled";
 
 function Contact() {
   return (
@@ -69,23 +68,10 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
   @media (max-width: 520px) {
     justify-content: space-evenly;
     height: 95%;
-  }
-`;
-
-const Dots = styled(DotsSvg)`
-  width: 25%;
-  opacity: 0.9;
-  margin-bottom: 5%;
-  margin-top: 1rem;
-  @media (max-width: 768px) {
-    width: 45%;
-  }
-  @media (max-width: 414px) {
-    width: 85%;
-    opacity: 1;
   }
 `;
 

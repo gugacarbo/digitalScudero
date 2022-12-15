@@ -3,9 +3,8 @@ import Button from "./components/Button";
 import HowDoIcons from "./components/HowDoIcons";
 import Text from "./components/Text";
 import Title from "./components/Title";
-import { ReactComponent as DotsSvg } from "../../../../../assets/services/ServiceDots.svg";
 import styled from "styled-components";
-
+import { Dots } from "../HomeStyled";
 function HowDo() {
   return (
     <HowDoContainer bg="black" id="HowWeDo">
@@ -21,18 +20,6 @@ function HowDo() {
 const HowDoContainer = styled(MainContainer)`
   @media (max-width: 414px) {
     gap: 1rem;
-  }
-`;
-
-const Dots = styled(DotsSvg)`
-  width: 25%;
-  opacity: 0.5;
-  margin-bottom: 3rem;
-  @media (max-width: 768px) {
-    width: 35%;
-  }
-  @media (max-width: 414px) {
-    width: 65%;
   }
 `;
 

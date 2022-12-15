@@ -1,8 +1,23 @@
 import styled from "styled-components";
 import CaseHome from "./CaseHome";
 import ShowCase from "./ShowCase";
-
+import LoadingContext from "../../../../context/LoadingContext";
+import { useContext, useEffect } from "react";
 function CaseContent({ caseItem }) {
+  const { loading, setLoading } = useContext(LoadingContext);
+
+  useEffect(() => {
+    if (!caseItem.to) {
+      setLoading(1);
+    } else {
+      setLoading(0);
+    }
+  }, [caseItem, caseItem.to]);
+
+  if (loading || !caseItem.to) {
+    return <></>;
+  }
+
   return (
     <CaseContainer>
       <CaseHome

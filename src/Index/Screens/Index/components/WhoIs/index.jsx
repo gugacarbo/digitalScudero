@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MainContainer } from "../../../../Styled";
+import { Dots } from "../HomeStyled";
 import Button from "./components/Button";
 import Text from "./components/Text";
 import Title from "./components/Title";
@@ -7,6 +8,7 @@ function WhoIs() {
   return (
     <WhoisContainer bg="black" id="WhoIs">
       <Title />
+      <Dots />
       <Text />
       <Button />
     </WhoisContainer>

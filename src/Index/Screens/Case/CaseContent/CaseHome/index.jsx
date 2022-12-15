@@ -9,21 +9,8 @@ import {
   BackLink,
   Dots,
 } from "../../../PatternPageStyled";
-import { useContext } from "react";
-import LoadingContext from "../../../../../context/LoadingContext";
-import { useEffect } from "react";
 
 function CaseHome({ text, title, logo, projectLink }) {
-  const { setLoading } = useContext(LoadingContext);
-
-  useEffect(() => {
-    if (!text) {
-      setLoading(1);
-    } else {
-      setLoading(0);
-    }
-  }, [text]);
-
   return (
     <CaseHomeContainer id="CaseHome">
       <Socials />

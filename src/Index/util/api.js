@@ -3,7 +3,7 @@ export default api;
 
 import axios from "axios";
 const apiUrl = "https://scuderobot.tk";
-const delay = 1500;
+const delay = 500;
 import { casesArray, PartnersArray } from "./api_data";
 
 const registerNewsletter = (data) =>
@@ -53,46 +53,33 @@ const sendContact = (data) =>
   });
 
 const getCases = () =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve({ status: 200, data: casesArray });
-    }, delay);
+  Mock({
+    status: 200,
+    data: casesArray,
   });
 
 const getCase = (caseName) =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const caseItem = casesArray.find((item) => {
+  Mock({
+    status: 200,
+    data:
+      casesArray.find((item) => {
         return item.to == caseName;
-      });
-      resolve({
-        status: 200,
-        data: caseItem,
-      });
-    }, delay);
+      }) ?? false,
   });
 
 const getPartners = () =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve({
-        status: 200,
-        data: PartnersArray,
-      });
-    }, delay);
+  Mock({
+    status: 200,
+    data: PartnersArray,
   });
 
 const getPartner = (partnerName) =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const partnerItem = PartnersArray.find((item) => {
+  Mock({
+    status: 200,
+    data:
+      PartnersArray.find((item) => {
         return item.to == partnerName;
-      });
-      resolve({
-        status: 200,
-        data: partnerItem,
-      });
-    }, delay);
+      }) ?? false,
   });
 
 export {
@@ -103,3 +90,10 @@ export {
   registerNewsletter,
   sendContact,
 };
+
+const Mock = (res) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(res);
+    }, delay);
+  });

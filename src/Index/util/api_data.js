@@ -86,4 +86,97 @@ export const PartnersArray = [
       },
     ],
   },
+  {
+    background: "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
+    title: "Carbomaq",
+    to: "carbomaq",
+    logo: "https://digitalscudero.com.br/logo.svg",
+    link: "https://digitalscudero.com.br",
+    text: [
+      `A <b>Carbomaq</b> é uma empresa com foco em prestar serviços de
+        usinagem, soldas, manutenção, montagens industriais, fabricação de
+        peças e equipamentos, além de fornecer mão de obra com equipe
+        especializada em diversos segmentos como cervejarias, frigoríficos,
+        madeireiras, etc.`,
+      `A <b>Digital Scudero</b> se tornou parceira da <b>Carbomaq</b> em 2022
+      com o desenvolvimento de um <b>website</b> moderno e responsivo, bem
+      como a reformulação da <b>identidade visual</b> da marca.`,
+    ],
+    partnerCases: [
+      {
+        title: "Visite o Website",
+        background:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARfTOMEBVV1_3fc3Ga_9E_UZ1pBnSGRHCG-qkB-3czg&s",
+        to: "https://www.google.com",
+      },
+      {
+        title: "Veja a prévia da Id Visual",
+        background:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARfTOMEBVV1_3fc3Ga_9E_UZ1pBnSGRHCG-qkB-3czg&s",
+        to: "https://www.google.com",
+      },
+    ],
+  },
+  {
+    background: "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
+    title: "Carbomaq",
+    to: "carbomaq",
+    logo: "https://digitalscudero.com.br/logo.svg",
+    link: "https://digitalscudero.com.br",
+    text: [
+      `A <b>Carbomaq</b> é uma empresa com foco em prestar serviços de
+        usinagem, soldas, manutenção, montagens industriais, fabricação de
+        peças e equipamentos, além de fornecer mão de obra com equipe
+        especializada em diversos segmentos como cervejarias, frigoríficos,
+        madeireiras, etc.`,
+      `A <b>Digital Scudero</b> se tornou parceira da <b>Carbomaq</b> em 2022
+      com o desenvolvimento de um <b>website</b> moderno e responsivo, bem
+      como a reformulação da <b>identidade visual</b> da marca.`,
+    ],
+    partnerCases: [
+      {
+        title: "Visite o Website",
+        background:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARfTOMEBVV1_3fc3Ga_9E_UZ1pBnSGRHCG-qkB-3czg&s",
+        to: "https://www.google.com",
+      },
+      {
+        title: "Veja a prévia da Id Visual",
+        background:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARfTOMEBVV1_3fc3Ga_9E_UZ1pBnSGRHCG-qkB-3czg&s",
+        to: "https://www.google.com",
+      },
+    ],
+  },
+  {
+    background: "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
+    title: "Carbomaq",
+    to: "carbomaq",
+    logo: "https://digitalscudero.com.br/logo.svg",
+    link: "https://digitalscudero.com.br",
+    text: [
+      `A <b>Carbomaq</b> é uma empresa com foco em prestar serviços de
+        usinagem, soldas, manutenção, montagens industriais, fabricação de
+        peças e equipamentos, além de fornecer mão de obra com equipe
+        especializada em diversos segmentos como cervejarias, frigoríficos,
+        madeireiras, etc.`,
+      `A <b>Digital Scudero</b> se tornou parceira da <b>Carbomaq</b> em 2022
+      com o desenvolvimento de um <b>website</b> moderno e responsivo, bem
+      como a reformulação da <b>identidade visual</b> da marca.`,
+    ],
+    partnerCases: [
+      {
+        title: "Visite o Website",
+        background:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARfTOMEBVV1_3fc3Ga_9E_UZ1pBnSGRHCG-qkB-3czg&s",
+        to: "https://www.google.com",
+      },
+      {
+        title: "Veja a prévia da Id Visual",
+        background:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARfTOMEBVV1_3fc3Ga_9E_UZ1pBnSGRHCG-qkB-3czg&s",
+        to: "https://www.google.com",
+      },
+    ],
+  },
 ];

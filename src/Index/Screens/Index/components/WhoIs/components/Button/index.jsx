@@ -9,6 +9,8 @@ function Button() {
   );
 }
 
-const Btn = styled(BaseButton)``;
+const Btn = styled(BaseButton)`
+  margin-top: 2rem;
+`;
 
 export default Button;

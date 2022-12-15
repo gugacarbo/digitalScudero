@@ -1,18 +1,23 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styled from "styled-components";
 import PartnerHome from "./PartnerHome";
 import ShowPartner from "./ShowPartner";
 import LoadingContext from "../../../../context/LoadingContext";
 
 function PartnerContent({ partnerItem }) {
-  const { setLoading } = useContext(LoadingContext);
+  const { loading, setLoading } = useContext(LoadingContext);
 
-  if (!partnerItem.to) {
-    setLoading(1);
+  useEffect(() => {
+    if (!partnerItem.to) {
+      setLoading(1);
+    } else {
+      setLoading(0);
+    }
+  }, [partnerItem, partnerItem.to]);
+
+  if (loading || !partnerItem.to) {
     return <></>;
   }
-  setLoading(0);
-
   return (
     <PartnerContainer>
       <PartnerHome

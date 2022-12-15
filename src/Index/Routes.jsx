@@ -7,9 +7,14 @@ import Cases from "./Screens/Cases";
 import Case from "./Screens/Case";
 import Partners from "./Screens/Partners";
 import Partner from "./Screens/Partner";
+import { useEffect } from "react";
+import { useContext } from "react";
+import LoadingContext from "../context/LoadingContext";
 
 function MyRoutes() {
   const location = useLocation();
+  const { setLoading } = useContext(LoadingContext);
+  useEffect(() => setLoading(0), [location.pathname]);
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>

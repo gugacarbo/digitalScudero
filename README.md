@@ -27,10 +27,31 @@
   - [x] Responsivo
 
 - [x] **Botão Ver Mais**
+
   - [x] Serviços
   - [x] Cases
   - [x] Parceiros
 
+- [ ] **Implementar Idiomas**
+
+  - [ ] PT
+  - [ ] EN
+  - [ ] ES
+
+
+- [ ] **Bot Notificação Telegram**
+
+  - [x] V0.1 - Funcional
+  - [ ] V0.2
+  - [ ] V0.3 - Produção
+
+- [ ] **Componente Avaliações**
+
+- [ ] **Backend**
+  - [ ] **Banco de Dados**
+  - [ ]
+
+- [ ] **Alterar Mobile Ícones Serviços**
 ---
 
 ### Páginas

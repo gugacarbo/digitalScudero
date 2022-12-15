@@ -30,7 +30,7 @@ function ServiceIcons() {
 }
 const IconsContainer = styled.div`
   display: flex;
-  width: 45%;
+  width: 50%;
   justify-content: space-between;
   @media (max-width: 768px) {
     width: 60%;
@@ -48,19 +48,29 @@ const IconText = styled.span`
   font-weight: 400;
   text-align: center;
   color: ${({ theme }) => theme.color.white};
-  margin: 1rem auto;
-  margin-bottom: auto;
 `;
 
 const IconBox = styled.div`
   width: 25%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: auto 3rem;
   place-items: center;
+  &:nth-child(1) {
+    transform: translateX(20%);
+  }
+  &:nth-child(2) {
+    transform: translateX(10%);
+  }
+  &:nth-child(3) {
+    transform: translateX(-10%);
+  }
+  &:nth-child(4) {
+    transform: translateX(-20%);
+  }
   svg {
-    width: 115%;
-    height: 115%;
+    aspect-ratio: 1;
+    width: 100%;
   }
 `;
 

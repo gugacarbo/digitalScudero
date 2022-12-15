@@ -38,7 +38,6 @@ const WhatWeDoContainer = styled(MainContainer)`
     gap: 0rem;
   }
   @media (max-width: 380px) {
-    justify-content: center;
   }
   @media (max-width: 280px) {
     gap: 1rem;

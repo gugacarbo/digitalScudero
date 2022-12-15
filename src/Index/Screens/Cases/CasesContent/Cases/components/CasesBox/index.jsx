@@ -44,19 +44,22 @@ const BoxContent = styled.div`
   height: 100%;
   margin: 0 auto;
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-  gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
     width: 85%;
   }
   @media (max-width: 520px) {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+
     width: 90%;
   }
-  @media (max-width: 414px) {
+  @media (max-width: 360px) {
+    gap: 1rem;
+
   }
 `;

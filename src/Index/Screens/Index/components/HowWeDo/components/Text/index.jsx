@@ -18,7 +18,8 @@ const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  margin-bottom: 1;
+  margin-top: 2rem;
   gap: 1rem;
 `;
 

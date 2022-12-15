@@ -5,8 +5,13 @@ export default ({ children }) => {
   const [loading, setLoading] = useState(0);
 
   function handleSet(val) {
-    val ? setLoading(1) : setLoading(0);
+    if (val == 1) {
+      setLoading(1);
+    } else {
+      setLoading(0);
+    }
   }
+  
   return (
     <LoadingContext.Provider
       value={{

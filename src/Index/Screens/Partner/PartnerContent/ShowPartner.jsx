@@ -2,14 +2,16 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 function ShowPartner({ partnerCases }) {
-  useEffect(() => {
-    //window.scrollTo(0, 0);
-  }, []);
-
+ 
   return (
     <Content>
       {partnerCases.map((value, index, array) => (
-        <Item key={index + index + "2a"} bg={value.background} target="blank" href={value.to}>
+        <Item
+          key={index + index + "2a"}
+          bg={value.background}
+          target="blank"
+          href={value.to}
+        >
           <ItemName>{value.title}</ItemName>
         </Item>
       ))}
@@ -48,7 +50,7 @@ const Item = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 35%;
   background-image: url(${({ bg }) => bg});
   background-size: auto 110%;
   background-position: center;
@@ -57,13 +59,7 @@ const Item = styled.a`
   position: relative;
   transition: ${({ theme }) => theme.transition.x2};
 
-  @media (max-width: 768px) {
-  }
-  @media (max-width: 520px) {
-  }
-  @media (max-width: 414px) {
-    width: 45%;
-  }
+
 
   &::after {
     content: "";
@@ -78,12 +74,18 @@ const Item = styled.a`
 
   filter: grayscale(50%) opacity(0.8);
 
-  @media (max-width: 520px) {
+  @media (max-width: 768px) {
+    width: 45%;
     filter: none;
+
+  }
+  @media (max-width: 520px) {
+
   }
   @media (max-width: 414px) {
-    width: 45%;
+    width: 90%;
   }
+ 
 
   &:hover {
     filter: grayscale(0%);

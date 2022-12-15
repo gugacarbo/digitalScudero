@@ -2,31 +2,32 @@ import styled, { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 import CaseContent from "./CaseContent";
 import { getCase } from "../../util/api";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import ScreenComponents from "../../components/ScreenComponents";
 import { useState, useEffect } from "react";
 
 function Case() {
   const [caseItem, setCaseItem] = useState([]);
   const { caseName } = useParams();
+  const theme = useTheme();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
     getCase(caseName)
-      .then(({ status, data }) => {
+      .then(({ status, data, ...res }) => {
         if (status == 200) {
           setCaseItem(data);
         } else {
-          alert("ERRO");
+          console.log(res);
+          //alert("ERRO");
         }
       })
-      .catch(() => {
-        alert("ERRO");
+      .catch((e) => {
+        console.log("ERRO", e);
       });
   }, []);
 
-  const theme = useTheme();
+  if (!caseItem || !caseName) return <Navigate to="/404" />;
 
   return (
     <CaseContainer

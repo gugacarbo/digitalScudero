@@ -1,39 +1,33 @@
 import styled, { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 import PartnerContent from "./PartnerContent";
-import { animateScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import ScreenComponents from "../../components/ScreenComponents";
 import { getPartner } from "../../util/api";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 
 function Partner() {
-  useEffect(() => {
-    animateScroll.scrollToTop({
-      duration: 0,
-      offset: 0,
-    });
-  }, []);
-
   const theme = useTheme();
-
   const { partnerName } = useParams();
-
   const [partner, setPartner] = useState({});
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getPartner(partnerName)
-      .then(({ status, data }) => {
+      .then(({ status, data, ...res }) => {
         if (status == 200) {
           setPartner(data);
         } else {
-          alert("ERRO");
+          console.log(res);
+          //alert("ERRO");
         }
       })
-      .catch(() => {
-        alert("ERRO");
+      .catch((e) => {
+        console.log("ERRO", e);
       });
   }, []);
+
+  if (!partner || !partnerName) return <Navigate to="/404" />;
 
   return (
     <PartnerContainer

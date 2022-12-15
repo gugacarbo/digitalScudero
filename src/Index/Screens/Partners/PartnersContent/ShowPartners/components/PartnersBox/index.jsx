@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -24,7 +25,17 @@ function PartnersBox() {
     <PartnersBoxContent>
       {partners.length > 0 &&
         partners.map((part, index, array) => (
-          <Partner key={index}>
+          <Partner
+            key={index}
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.35, delay: 0.15 },
+            }}
+            exit={{ opacity: 0, scale: 0.2, transition: { duration: 0.5 } }}
+            viewport={{ once: true }}
+          >
             <PartnerLogo to={`/parceiro/${part.to}`}>
               <img src={part.logo} alt="" />
             </PartnerLogo>
@@ -37,7 +48,6 @@ function PartnersBox() {
 const PartnersBoxContent = styled.div`
   width: 70%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.color.white};
@@ -45,8 +55,8 @@ const PartnersBoxContent = styled.div`
   grid-gap: 1rem;
 
   padding: 2rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   @media (max-width: 900px) {
   }
 
@@ -54,21 +64,36 @@ const PartnersBoxContent = styled.div`
   }
   @media (max-width: 520px) {
     padding: 4rem 0;
-
-    width: 85%;
+    width: 90%;
   }
   @media (max-width: 414px) {
-    width: 95%;
   }
 `;
-const Partner = styled.div`
-  width: 100%;
+const Partner = styled(motion.div)`
+  width: 30%;
   aspect-ratio: 1;
-  padding: 5%;
+  padding: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #444;
+  background-color: ${({ theme }) => theme.background};
+  @media (max-width: 900px) {
+    
+    width: 40%;
+  }
+  @media (max-width: 768px) {
+    padding: 2rem;
+    width: 45%;
+  }
+  @media (max-width: 520px) {
+    width: 48%;
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+    padding: 3rem;
+
+    aspect-ratio: 2;
+  }
 `;
 const PartnerLogo = styled(Link)`
   display: flex;

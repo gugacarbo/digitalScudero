@@ -15,7 +15,7 @@ function CaseItem({ img, logo, title, to }) {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { duration: 0.65, delay: 0.2 },
+        transition: { duration: 0.35, delay: 0.15 },
       }}
       exit={{ opacity: 0, scale: 0.2, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
@@ -47,6 +47,9 @@ const BrandLogo = styled.div`
     height: 90%;
     width: 90%;
   }
+  @media (max-width: 360px) {
+    height: 30%;
+  }
 `;
 
 const CaseTitle = styled.h1`
@@ -76,7 +79,7 @@ const CaseTitle = styled.h1`
 `;
 
 const BoxItem = styled(motion.div)`
-  width: 100%;
+  width: 25%;
   aspect-ratio: 1;
 
   background-color: ${({ theme }) => theme.background};
@@ -118,6 +121,18 @@ const BoxItem = styled(motion.div)`
     & ${BrandLogo} {
       transform: scale(1.21) translateY(0.3rem);
     }
+  }
+  @media (max-width: 900px) {
+    width: 40%;
+  }
+  @media (max-width: 768px) {
+    width: 45%;
+  }
+  @media (max-width: 520px) {
+    width: 45%;
+  }
+  @media (max-width: 360px) {
+    width: 100%;
   }
 `;
 
