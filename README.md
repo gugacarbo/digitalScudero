@@ -34,6 +34,8 @@
 
 - [x] **Alterar Mobile Ícones Serviços**
 
+- [x] **Componente Avaliações**
+
 - [ ] **Implementar Idiomas**
 
   - [ ] PT
@@ -45,8 +47,6 @@
   - [x] V0.1 - Funcional
   - [ ] V0.2
   - [ ] V0.3 - Produção
-
-- [ ] **Componente Avaliações**
 
 - [ ] **Backend**
   - [ ] **Banco de Dados**

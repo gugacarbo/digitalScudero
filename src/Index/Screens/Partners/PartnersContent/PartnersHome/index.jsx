@@ -49,19 +49,30 @@ const DownArrow = styled(ArrowDown)`
 `;
 
 const PartnersTitle = styled(Title)`
+  width: 80%;
+
+  font-size: 4.5rem;
   b {
+    font-size: 1em;
     white-space: normal;
   }
+  @media (max-width: 768px) {
+    font-size: 5.5;
+  }
+  @media (max-width: 620px) {
+    width: 90%;
+  }
   @media (max-width: 520px) {
+    width: 100%;
     font-size: 3.5rem;
   }
 `;
 
 const PartnersHomeContainer = styled(PatternPageContainer)`
-  grid-template-rows: 10% 60% 10% 1fr;
-  
+  grid-template-rows: 10% auto 1fr;
+
   @media (max-width: 520px) {
-    grid-template-rows: 10% 70% 10% 1fr;
+    grid-template-rows: 10% 1fr 10% auto 10%;
   }
   &::before {
     content: "";
@@ -81,6 +92,9 @@ const PartnersHomeContainer = styled(PatternPageContainer)`
 
 const PartnersBox = styled(PatterPageBox)`
   gap: 2rem;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const GoToProject = styled(Link)`

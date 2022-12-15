@@ -23,9 +23,9 @@ const TitleContainer = styled.div`
 `;
 
 const TitleH1 = styled(BaseTitle)`
-  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+
   @media (max-width: 414px) {
-    margin-top: 0rem;
   }
   @media (max-width: 380px) {
   }
@@ -36,8 +36,6 @@ const SubTitle = styled.h2`
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 0.051rem;
   font-weight: 300;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
   text-align: center;
   max-width: 95%;
   display: flex;

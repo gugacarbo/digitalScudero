@@ -10,8 +10,8 @@ function WhatWeDo() {
   return (
     <WhatWeDoContainer bg="white" id="WhatWeDo">
       <Title />
-      <Text />
       <Dots />
+      <Text />
       <ServiceIcons />
       <Button />
     </WhatWeDoContainer>
@@ -24,10 +24,9 @@ const WhatWeDoContainer = styled(MainContainer)`
   }
   @media (max-width: 414px) {
     justify-content: center;
-    gap: 2rem;
+    gap: 0;
   }
   @media (max-width: 380px) {
-    gap: 1rem;
   }
   @media (max-width: 280px) {
     justify-content: center;

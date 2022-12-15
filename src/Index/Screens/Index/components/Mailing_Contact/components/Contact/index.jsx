@@ -47,7 +47,6 @@ const ButtonsContainer = styled.div`
 
 const Title = styled(BaseTitle)`
   color: ${({ theme }) => theme.color.black};
-  margin-top: 2%;
   b {
     color: ${({ theme }) => theme.color.main.color};
   }

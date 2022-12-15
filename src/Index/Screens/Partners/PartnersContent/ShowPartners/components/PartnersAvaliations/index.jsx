@@ -31,7 +31,7 @@ const AvaliationsContainer = styled.div`
     width: 85%;
   }
   @media (max-width: 414px) {
-    width: 95%;
+    width: 98%;
   }
 `;
 

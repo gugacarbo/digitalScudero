@@ -8,7 +8,7 @@ export const BaseTitle = styled.h1`
   font-weight: 600;
   max-width: 95%;
   text-align: center;
-  line-height: 1em;
+  line-height: 0.9em;
   b {
     font-size: 1em;
     font-weight: 600;
@@ -32,6 +32,7 @@ export const BaseText = styled.p`
   font-weight: 400;
   text-align: center;
   width: 80%;
+  margin: 1rem 0;
   @media (max-width: 520px) {
     width: 90%;
   }
@@ -40,16 +41,17 @@ export const BaseText = styled.p`
 export const Dots = styled(DotsSvg)`
   width: 25%;
   opacity: 0.9;
-  margin: 2rem 0;
+  margin: 0.5rem 0;
+  margin: 1rem 0;
   @media (max-width: 768px) {
     width: 45%;
+    margin: 0.7rem 0;
   }
   @media (max-width: 414px) {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     width: 65%;
     opacity: 1;
   }
   @media (max-width: 350px) {
-    margin: 0;
   }
 `;

@@ -26,8 +26,8 @@ const ShowPartnersContainer = styled.div`
   justify-content: center;
   background-color: ${({ theme }) => theme.color.white};
   position: relative;
-
-  padding: 15vh 0;
+  gap: 3rem;
+  padding: 10vh 0;
 
   display: flex;
   flex-direction: column;

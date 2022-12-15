@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 function ShowPartner({ partnerCases }) {
- 
   return (
     <Content>
       {partnerCases.map((value, index, array) => (
@@ -43,6 +42,10 @@ const ItemName = styled.span`
     height: 0.1rem;
     background-color: ${({ theme }) => theme.color.main.color};
   }
+  @media (max-width: 520px) {
+  font-size:2rem;
+
+  }
 `;
 
 const Item = styled.a`
@@ -56,11 +59,9 @@ const Item = styled.a`
   background-position: center;
   background-repeat: no-repeat;
   text-decoration: none;
+  overflow: hidden;
   position: relative;
   transition: ${({ theme }) => theme.transition.x2};
-
-
-
   &::after {
     content: "";
     position: absolute;
@@ -69,23 +70,30 @@ const Item = styled.a`
     left: 0;
     height: 100%;
     background-image: ${({ theme }) =>
-      `linear-gradient(to bottom, ${theme.background}00, ${theme.background}aa, ${theme.background}, ${theme.background})`};
+      `linear-gradient(to bottom, ${theme.background}00,
+       ${theme.background}aa,
+        ${theme.background},
+         ${theme.background})`};
   }
-
   filter: grayscale(50%) opacity(0.8);
 
   @media (max-width: 768px) {
     width: 45%;
     filter: none;
-
   }
   @media (max-width: 520px) {
-
   }
   @media (max-width: 414px) {
     width: 90%;
+    &::after {
+      content: "";
+      background-image: ${({ theme }) =>
+        `linear-gradient(to bottom, ${theme.color.main.color}00,
+       ${theme.background}88,
+        ${theme.background}dd,
+         ${theme.background})`};
+    }
   }
- 
 
   &:hover {
     filter: grayscale(0%);
@@ -109,6 +117,7 @@ const Content = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+
   @media (max-width: 768px) {
     width: 80%;
   }
@@ -116,7 +125,9 @@ const Content = styled.div`
     width: 85%;
   }
   @media (max-width: 414px) {
+    flex-direction: column;
     width: 90%;
+    gap: 5rem;
   }
 `;
 

@@ -17,6 +17,7 @@ export default {
     transition: {
       fast: 0.2,
       main: 0.3,
+      slow: 0.45,
       x2: 0.6,
       x3: 0.9,
       x4: 1.2,

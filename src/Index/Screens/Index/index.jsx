@@ -43,7 +43,7 @@ function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: theme.screen.transition.x2 }}
+      transition={{ duration: theme.screen.transition.slow }}
     >
       <HomeScreen />
       <WhoIs />

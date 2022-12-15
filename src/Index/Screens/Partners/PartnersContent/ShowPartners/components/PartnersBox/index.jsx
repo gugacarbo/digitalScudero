@@ -65,6 +65,7 @@ const PartnersBoxContent = styled.div`
   @media (max-width: 520px) {
     padding: 4rem 0;
     width: 90%;
+
   }
   @media (max-width: 414px) {
   }

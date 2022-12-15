@@ -9,8 +9,8 @@ function HowDo() {
   return (
     <HowDoContainer bg="black" id="HowWeDo">
       <Title />
-      <Text />
       <Dots />
+      <Text />
       <HowDoIcons />
       <Button />
     </HowDoContainer>
@@ -19,7 +19,7 @@ function HowDo() {
 
 const HowDoContainer = styled(MainContainer)`
   @media (max-width: 414px) {
-    gap: 1rem;
+    gap: 0;
   }
 `;
 

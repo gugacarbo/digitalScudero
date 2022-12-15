@@ -19,7 +19,6 @@ const TextContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 1;
-  margin-top: 2rem;
   gap: 1rem;
 `;
 

@@ -4,7 +4,7 @@ export default api;
 import axios from "axios";
 const apiUrl = "https://scuderobot.tk";
 const delay = 500;
-import { casesArray, PartnersArray } from "./api_data";
+import { casesArray, PartnersArray, AvaliationsArray } from "./api_data";
 
 const registerNewsletter = (data) =>
   new Promise((resolve, reject) => {
@@ -14,7 +14,7 @@ const registerNewsletter = (data) =>
       axios.post(
         apiUrl + "/notification",
         {
-          notification: "Uma Pessoa se Registrou na Newsletter!",
+          notification: "Faz a ultima tela ai!",
         },
         {
           headers: {
@@ -82,11 +82,18 @@ const getPartner = (partnerName) =>
       }) ?? null,
   });
 
+const getAvaliations = () =>
+  Mock({
+    status: 200,
+    data: AvaliationsArray,
+  });
+
 export {
   getCases,
   getCase,
   getPartners,
   getPartner,
+  getAvaliations,
   registerNewsletter,
   sendContact,
 };

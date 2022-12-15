@@ -2,6 +2,7 @@ import Div100vh from "react-div-100vh";
 import styled from "styled-components";
 import LogoBlack from "../assets/background/LogoBlack.svg";
 import LogoWhite from "../assets/background/LogoWhite.svg";
+import BackgroundImage from "../assets/Home-Background.jpg";
 
 export const MainContainer = styled(Div100vh)`
   display: flex;
@@ -12,6 +13,24 @@ export const MainContainer = styled(Div100vh)`
   z-index: 5;
   position: relative;
   overflow: hidden;
+
+  ${({ theme, homeBg }) =>`
+    background-image: url(${BackgroundImage});
+    background-size: 95%;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 768px) {
+      background-size: 170% 100%;
+      background-position: right 0vh;
+    }
+
+    @media (max-width: 520px) {
+      background-size: 200% 110%;
+      background-position: right 0vh;
+    }
+  `}
+  
 
   ${({ theme, bg }) =>
     bg &&
@@ -58,7 +77,7 @@ export const MainContainer = styled(Div100vh)`
     ${({ bg }) =>
       bg &&
       `
-    background-size: 200%;
+    background-size: 350%;
     background-position-x: 50%;
     `}
   }

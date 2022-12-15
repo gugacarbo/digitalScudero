@@ -7,6 +7,14 @@ export const SocialsContainer = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-top: 3rem;
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: 10%;
+  @media (max-width: 520px) {
+    width: 60%;
+  }
+  @media (max-width: 520px) {
+  }
 `;
 
 export const IconsBox = styled.div`

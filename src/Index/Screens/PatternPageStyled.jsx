@@ -84,10 +84,12 @@ export const Title = styled.h1`
   letter-spacing: 0.1rem;
   font-weight: 600;
   text-align: center;
-  line-height: 4.2rem;
+  line-height: 1.05em;
   width: 100%;
   b {
     white-space: nowrap;
+  font-size: 1em;
+
     font-weight: 600;
     margin-left: 0.2rem;
     color: ${({ theme }) => theme.color.main.color};
