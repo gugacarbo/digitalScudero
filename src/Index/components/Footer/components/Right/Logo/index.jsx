@@ -68,7 +68,7 @@ const BrandName = styled.span`
   }
   .Digital {
     font-size: 0.4em;
-    font-family: "Gothan";
+    font-family: "Gotham";
     left: 0.4em;
     top: -0.3em;
     position: absolute;

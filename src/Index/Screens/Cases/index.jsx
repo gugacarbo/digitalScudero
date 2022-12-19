@@ -6,6 +6,7 @@ import CasesContent from "./CasesContent";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import ScreenComponents from "../../components/ScreenComponents";
+import Helmet from "../../util/Helmets";
 
 function Cases() {
   const theme = useTheme();
@@ -17,6 +18,8 @@ function Cases() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
+      <Helmet name="cases" />
+
       <CasesContent />
       <ScreenComponents />
     </AppContainer>

@@ -21,6 +21,7 @@ function MyRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" exact element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/contato/:contact" element={<ContactForm />} />
 
         <Route path="/servicos" element={<Services />} />

@@ -46,6 +46,19 @@
   - [ ] EN
   - [ ] ES
 
+- [ ] SEO
+
+  - [ ] Tags
+  - [ ] Svg
+  - [ ] Img
+    - [ ] Alt
+  - [ ] Robots
+  - [ ] Sitemap
+  - [ ] Force HTTPS
+  - [x] Title - react-helmet
+  - [ ] Keywords HTML
+  - [ ] Keywords Conteúdo
+
 - [ ] **Backend**
 
   - [ ] **Banco de Dados**
@@ -55,7 +68,6 @@
   - [x] V0.1 - Funcional
   - [ ] V0.2
   - [ ] V0.3 - Produção
-
 
 ---
 

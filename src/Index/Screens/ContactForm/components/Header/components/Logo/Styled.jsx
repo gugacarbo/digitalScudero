@@ -42,7 +42,7 @@ export const LogoText = styled.h1`
 
 export const Digital = styled.span`
   font-size: 0.4em;
-  font-family: "Gothan";
+  font-family: "Gotham";
   left: 0.4em;
   top: -0.3em;
   position: absolute;

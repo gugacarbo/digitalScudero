@@ -7,7 +7,7 @@ import LoadingCover from "./LoadingCover";
 function App() {
   return (
     <AppContextProvider>
-      {/* <SplashScreen /> */}
+      <SplashScreen />
       <LoadingCover />
       <Router>
         <Routes />

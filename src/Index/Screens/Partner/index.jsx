@@ -6,6 +6,7 @@ import ScreenComponents from "../../components/ScreenComponents";
 import { getPartner } from "../../util/api";
 import { Navigate, useParams } from "react-router-dom";
 
+
 function Partner() {
   const theme = useTheme();
   const { partnerName } = useParams();
@@ -36,6 +37,7 @@ function Partner() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.x2 }}
     >
+
       <PartnerContent partnerItem={partner} />
       <ScreenComponents />
     </PartnerContainer>

@@ -4,7 +4,6 @@ import { ThemeProvider } from "styled-components";
 import StyleContext from "./index";
 import Themes from "../../Style/Themes";
 import GlobalStyle from "../../Style/GlobalStyle";
-import Fonts from "../../Style/Fonts";
 
 export default ({ children }) => {
   const [theme, setTheme] = useState(Themes.dark);
@@ -51,7 +50,7 @@ export default ({ children }) => {
     >
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Fonts />
+        
         {children}
       </ThemeProvider>
     </StyleContext.Provider>

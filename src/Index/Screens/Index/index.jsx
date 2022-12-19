@@ -1,8 +1,8 @@
 import styled, { useTheme } from "styled-components";
-import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-import { scroller } from "react-scroll";
 import { useEffect } from "react";
+import { scroller } from "react-scroll";
+import { motion } from "framer-motion";
 
 import HomeScreen from "./components/Home";
 import WhoIs from "./components/WhoIs";
@@ -11,6 +11,8 @@ import HowDo from "./components/HowWeDo";
 import Mailing_Contact from "./components/Mailing_Contact";
 
 import ScreenComponents from "../../components/ScreenComponents";
+
+import Helmet from "../../util/Helmets";
 
 function Home() {
   const theme = useTheme();
@@ -29,12 +31,12 @@ function Home() {
       h.state.to = null;
       window.history.replaceState(h, document.title);
     } else {
-      scroller.scrollTo("Home", {
-        duration: 300,
-        delay: 20,
-        smooth: "easeInOutCubic",
-        offset: 0,
-      });
+      // scroller.scrollTo("Home", {
+      //   duration: 300,
+      //   delay: 20,
+      //   smooth: "easeInOutCubic",
+      //   offset: 0,
+      // });
     }
   }, []);
 
@@ -45,6 +47,7 @@ function Home() {
       exit={{ opacity: 0 }}
       transition={{ duration: theme.screen.transition.slow }}
     >
+      <Helmet name="home" />
       <HomeScreen />
       <WhoIs />
       <WhatWeDo />

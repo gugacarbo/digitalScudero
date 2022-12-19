@@ -1,4 +1,8 @@
 User-agent: *
-Disallow: /*.pdf$
+Allow: /contato
+Allow: /servicos
+Allow: /parceiros
+Allow: /cases
+Disallow: /metodos
 
 Sitemap: https://www.digitalscudero.com.br/sitemap.xml

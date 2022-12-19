@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "BDPBIRGULA";
+    src: url(/fonts/BDPBIRGULA.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url(/fonts/Gotham.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Bold.otf) format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-ExtraBold.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-ExtraLight.otf) format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Medium.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}

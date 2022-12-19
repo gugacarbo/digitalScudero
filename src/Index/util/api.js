@@ -3,7 +3,7 @@ export default api;
 
 import axios from "axios";
 const apiUrl = "https://scuderobot.tk";
-const delay = 500;
+const delay = 1;
 import { casesArray, PartnersArray, AvaliationsArray } from "./api_data";
 
 const registerNewsletter = (data) =>
