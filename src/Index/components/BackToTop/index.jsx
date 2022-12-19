@@ -50,7 +50,7 @@ function BackToTop() {
 
 const ArrowUp = styled(ArrowDownSvg)`
   transform: rotate(180deg);
-  width: 1.8rem;
+  width: 1.6rem;
 
   fill: ${({ theme }) => theme.color.white};
 `;
@@ -59,7 +59,7 @@ const TopButton = styled(motion.div)`
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  padding: 1.3rem;
+  padding: 1.1rem;
   border-radius: 50%;
   background-color: #333;
   color: #fff;

@@ -36,21 +36,26 @@
 
 - [x] **Componente Avaliações**
 
+- [ ] **Definir Cases**
+
+- [ ] **Definir Parceiros**
+
 - [ ] **Implementar Idiomas**
 
   - [ ] PT
   - [ ] EN
   - [ ] ES
 
-- [ ] **Bot Notificação Telegram**
+- [ ] **Backend**
 
+  - [ ] **Banco de Dados**
+  - [ ]
+
+- [ ] **Bot Notificação Telegram**
   - [x] V0.1 - Funcional
   - [ ] V0.2
   - [ ] V0.3 - Produção
 
-- [ ] **Backend**
-  - [ ] **Banco de Dados**
-  - [ ]
 
 ---
 
@@ -85,6 +90,6 @@
   - [x] **Página Ver Parceiro**
     - [x] Responsivo
 
-- [ ] **Página Métodos**
+- [x] **Página Métodos**
 
-  - [ ] Responsivo
+  - [x] Responsivo

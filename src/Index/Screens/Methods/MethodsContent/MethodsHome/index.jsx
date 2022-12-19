@@ -11,22 +11,21 @@ import {
   PatterPageBox,
 } from "../../../PatternPageStyled";
 
-function CasesHome() {
+function MethodsHome() {
   return (
-    <CasesHomeContainer id="CasesHome">
+    <MethodsHomeContainer id="MethodsHome">
       <Socials />
-      <CasesBox>
+      <MethodsBox>
         <Logo />
         <Title>
-          Nossos <b>Cases</b>
+          Nossa <b>Metodologia</b>
         </Title>
         <Text>
-          Conheça nosso portfolio e descubra o que fizemos para aumentar as
-          vendas dos nossos parceiros.
+          Conheça a metodologia que aplicamos para cuidar do seu negócio
         </Text>
         <Dots />
         <Link
-          to="CasesContainer"
+          to="MethodsContainer"
           spy={true}
           smooth={true}
           offset={-100}
@@ -35,11 +34,12 @@ function CasesHome() {
         >
           <ArrowDown />
         </Link>
-      </CasesBox>
-    </CasesHomeContainer>
+      </MethodsBox>
+    </MethodsHomeContainer>
   );
 }
 
-const CasesHomeContainer = styled(PatternPageContainer)``;
-const CasesBox = styled(PatterPageBox)``;
-export default CasesHome;
+const MethodsHomeContainer = styled(PatternPageContainer)`
+`;
+const MethodsBox = styled(PatterPageBox)``;
+export default MethodsHome;

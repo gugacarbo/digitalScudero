@@ -53,6 +53,9 @@ export const MenuIcon = styled(LogoSvg)`
   height: 4rem;
   margin: auto 0;
   cursor: pointer;
+  @media (max-width: 1600px) {
+    height: 3.5rem;
+  }
   @media (max-width: 620px) {
     height: 4rem;
   }
@@ -77,6 +80,6 @@ export const MenuIcon = styled(LogoSvg)`
   ${({ scrolled }) =>
     scrolled &&
     `
-    transform: scale(0.8);
+    transform: scale(0.7);
     `}
 `;
