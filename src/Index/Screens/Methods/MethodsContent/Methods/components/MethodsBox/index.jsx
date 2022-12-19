@@ -52,7 +52,7 @@ const PDCA = styled.div`
   }
 
   @media (max-width: 520px) {
-    width: 85%;
+    width: 80%;
   }
 `;
 const GAPA = styled(PDCA)`
