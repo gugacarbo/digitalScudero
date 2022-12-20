@@ -115,7 +115,7 @@ export const MenuIcon = styled(LogoSvg)`
   ${({ theme, scrolled }) =>
     scrolled &&
     `
-  fill: ${theme.color.lightGray};
+    fill: ${theme.color.lightGray};
 
     transform: scale(0.7);
     `}
