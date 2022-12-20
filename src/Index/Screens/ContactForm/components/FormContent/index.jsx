@@ -25,7 +25,7 @@ function FormContent() {
       </>
     );
   } else {
-    return <Navigate to="/" />;
+    return <Navigate to="/" state={{ to: "Mailing" }} />;
   }
   return (
     <FormContainer>

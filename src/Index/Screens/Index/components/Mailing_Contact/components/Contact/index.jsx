@@ -4,7 +4,7 @@ import { BaseTitle, Dots } from "../../../HomeStyled";
 
 function Contact() {
   return (
-    <ContactContainer>
+    <ContactContainer id="Contact">
       <Title>
         Entre em <b>Contato</b>
       </Title>

@@ -16,7 +16,10 @@ const MyComponent = () => {
     const onPageLoad = () => {
       setTimeout(() => {
         setLoaded(1);
-      }, 80);
+        setTimeout(() => {
+          localStorage.setItem("ds_splash_screen", new Date());
+        }, fadeOutTimeout);
+      }, 500);
     };
 
     if (
@@ -28,7 +31,6 @@ const MyComponent = () => {
     ) {
     } else {
       setNoSplash(0);
-      localStorage.setItem("ds_splash_screen", new Date());
 
       document.body.style.overflow = "hidden";
 
