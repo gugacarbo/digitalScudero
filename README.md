@@ -40,12 +40,6 @@
 
 - [ ] **Definir Parceiros**
 
-- [ ] **Implementar Idiomas**
-
-  - [ ] PT
-  - [ ] EN
-  - [ ] ES
-
 - [ ] SEO
 
   - [ ] Tags
@@ -58,7 +52,7 @@
   - [x] Title - react-helmet
   - [ ] Keywords HTML
   - [ ] Keywords Conteúdo
-  - [x] Importar Fontes no HTML 
+  - [x] Importar Fontes no HTML
 
 - [ ] **Backend**
 
@@ -106,3 +100,15 @@
 - [x] **Página Métodos**
 
   - [x] Responsivo
+
+---
+
+### Cancelados
+
+---
+
+- [ ] **Implementar Idiomas**
+
+  - [ ] PT
+  - [ ] EN
+  - [ ] ES

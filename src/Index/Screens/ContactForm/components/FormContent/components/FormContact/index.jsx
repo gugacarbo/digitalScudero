@@ -32,8 +32,8 @@ function FormContact() {
         sendContact(values)
           .then((data) => {
             if (data.status == 200) {
+              resetForm();
               setStatus("success");
-              setTimeout(() => resetForm(), 4000);
             } else {
               setStatus("error");
             }
@@ -43,7 +43,7 @@ function FormContact() {
           })
           .finally(() => {
             setSubmitting(false);
-            setTimeout(() => setStatus(null), 4000);
+            setTimeout(() => setStatus(null), 2500);
           });
       }}
     >
@@ -261,7 +261,6 @@ export const SubmitButton = styled(BaseButton)`
   font-size: 1rem;
   border-color: ${({ theme }) => theme.color.main.color};
   background-color: transparent;
-  color: ${({ theme }) => theme.color.main.color};
   display: flex;
   justify-content: center;
   align-items: center;

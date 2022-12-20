@@ -16,7 +16,7 @@ const sendContact = (data) =>
     setTimeout(() => {
       resolve({ status: 200 });
       resolve({ status: 300 });
-      //reject(new Error("ERO"));
+      reject(new Error("ERO"));
     }, delay);
   });
 

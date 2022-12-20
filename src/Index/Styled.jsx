@@ -110,8 +110,11 @@ export const BaseButton = styled.button`
     color: ${({ theme }) => theme.color.main.color};
   }
 
+  ${({ theme, isSubmitting, status }) =>
+    status && `color: ${theme.color.white} !important;`}
   position: relative;
   overflow: hidden;
+
   &::after {
     content: "";
     position: absolute;
@@ -147,8 +150,8 @@ export const BaseButton = styled.button`
       0% {
         /* box-shadow: 0 0 0 0 ${({ theme }) => theme.color.main.light + "a0"},
           0 0 0 0 ${({ theme }) => theme.color.main.light + "a0"}; */
-        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.green},
-          0 0 0 0 ${({ theme }) => theme.color.green};
+        box-shadow: 0 0 0 0 ${({ theme }) => theme.color.main.color},
+          0 0 0 0 ${({ theme }) => theme.color.main.color};
       }
 
       50% {
@@ -192,9 +195,8 @@ export const BaseButton = styled.button`
           color: ${theme.color.white};
           border-color: ${theme.color.red};
           &::after {
-              background-color: ${theme.color.red};
+            background-color: ${theme.color.red};
             animation: animationError 2s forwards;
-
             }
           `;
       }

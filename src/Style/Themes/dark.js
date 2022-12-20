@@ -14,7 +14,7 @@ export default {
     red: "#e74c3c",
     main: {
       color: "#ff5b00",
-      dark: "#ff8c00",
+      dark: "#ef3a00",
       darker: "#CC5200",
       light: "#ff8500",
       complement: "#00F1FF",
