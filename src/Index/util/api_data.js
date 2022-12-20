@@ -4,7 +4,7 @@ export const casesArray = [
       "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
     title: "Desenvolvimento de Website",
     to: "carbomaq-website",
-    logo: "https://digitalscudero.com.br/logo.svg",
+    logo: "https://digitalscudero.com.br/favico.svg",
     link: "https://digitalscudero.com.br",
     text: [
       `<b>Com</b> foco em prestar serviços de usinagem, soldas, manutenção, fabricação de peças e equipamentos, a <b>Carbomaq</b> precisava de um <b>website moderno</b>, prático e simples, para aumentar sua proximidade com seus clientes em potencial.`,
@@ -18,7 +18,7 @@ export const casesArray = [
       "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
     title: "Desenvolvimento de ID Visual",
     to: "carbomaq-id",
-    logo: "https://digitalscudero.com.br/logo.svg",
+    logo: "https://digitalscudero.com.br/favico.svg",
     link: "https://digitalscudero.com.br",
     text: [
       `<b>Com</b> foco em prestar serviços de usinagem, soldas, manutenção,fabricação de peças e equipamentos, a <b>Carbomaq</b> precisava de um <b>website moderno</b>, prático e simples, para aumentar sua proximidade com seus clientes em potencial.`,
@@ -62,7 +62,7 @@ export const PartnersArray = [
       "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
     title: "Carbomaq",
     to: "carbomaq",
-    logo: "https://digitalscudero.com.br/logo.svg",
+    logo: "https://digitalscudero.com.br/favico.svg",
     link: "https://digitalscudero.com.br",
     text: [
       `A <b>Carbomaq</b> é uma empresa com foco em prestar serviços de
@@ -95,7 +95,7 @@ export const PartnersArray = [
       "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
     title: "Carbomaq",
     to: "carbomaq",
-    logo: "https://digitalscudero.com.br/logo.svg",
+    logo: "https://digitalscudero.com.br/favico.svg",
     link: "https://digitalscudero.com.br",
     text: [
       `A <b>Carbomaq</b> é uma empresa com foco em prestar serviços de
@@ -127,7 +127,7 @@ export const PartnersArray = [
       "https://as1.ftcdn.net/v2/jpg/03/66/27/16/1000_F_366271672_GGyhbfkwYM2mwmz5FJi4JX7gljgNZMpg.jpg",
     title: "Carbomaq",
     to: "carbomaq",
-    logo: "https://digitalscudero.com.br/logo.svg",
+    logo: "https://digitalscudero.com.br/favico.svg",
     link: "https://digitalscudero.com.br",
     text: [
       `A <b>Carbomaq</b> é uma empresa com foco em prestar serviços de
@@ -160,7 +160,7 @@ export const AvaliationsArray = [
   {
     partnerName: "Gustavo Carbonera ",
     partnerImage:
-      "https://scontent.ffln13-1.fna.fbcdn.net/v/t39.30808-6/250685604_4811928245507137_4226467416076304143_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEX83V9cabrQk49k7usZPJu7F6PEfdgOMbsXo8R92A4xo0sQkQiNkjIt51RhofDS8T1D8rshhrXp8hqnLHPBj9w&_nc_ohc=Lpv33jVztOkAX-yRTdc&_nc_ht=scontent.ffln13-1.fna&oh=00_AfCanYyXJwor9mcdFITWAEqjqLMdKpQwTG2h74HNsONOJQ&oe=639F82E3",
+      "https://digitalscudero.com.br/favico.svg",
     partnerOffice: "CTO Dev - DigitalScudero",
     partnerAvaliation: `Velocidade e qualidade no trabalho, Suporte súper acessível e pau no cúdo Bolsonaro!!!`,
     date: `Lages - ${new Date().getDate()}/${
@@ -170,7 +170,7 @@ export const AvaliationsArray = [
   {
     partnerName: "Gustavo Legnaghi ",
     partnerImage:
-      "https://scontent.ffln13-1.fna.fbcdn.net/v/t39.30808-6/250685604_4811928245507137_4226467416076304143_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEX83V9cabrQk49k7usZPJu7F6PEfdgOMbsXo8R92A4xo0sQkQiNkjIt51RhofDS8T1D8rshhrXp8hqnLHPBj9w&_nc_ohc=Lpv33jVztOkAX-yRTdc&_nc_ht=scontent.ffln13-1.fna&oh=00_AfCanYyXJwor9mcdFITWAEqjqLMdKpQwTG2h74HNsONOJQ&oe=639F82E3",
+      "https://digitalscudero.com.br/favico.svg",
     partnerOffice: "CFO - DigitalScudero",
     partnerAvaliation: `Velocidade no pau no cúdo Bolsonaro!!!`,
     date: `Lages - ${new Date().getDate() - 1}/${

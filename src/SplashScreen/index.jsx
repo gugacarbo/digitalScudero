@@ -27,7 +27,7 @@ const MyComponent = () => {
       new Date(localStorage.getItem("ds_splash_screen")) != "Invalid Date" &&
       new Date().getTime() -
         new Date(localStorage.getItem("ds_splash_screen")).getTime() <
-        3600 * 1000
+        3600 * 1000 //? 1h
     ) {
     } else {
       setNoSplash(0);

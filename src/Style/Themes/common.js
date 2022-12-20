@@ -16,11 +16,11 @@ export default {
   screen: {
     transition: {
       fast: 0.05,
-      main: 0.10,
-      slow: 0.15,
-      x2: 0.2,
-      x3: 0.3,
-      x4: 0.4,
+      main: 0.15,
+      slow: 0.2,
+      x2: 0.3,
+      x3: 0.45,
+      x4: 0.6,
     },
   },
 };

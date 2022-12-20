@@ -6,10 +6,10 @@ export default {
     inverseText: "#222222",
     black: "#222222",
     white: "#fefefe",
-    gray: "#aaa",
     lightGray: "#cccccc",
-    mediumGray: "#999999",
-    darkGray: "#666666",
+    gray: "#bbbbbb",
+    mediumGray: "#aaaaaa",
+    darkGray: "#777777",
     green: "#2ecc71",
     red: "#e74c3c",
     main: {

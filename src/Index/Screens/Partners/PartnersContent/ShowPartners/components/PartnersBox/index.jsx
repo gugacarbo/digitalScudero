@@ -65,7 +65,6 @@ const PartnersBoxContent = styled.div`
   @media (max-width: 520px) {
     padding: 4rem 0;
     width: 90%;
-
   }
   @media (max-width: 414px) {
   }
@@ -77,9 +76,7 @@ const Partner = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.background};
   @media (max-width: 900px) {
-    
     width: 40%;
   }
   @media (max-width: 768px) {

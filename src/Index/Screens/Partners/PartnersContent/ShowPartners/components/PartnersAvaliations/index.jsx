@@ -11,11 +11,7 @@ function PartnersAvaliations() {
     });
   }, []);
 
-  return (
-    <AvaliationsContainer>
-      <Scroller />
-    </AvaliationsContainer>
-  );
+  return <AvaliationsContainer>{/*//! <Scroller /> */}</AvaliationsContainer>;
 }
 
 const AvaliationsContainer = styled.div`

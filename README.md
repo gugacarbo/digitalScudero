@@ -58,6 +58,7 @@
   - [x] Title - react-helmet
   - [ ] Keywords HTML
   - [ ] Keywords Conteúdo
+  - [x] Importar Fontes no HTML 
 
 - [ ] **Backend**
 
