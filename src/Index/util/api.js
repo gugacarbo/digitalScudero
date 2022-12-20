@@ -1,30 +1,13 @@
 function api() {}
 export default api;
 
-import axios from "axios";
-const apiUrl = "https://scuderobot.tk";
 const delay = 1;
 import { casesArray, PartnersArray, AvaliationsArray } from "./api_data";
 
 const registerNewsletter = (data) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("sending Newsletter Notification");
-
-      axios.post(
-        apiUrl + "/notification",
-        {
-          notification: "Faz a ultima tela ai!",
-        },
-        {
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-        }
-      );
       resolve({ status: 200 });
-      resolve({ status: 300 });
     }, delay);
   });
 
@@ -32,22 +15,7 @@ const sendContact = (data) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({ status: 200 });
-      console.log("sending Contact Notification");
-
-      axios.post(
-        apiUrl + "/notification",
-        {
-          notification: "Uma Mensagem de Contato foi enviada pelo site!",
-        },
-        {
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      //resolve({ status: 300 });
+      resolve({ status: 300 });
       //reject(new Error("ERO"));
     }, delay);
   });

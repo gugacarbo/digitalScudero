@@ -14,7 +14,7 @@ export const MainContainer = styled(Div100vh)`
   position: relative;
   overflow: hidden;
 
-  ${({ theme, homeBg }) =>`
+  ${({ theme, homeBg }) => `
     background-image: url(${BackgroundImage});
     background-size: 95%;
     background-position: right;
@@ -30,7 +30,6 @@ export const MainContainer = styled(Div100vh)`
       background-position: right 0vh;
     }
   `}
-  
 
   ${({ theme, bg }) =>
     bg &&
@@ -180,10 +179,10 @@ export const BaseButton = styled.button`
         case "success":
           return `
           pointer-events: none;
-          border-color: ${theme.color.green};
+          border-color: ${theme.color.main.light};
           color: ${theme.color.white};
           &::after {
-            background-color: ${theme.color.green};
+            background-color: ${theme.color.main.light};
             animation: animationSuccess 2s forwards;
           }
           `;

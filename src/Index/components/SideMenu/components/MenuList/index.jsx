@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
-
+import styled from "styled-components";
 import MenuContext from "../../../../../context/MenuContext";
+
 function MenuList() {
   return (
     <List>
@@ -61,8 +62,6 @@ export const Item = ({ children, to, isLink = false, ...props }) => {
 
 export default MenuList;
 
-import styled from "styled-components";
-
 export const List = styled.div`
   list-style: none;
   display: flex;
@@ -77,8 +76,6 @@ export const List = styled.div`
     gap: 1.5rem;
   }
 `;
-
-import { Link } from "react-scroll";
 export const MenuItem = styled(Link)`
   font-size: 1.1rem;
   font-weight: 300;
