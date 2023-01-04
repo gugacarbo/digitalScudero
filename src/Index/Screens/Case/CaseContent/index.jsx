@@ -26,7 +26,7 @@ function CaseContent({ caseItem }) {
         projectLink={caseItem.link}
         logo={caseItem.logo}
       />
-      <ShowCase img={caseItem.caseImage} />
+      <ShowCase img={caseItem.caseImage} alt={caseItem.title} />
     </CaseContainer>
   );
 }

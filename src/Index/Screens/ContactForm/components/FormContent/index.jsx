@@ -5,32 +5,35 @@ import { useParams, Navigate } from "react-router-dom";
 function FormContent() {
   const { contact } = useParams();
   var TitleText = "";
-
+  var contactType = "";
   if (contact == "reuniao") {
     TitleText = (
       <>
         Agende uma reunião <b>com a gente</b>
       </>
     );
+    contactType = "Agendar Reunião";
   } else if (contact == "minhaMarca") {
     TitleText = (
       <>
         Quero falar sobre <b>a minha marca</b>
       </>
     );
+    contactType = "Sobre Minha Marca";
   } else if (contact == "duvida") {
     TitleText = (
       <>
         Quero tirar minhas <b>dúvidas</b>
       </>
     );
+    contactType = "Tirar Dúvida";
   } else {
     return <Navigate to="/" state={{ to: "Mailing" }} />;
   }
   return (
     <FormContainer>
       <Title>{TitleText}</Title>
-      <FormContact />
+      <FormContact contactType={contactType} />
     </FormContainer>
   );
 }

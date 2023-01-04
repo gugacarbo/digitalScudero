@@ -129,11 +129,12 @@ const BlogTitle = styled.span`
 `;
 
 const BlogLabel = styled.label`
-  display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-left: 0.5rem;
   font-weight: 500;
+  //display: flex;
+  display: none;
   input {
     accent-color: ${({ theme }) => theme.color.main.light};
   }

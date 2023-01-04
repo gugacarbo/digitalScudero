@@ -75,7 +75,7 @@ const MethodsTitle = styled(Title)`
   color: ${({ theme }) => theme.color.black};
   @media (max-width: 500px) {
     margin-top: 4rem;
-}
+  }
 `;
 
 const MethodsText = styled.p`

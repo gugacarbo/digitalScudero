@@ -62,7 +62,7 @@ export const Item = ({ children, to, isLink = false, ...props }) => {
 
 export default MenuList;
 
-export const List = styled.div`
+export const List = styled.nav`
   list-style: none;
   display: flex;
   flex-direction: column;

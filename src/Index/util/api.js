@@ -1,23 +1,19 @@
-function api() {}
-export default api;
-
-const delay = 1;
+//how to create a axios object with default url?
+import axios from "axios";
 import { casesArray, PartnersArray, AvaliationsArray } from "./api_data";
 
+const api = axios.create({ baseURL: import.meta.env.VITE_API_URL });
+
+const registerVisitor = () => api.get("/visitor.php");
+
 const registerNewsletter = (data) =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve({ status: 200 });
-    }, delay);
+  api.post("/registerNewsletter.php", {
+    ...data,
   });
 
 const sendContact = (data) =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve({ status: 200 });
-      resolve({ status: 300 });
-      reject(new Error("ERO"));
-    }, delay);
+  api.post("/sendContact.php", {
+    ...data,
   });
 
 const getCases = () =>
@@ -57,6 +53,7 @@ const getAvaliations = () =>
   });
 
 export {
+  registerVisitor,
   getCases,
   getCase,
   getPartners,
@@ -65,6 +62,8 @@ export {
   registerNewsletter,
   sendContact,
 };
+
+const delay = 1;
 
 const Mock = (res) =>
   new Promise((resolve, reject) => {

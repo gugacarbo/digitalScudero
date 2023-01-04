@@ -21,7 +21,7 @@ function PartnerHome({ text, title, logo }) {
           <LeftArrowsSvg /> Voltar
         </BackLink>
         <Logo>
-          <img src={logo} alt="" />
+          <img src={logo} alt={title + " Logo"} />
         </Logo>
         <Title>
           Conheça a <b>{title}</b>

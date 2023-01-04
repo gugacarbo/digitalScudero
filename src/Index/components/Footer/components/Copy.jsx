@@ -4,7 +4,7 @@ function Copy() {
   return (
     <CopyRight>
       <CopyText>
-        Copyright © 2022 -{" "}
+        Copyright © 2023 -{" "}
         <CopyLink href="mailto:digitalscudero@digitalscudero.com.br">
           Digital <b>scudero</b>
         </CopyLink>{" "}

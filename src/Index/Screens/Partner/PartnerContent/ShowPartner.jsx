@@ -11,7 +11,7 @@ function ShowPartner({ partnerCases }) {
           target="blank"
           href={value.to}
         >
-          <ItemName>{value.title}</ItemName>
+          <ItemName hide={!value.to ? 1 : 0}>{value.title}</ItemName>
         </Item>
       ))}
     </Content>
@@ -31,7 +31,8 @@ const ItemName = styled.span`
   letter-spacing: 0.1rem;
   text-align: center;
   transition: ${({ theme }) => theme.transition.x2};
-  transform: translateY(100%);
+  transform: translateY(-150%);
+  margin-top: auto;
   &::after {
     content: "";
     width: 90%;
@@ -43,13 +44,13 @@ const ItemName = styled.span`
     background-color: ${({ theme }) => theme.color.main.color};
   }
   @media (max-width: 520px) {
-  font-size:2rem;
-
+    font-size: 2rem;
   }
+  ${({ hide }) => hide && `display:none;`}
 `;
 
 const Item = styled.a`
-  aspect-ratio: 1;
+  aspect-ratio: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,10 +70,12 @@ const Item = styled.a`
     bottom: 0;
     left: 0;
     height: 100%;
+    transition: ${({ theme }) => theme.transition.main};
+
     background-image: ${({ theme }) =>
       `linear-gradient(to bottom, ${theme.background}00,
        ${theme.background}aa,
-        ${theme.background},
+        ${theme.background}cc,
          ${theme.background})`};
   }
   filter: grayscale(50%) opacity(0.8);
@@ -97,9 +100,12 @@ const Item = styled.a`
 
   &:hover {
     filter: grayscale(0%);
+    &::after {
+      opacity: 0.1;
+    }
     & ${ItemName} {
       color: ${({ theme }) => theme.color.white};
-      transform: scale(1.1) translateY(100%);
+      transform: scale(1.1) translateY(-200%);
       &::after {
         width: 99%;
         background-color: ${({ theme }) => theme.color.white};

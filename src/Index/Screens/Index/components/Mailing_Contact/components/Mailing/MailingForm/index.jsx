@@ -28,16 +28,24 @@ function MailingForm() {
         if (!values.name) {
           errors.name = "Digite Seu Nome";
         }
+        if (values.name.length > 50) {
+          errors.name = "Máximo 50 Caracteres";
+        }
+        if (values.email.length > 100) {
+          errors.email = "Máximo 100 Caracteres";
+        }
 
         return errors;
       }}
       onSubmit={(values, { setSubmitting, setStatus, resetForm, ...rest }) => {
         registerNewsletter(values)
-          .then((data) => {
+          .then(({ data }) => {
+            console.log(data);
             if (data.status == 200) {
               resetForm();
               setStatus("success");
             } else {
+              alert(data.message);
               setStatus("error");
             }
           })
@@ -46,7 +54,7 @@ function MailingForm() {
           })
           .finally(() => {
             setSubmitting(false);
-            setTimeout(() => setStatus(null), 4000);
+            setTimeout(() => setStatus(null), 3000);
           });
       }}
     >
@@ -69,6 +77,7 @@ function MailingForm() {
             placeholder="Digite Seu Nome"
             onChange={handleChange}
             onBlur={handleBlur}
+            maxLength={50}
             value={values.name}
           />
 
@@ -76,6 +85,7 @@ function MailingForm() {
             title="Email"
             type="email"
             name="email"
+            maxLength={100}
             error={errors.email}
             placeholder={"Digite Seu Email"}
             onChange={handleChange}

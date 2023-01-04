@@ -37,7 +37,7 @@ function PartnersBox() {
             viewport={{ once: true }}
           >
             <PartnerLogo to={`/parceiro/${part.to}`}>
-              <img src={part.logo} alt="" />
+              <img src={part.logo} alt={part.title} />
             </PartnerLogo>
           </Partner>
         ))}

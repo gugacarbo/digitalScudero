@@ -25,7 +25,11 @@ function CaseHome({ text, title, logo, projectLink }) {
           <b>{title}</b>
         </CaseTitle>
         <Dots />
-        <GoToProject href={projectLink} target="blank">
+        <GoToProject
+          href={projectLink}
+          target="blank"
+          hide={!projectLink ? 1 : 0}
+        >
           Visite o Projeto
         </GoToProject>
         {text &&
@@ -83,6 +87,8 @@ const GoToProject = styled.a`
       background-color: ${({ theme }) => theme.color.white};
     }
   }
+
+  ${({ hide }) => hide && `display:none;`}
 `;
 
 const Text = styled.p`

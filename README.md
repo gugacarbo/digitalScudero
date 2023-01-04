@@ -36,35 +36,31 @@
 
 - [x] **Componente Avaliações**
 
-- [ ] **Definir Cases**
+- [ ] **SEO**
 
-- [ ] **Definir Parceiros**
-
-- [ ] SEO
-
-  - [ ] Tags
+  - [x] Tags
   - [ ] Svg
   - [ ] Img
     - [ ] Alt
-  - [ ] Robots
+  - [x] Robots
   - [ ] Sitemap
-  - [ ] Force HTTPS
+  - [x] Force HTTPS
   - [x] Title - react-helmet
-  - [ ] Keywords HTML
-  - [ ] Keywords Conteúdo
+  - [x] Keywords HTML \*
+  - [x] Keywords Conteúdo \*
   - [x] Importar Fontes no HTML
 
 - [ ] **Backend**
 
-  - [ ] **Banco de Dados**
-  - [ ]
+  - [x] **Banco de Dados**
+  - [x] Registrar Visitante
+  - [x] Cadastrar na Newsletter
+  - [x] Enviar Contato
+  - [ ] Segurança
 
-- [ ] **Bot Notificação Telegram**
-  - [x] V0.1 - Funcional
-  - [ ] V0.2
-  - [ ] V0.3 - Produção
+- [ ] **Definir Cases**
 
----
+- [ ] **Definir Parceiros**
 
 ### Páginas
 

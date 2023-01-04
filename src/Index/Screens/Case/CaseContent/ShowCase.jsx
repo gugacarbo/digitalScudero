@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import styled from "styled-components";
 
-function ShowCase({ img }) {
-  
-
+function ShowCase({ img, alt }) {
   return (
     <Content>
-      <img src={img} alt="" />
+      <img src={img} alt={alt} />
     </Content>
   );
 }

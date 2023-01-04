@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as DotsSvg } from "../../../../assets/services/ServiceDots.svg";
 
-export const BaseTitle = styled.h1`
+export const BaseTitle = styled.h2`
   font-size: 3.9rem;
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 0.1rem;

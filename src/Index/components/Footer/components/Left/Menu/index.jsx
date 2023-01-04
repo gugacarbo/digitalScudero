@@ -1,4 +1,5 @@
-import { List } from "./Styled";
+import styled from "styled-components";
+import { Link } from "react-scroll";
 
 import { Item } from "../../../../SideMenu/components/MenuList";
 
@@ -18,3 +19,12 @@ function Menu() {
 }
 
 export default Menu;
+
+export const List = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  gap: 1rem;
+`;

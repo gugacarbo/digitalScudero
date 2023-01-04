@@ -1,6 +1,8 @@
 import { Formik } from "formik";
 import { sendContact } from "../../../../../../util/api";
-function FormContact() {
+import InputMask from "react-input-mask";
+
+function FormContact({ contactType }) {
   return (
     <Formik
       initialValues={{ email: "", name: "", phone: "", type: "", message: "" }}
@@ -19,6 +21,9 @@ function FormContact() {
         if (!values.phone) {
           errors.phone = "Digite Seu Telefone";
         }
+        if (values.phone.length < 16) {
+          errors.phone = "Telefone Inválido";
+        }
         if (!values.message) {
           errors.message = "Digite Sua Mensagem";
         }
@@ -29,8 +34,13 @@ function FormContact() {
         return errors;
       }}
       onSubmit={(values, { setSubmitting, setStatus, resetForm, ...rest }) => {
-        sendContact(values)
-          .then((data) => {
+        sendContact({
+          ...values,
+          contactType,
+          clientType: values.type,
+          type: undefined,
+        })
+          .then(({ data }) => {
             if (data.status == 200) {
               resetForm();
               setStatus("success");
@@ -70,6 +80,9 @@ function FormContact() {
           <Input
             title="Telefone"
             name="phone"
+            as={InputMask}
+            mask="(99) 9.9999-9999"
+            maskChar=""
             error={touched.phone && errors.phone}
             placeholder="Digite Seu Telefone"
             onChange={handleChange}
@@ -149,6 +162,7 @@ export function Input({ children, title, error, ...props }) {
         onChange={props.onChange}
         onBlur={props.onBlur}
         value={props.value}
+        {...props}
       />
     </Label>
   );

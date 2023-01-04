@@ -12,21 +12,21 @@ export default ({ children }) => {
     switch (theme_) {
       case "dark":
         setTheme(Themes.dark);
-        localStorage.setItem("theme", "dark");
+        localStorage.setItem("ds_theme", "dark");
         break;
       case "light":
         setTheme(Themes.light);
-        localStorage.setItem("theme", "light");
+        localStorage.setItem("ds_theme", "light");
         break;
       default:
         setTheme(Themes.dark);
-        localStorage.setItem("theme", "dark");
+        localStorage.setItem("ds_theme", "dark");
         break;
     }
   };
 
   useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
+    const localTheme = localStorage.getItem("ds_theme");
     if (localTheme) {
       handleSetTheme(localTheme);
     } else {

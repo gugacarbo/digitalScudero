@@ -5,6 +5,8 @@ import styled from "styled-components";
 import Div100vh from "react-div-100vh";
 import { motion } from "framer-motion";
 
+import { registerVisitor } from "../Index/util/api";
+
 const fadeOutTimeout = 1500;
 
 const MyComponent = () => {
@@ -31,6 +33,7 @@ const MyComponent = () => {
     ) {
     } else {
       setNoSplash(0);
+      registerVisitor();
 
       document.body.style.overflow = "hidden";
 

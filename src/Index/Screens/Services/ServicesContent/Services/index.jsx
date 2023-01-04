@@ -123,7 +123,7 @@ const ServiceBox = styled.div`
       "serviceData";
   }
 `;
-const ServiceTitle = styled.h1`
+const ServiceTitle = styled.h2`
   grid-area: title;
   font-size: 2.4rem;
   letter-spacing: 0.1rem;

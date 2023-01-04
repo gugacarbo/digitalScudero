@@ -24,7 +24,7 @@ function CaseItem({ img, logo, title, to }) {
       <BoxItemContent to={"/case/" + to}>
         <CaseTitle>{title}</CaseTitle>
         <BrandLogo>
-          <img src={logo} />
+          <img src={logo} alt={title} />
         </BrandLogo>
       </BoxItemContent>
     </BoxItem>
@@ -52,7 +52,7 @@ const BrandLogo = styled.div`
   }
 `;
 
-const CaseTitle = styled.h1`
+const CaseTitle = styled.span`
   text-align: center;
   font-size: 1.3rem;
   font-weight: 600;
