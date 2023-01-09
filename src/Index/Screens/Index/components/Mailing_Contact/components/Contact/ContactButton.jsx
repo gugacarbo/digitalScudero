@@ -42,9 +42,13 @@ const Button = styled(Link)`
     width: initial;
     aspect-ratio: initial;
     width: 100%;
-    height: 47%;
+    height: 35%;
     border-radius: 1rem;
     font-size: 1.5rem;
+  }
+
+  @media (max-width: 320px) {
+    height: 40%;
   }
 `;
 export default ContactButton;

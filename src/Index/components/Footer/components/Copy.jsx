@@ -5,7 +5,7 @@ function Copy() {
     <CopyRight>
       <CopyText>
         Copyright © 2023 -{" "}
-        <CopyLink href="mailto:digitalscudero@digitalscudero.com.br">
+        <CopyLink href={`mailto:${import.meta.env.VITE_DS_EMAIL}`}>
           Digital <b>scudero</b>
         </CopyLink>{" "}
         Todos os direitos reservados

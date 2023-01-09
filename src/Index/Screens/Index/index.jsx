@@ -20,6 +20,7 @@ function Home() {
   let history = useLocation();
 
   useEffect(() => {
+    /*
     if (history?.state?.to) {
       scroller.scrollTo(history.state.to, {
         duration: 800,
@@ -38,6 +39,7 @@ function Home() {
       //   offset: 0,
       // });
     }
+    */
   }, []);
 
   return (

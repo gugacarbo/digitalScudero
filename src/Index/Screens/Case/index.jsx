@@ -1,33 +1,24 @@
 import styled, { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 import CaseContent from "./CaseContent";
-import { getCase } from "../../util/api";
 import { Navigate, useParams } from "react-router-dom";
 import ScreenComponents from "../../components/ScreenComponents";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import DataContext from "../../../context/DataContext";
 
 function Case() {
   const [caseItem, setCaseItem] = useState([]);
   const { caseName } = useParams();
   const theme = useTheme();
+  const { getCase } = useContext(DataContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    getCase(caseName)
-      .then(({ status, data, ...res }) => {
-        if (status == 200) {
-          setCaseItem(data);
-        } else {
-          console.log(res);
-          //alert("ERRO");
-        }
-      })
-      .catch((e) => {
-        console.log("ERRO", e);
-      });
+    setCaseItem(getCase(caseName))
+    
   }, []);
 
-  if (!caseItem || !caseName) return <Navigate to="/404" />;
+  if (!caseItem || !caseName) return <Navigate to="/404" state={{to : b}} />;
 
   return (
     <CaseContainer

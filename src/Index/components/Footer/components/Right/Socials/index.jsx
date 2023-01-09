@@ -3,7 +3,6 @@ import SocialIcon from "./SocialIcon";
 import { ReactComponent as FacebookIcon } from "../../../../../../assets/socials/facebook.svg";
 import { ReactComponent as InstagramIcon } from "../../../../../../assets/socials/instagram.svg";
 import { ReactComponent as LinkedinIcon } from "../../../../../../assets/socials/linkedin.svg";
-import { ReactComponent as BehanceIcon } from "../../../../../../assets/socials/behance.svg";
 import { ReactComponent as PinterestIcon } from "../../../../../../assets/socials/pinterest.svg";
 
 function Socials() {
@@ -12,28 +11,23 @@ function Socials() {
       <SocialIcon
         color={"#e4405f"}
         icon={<InstagramIcon />}
-        href="https://www.instagram.com/"
+        href={import.meta.env.VITE_DS_INSTAGRAM_URL}
       />
       <SocialIcon
         color={"#3b5998"}
         icon={<FacebookIcon />}
-        href="https://www.facebook.com/"
+        href={import.meta.env.VITE_DS_FACEBOOK_URL}
       />
 
       <SocialIcon
         color={"#0077b5"}
         icon={<LinkedinIcon />}
-        href="https://www.linkedin.com/"
+        href={import.meta.env.VITE_DS_LINKEDIN_URL}
       />
-      {/* <SocialIcon
-        color={"#1769ff"}
-        icon={<BehanceIcon />}
-        href="https://www.behance.net/"
-      /> */}
       <SocialIcon
         color={"#e60023"}
         icon={<PinterestIcon />}
-        href="https://www.pinterest.com/"
+        href={import.meta.env.VITE_DS_PINTEREST_URL}
       />
     </SocialsContainer>
   );

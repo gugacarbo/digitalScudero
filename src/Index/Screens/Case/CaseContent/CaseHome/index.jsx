@@ -15,7 +15,7 @@ function CaseHome({ text, title, logo, projectLink }) {
     <CaseHomeContainer id="CaseHome">
       <Socials />
       <CaseBox>
-        <BackLink to={"/cases"}>
+        <BackLink to={-1 ?? "/cases"}>
           <LeftArrowsSvg /> Voltar
         </BackLink>
         <Logo>

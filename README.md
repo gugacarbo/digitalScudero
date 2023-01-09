@@ -57,6 +57,9 @@
   - [x] Cadastrar na Newsletter
   - [x] Enviar Contato
   - [ ] Segurança
+  - [ ] Remover Headers Allow Origin : *
+
+- [ ] **Alerta de Erros**
 
 - [ ] **Definir Cases**
 

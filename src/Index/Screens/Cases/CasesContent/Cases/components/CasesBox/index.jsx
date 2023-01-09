@@ -1,25 +1,12 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import DataContext from "../../../../../../../context/DataContext";
+
 import CaseItem from "./CaseItem";
 
-import { getCases } from "../../../../../../util/api";
-import { useEffect, useState } from "react";
 
 function CasesBox() {
-  const [cases, setCases] = useState([]);
-
-  useEffect(() => {
-    getCases()
-      .then(({ status, data }) => {
-        if (status == 200) {
-          setCases(data);
-        } else {
-          alert("ERRO");
-        }
-      })
-      .catch(() => {
-        alert("ERRO");
-      });
-  }, []);
+  const {cases} = useContext(DataContext);
 
   return (
     <BoxContent id="CasesContainer">
@@ -60,6 +47,5 @@ const BoxContent = styled.div`
   }
   @media (max-width: 360px) {
     gap: 1rem;
-
   }
 `;

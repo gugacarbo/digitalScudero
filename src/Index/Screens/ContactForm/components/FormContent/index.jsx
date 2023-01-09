@@ -9,14 +9,14 @@ function FormContent() {
   if (contact == "reuniao") {
     TitleText = (
       <>
-        Agende uma reunião <b>com a gente</b>
+        Agende uma  <b>reunião</b>
       </>
     );
     contactType = "Agendar Reunião";
   } else if (contact == "minhaMarca") {
     TitleText = (
       <>
-        Quero falar sobre <b>a minha marca</b>
+        Quero falar sobre a <b>minha marca</b>
       </>
     );
     contactType = "Sobre Minha Marca";

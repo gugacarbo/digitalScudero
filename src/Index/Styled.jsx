@@ -21,12 +21,12 @@ export const MainContainer = styled(Div100vh)`
     background-repeat: no-repeat;
 
     @media screen and (max-width: 768px) {
-      background-size: 170% 100%;
+      background-size: 170% 150%;
       background-position: right 0vh;
     }
 
     @media (max-width: 520px) {
-      background-size: 200% 110%;
+      background-size: 200% 200%;
       background-position: right 0vh;
     }
   `}

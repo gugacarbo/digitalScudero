@@ -26,7 +26,7 @@ export const Item = ({ children, to, isLink = false, ...props }) => {
   if (location.pathname == "/") {
     LinkConfig = {
       as: ScrollLink,
-      activeClass: "Selected",
+      //activeClass: "Selected",
       to: to,
       smooth: "easeInOutCubic",
       offset: 0,
@@ -89,7 +89,7 @@ export const MenuItem = styled(Link)`
     color: ${({ theme }) => theme.color.main.color};
   }
   &.Selected {
-    color: ${({ theme }) => theme.color.main.color};
+    color: ${({ theme }) => theme.color.main.color} !important;
     border-bottom: 2px solid ${({ theme }) => theme.color.main.color};
   }
   @media (max-width: 768px) {

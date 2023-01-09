@@ -14,7 +14,6 @@ function ContactForm() {
     >
       <ContactFormModal>
         <Helmet name="contact" />
-
         <Header />
         <FormContent />
       </ContactFormModal>
@@ -29,7 +28,7 @@ const ContactFormMotion = styled(motion.div)`
   z-index: 40;
 
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: ${({ theme }) => theme.color.black};
 `;
 

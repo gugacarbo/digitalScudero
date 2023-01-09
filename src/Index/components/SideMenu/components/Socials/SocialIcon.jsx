@@ -1,6 +1,6 @@
-function SocialIcon({ icon, color }) {
+function SocialIcon({ icon, ...props }) {
   return (
-    <Icon href="https://www.facebook.com/" target={"_blank"} color={color}>
+    <Icon target={"_blank"} {...props}>
       {icon}
     </Icon>
   );

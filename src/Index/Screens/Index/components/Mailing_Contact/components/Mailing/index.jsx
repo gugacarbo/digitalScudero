@@ -43,23 +43,23 @@ const MailingContainer = styled.div`
   }
 
   @media screen and (max-width: 720px) {
-    padding-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
   @media (max-width: 520px) {
     grid-template-rows: 1fr auto;
     grid-template-columns: 5% 90% 5%;
     row-gap: 1rem;
-    padding-bottom: 3rem;
     grid-template-areas:
       ". MailingText ."
       ". MailingForm .";
-    padding-top: 6rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   @media (max-width: 414px) {
-    padding-bottom: 1rem;
   }
   @media screen and (max-width: 360px) {
-    padding-top: 3.2rem;
   }
 `;
 
@@ -82,7 +82,7 @@ const MailingTitle = styled.h3`
     font-size: 2.7rem;
   }
   @media screen and (max-width: 360px) {
-  font-weight: 600;
+    font-weight: 600;
     font-size: 2.5rem;
   }
 `;

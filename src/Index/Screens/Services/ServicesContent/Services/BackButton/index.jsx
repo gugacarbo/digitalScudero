@@ -1,6 +1,6 @@
-import { ReactComponent as LeftArrowsSvg } from "../../../../../../../assets/LeftArrows.svg";
+import { ReactComponent as LeftArrowsSvg } from "../../../../../../assets/LeftArrows.svg";
 
-import { BackLink, Dots } from "../../../../../PatternPageStyled";
+import { BackLink, Dots } from "../../../../PatternPageStyled";
 
 function BackButton() {
   return (

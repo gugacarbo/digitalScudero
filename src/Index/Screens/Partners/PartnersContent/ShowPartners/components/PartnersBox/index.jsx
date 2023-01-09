@@ -10,17 +10,19 @@ function PartnersBox() {
 
   useEffect(() => {
     getPartners()
-      .then(({ status, data }) => {
-        if (status == 200) {
-          setPartners(data);
-        } else {
-          alert("ERRO");
-        }
-      })
-      .catch(() => {
+    .then(({ data, ...props }) => {
+      if (data.status == 200) {
+        setPartners(data.data);
+      } else {
         alert("ERRO");
-      });
-  }, []);
+        console.log(data)
+      }
+    })
+    .catch((e) => {
+      console.log(e)
+      alert("ERRO");
+    });
+}, []);
   return (
     <PartnersBoxContent>
       {partners.length > 0 &&

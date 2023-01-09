@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
+import BackButton from "./BackButton"
+
 import { ReactComponent as SearchSvg } from "../../../../../assets/services/Search.svg";
 import { ReactComponent as WwwSvg } from "../../../../../assets/services/Www.svg";
 import { ReactComponent as FbIgSvg } from "../../../../../assets/services/FbIg.svg";
 import { ReactComponent as PenSvg } from "../../../../../assets/services/Pen.svg";
 import { ReactComponent as PrinterSvg } from "../../../../../assets/services/Printer.svg";
+
 function Services() {
   return (
     <Container id="ServicesContainer">
+      <BackButton/>
       <ServiceBox>
         <ServiceIcon>
           <SearchSvg />

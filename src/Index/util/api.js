@@ -1,6 +1,5 @@
 //how to create a axios object with default url?
 import axios from "axios";
-import { casesArray, PartnersArray, AvaliationsArray } from "./api_data";
 
 const api = axios.create({ baseURL: import.meta.env.VITE_API_URL });
 
@@ -16,48 +15,22 @@ const sendContact = (data) =>
     ...data,
   });
 
-const getCases = () =>
-  Mock({
-    status: 200,
-    data: casesArray,
-  });
+const getCases = () => api.get("/get/cases.php");
 
-const getCase = (caseName) =>
-  Mock({
-    status: 200,
-    data:
-      casesArray.find((item) => {
-        return item.to == caseName;
-      }) ?? null,
-  });
 
-const getPartners = () =>
-  Mock({
-    status: 200,
-    data: PartnersArray,
-  });
+const getPartners = () => api.get("/get/partners");
 
-const getPartner = (partnerName) =>
-  Mock({
-    status: 200,
-    data:
-      PartnersArray.find((item) => {
-        return item.to == partnerName;
-      }) ?? null,
-  });
 
 const getAvaliations = () =>
   Mock({
     status: 200,
-    data: AvaliationsArray,
+    data: {}, //api.get("/get/avaliations.php"),
   });
 
 export {
   registerVisitor,
   getCases,
-  getCase,
   getPartners,
-  getPartner,
   getAvaliations,
   registerNewsletter,
   sendContact,

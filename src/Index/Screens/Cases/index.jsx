@@ -1,9 +1,5 @@
 import styled, { useTheme } from "styled-components";
-import TopMenu from "../../components/TopMenu";
-import SideMenu from "../../components/SideMenu";
 import CasesContent from "./CasesContent";
-
-import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import ScreenComponents from "../../components/ScreenComponents";
 import Helmet from "../../util/Helmets";

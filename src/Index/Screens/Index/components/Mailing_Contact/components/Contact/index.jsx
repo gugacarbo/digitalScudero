@@ -34,13 +34,14 @@ const ButtonsContainer = styled.div`
   @media (max-width: 520px) {
     height: 100%;
     flex-direction: column;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
+    justify-content: space-evenly;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
   }
   @media (max-width: 414px) {
     height: 100%;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     margin-top: 0rem;
   }
 `;
@@ -57,7 +58,7 @@ const Title = styled(BaseTitle)`
     font-size: 3.7rem;
   }
   @media (max-width: 414px) {
-    margin-top: 0;
+    margin-top: 3rem;
     font-size: 3rem;
   }
 `;

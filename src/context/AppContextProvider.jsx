@@ -1,12 +1,15 @@
 import StyleProvider from "./StyleContext/StyleProvider";
 import MenuProvider from "./MenuContext/MenuProvider";
 import LoadingProvider from "./LoadingContext/LoadingProvider";
+import DataProvider from "./DataContext/DataProvider";
 
 function AppContextProvider({ children }) {
   return (
     <StyleProvider>
       <LoadingProvider>
-        <MenuProvider>{children}</MenuProvider>
+        <DataProvider>
+          <MenuProvider>{children}</MenuProvider>
+        </DataProvider>
       </LoadingProvider>
     </StyleProvider>
   );

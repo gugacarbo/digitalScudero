@@ -52,17 +52,22 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 520px) {
         html{
-            font-size: 9px;
+            font-size: 10px;
         }
     }
 
     @media (max-width: 414px) {
         html{
-            font-size: 10px;
+            font-size: 11px;
         }
     }
     
    
+    @media (max-width: 480px) {
+        html{
+            font-size: 10.3px;
+        }
+    }
     
     @media (max-width: 320px) {
         html{

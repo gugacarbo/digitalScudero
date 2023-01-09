@@ -8,7 +8,7 @@ import { BackLink, Dots } from "../../../PatternPageStyled";
 function ShowPartners() {
   return (
     <ShowPartnersContainer id="PartnersContainer">
-      <BackLink to="/">
+      <BackLink to={-1 ?? "/"}>
         <LeftArrowsSvg /> Home
       </BackLink>
       <Dots />

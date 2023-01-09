@@ -11,32 +11,31 @@ function Socials() {
     <SocialsContainer>
       <Dots rotate={1} />
       <IconsBox>
-      <SocialIcon
-        color={"#e4405f"}
-        icon={<InstagramIcon />}
-        href="https://www.instagram.com/"
-      />
-      <SocialIcon
-        color={"#3b5998"}
-        icon={<FacebookIcon />}
-        href="https://www.facebook.com/"
-      />
+        <SocialIcon
+          color={"#e4405f"}
+          icon={<InstagramIcon />}
+          
+          href={import.meta.env.VITE_DS_INSTAGRAM_URL}
+        />
+        <SocialIcon
+          color={"#3b5998"}
+          icon={<FacebookIcon />}
+          
+          href={import.meta.env.VITE_DS_FACEBOOK_URL}
+        />
 
-      <SocialIcon
-        color={"#0077b5"}
-        icon={<LinkedinIcon />}
-        href="https://www.linkedin.com/"
-      />
-      {/* <SocialIcon
-        color={"#1769ff"}
-        icon={<BehanceIcon />}
-        href="https://www.behance.net/"
-      /> */}
-      <SocialIcon
-        color={"#e60023"}
-        icon={<PinterestIcon />}
-        href="https://www.pinterest.com/"
-      />
+        <SocialIcon
+          color={"#0077b5"}
+          icon={<LinkedinIcon />}
+          
+          href={import.meta.env.VITE_DS_LINKEDIN_URL}
+        />
+        <SocialIcon
+          color={"#e60023"}
+          icon={<PinterestIcon />}
+          
+          href={import.meta.env.VITE_DS_PINTEREST_URL}
+        />
       </IconsBox>
 
       <Dots />

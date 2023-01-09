@@ -5,7 +5,7 @@ import { BackLink, Dots } from "../../../../../PatternPageStyled";
 function BackButton() {
   return (
     <>
-      <BackLink to={"/"}>
+      <BackLink to={-1}>
         <LeftArrowsSvg />
         <span>Home</span>
       </BackLink>

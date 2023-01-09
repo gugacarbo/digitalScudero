@@ -14,24 +14,23 @@ function Socials() {
         <SocialIcon
           color={"#e4405f"}
           icon={<InstagramIcon />}
-          href="https://www.instagram.com/"
+          href={import.meta.env.VITE_DS_INSTAGRAM_URL}
         />
         <SocialIcon
           color={"#3b5998"}
           icon={<FacebookIcon />}
-          href="https://www.facebook.com/"
+          href={import.meta.env.VITE_DS_FACEBOOK_URL}
         />
 
         <SocialIcon
           color={"#0077b5"}
           icon={<LinkedinIcon />}
-          href="https://www.linkedin.com/"
+          href={import.meta.env.VITE_DS_LINKEDIN_URL}
         />
-
         <SocialIcon
           color={"#e60023"}
           icon={<PinterestIcon />}
-          href="https://www.pinterest.com/"
+          href={import.meta.env.VITE_DS_PINTEREST_URL}
         />
       </IconsBox>
       <BlogButton />

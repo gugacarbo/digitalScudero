@@ -219,14 +219,14 @@ const Error = styled.div`
 `;
 
 const LabelTitle = styled.span`
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: ${({ theme }) => theme.color.main.color};
-
+  font-weight: 600;
   b {
-    font-size: 0.9rem;
+    font-size: 0.9em;
     margin-left: 1rem;
-    font-weight: 400;
-    color: ${({ theme }) => theme.color.main.dark};
+    font-weight: 500;
+    color: ${({ theme }) => theme.color.main.light};
   }
 `;
 
@@ -235,8 +235,8 @@ const StyledInput = styled(Field)`
   color: ${({ theme }) => theme.color.white};
   border: none;
   padding: 0.3rem 1rem;
-  font-size: 1.2rem;
-  letter-spacing: 0.05rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.03rem;
   transition: ${({ theme }) => theme.transition.main};
   border-bottom: 2px solid ${({ theme }) => theme.color.white};
   outline: none;
@@ -262,7 +262,7 @@ const StyledTextArea = styled(StyledInput)`
   resize: none;
   width: 100%;
   @media (max-width: 414px) {
-    min-height: 3rem;
+    min-height: 1rem;
   }
 `;
 
@@ -272,12 +272,15 @@ export const SubmitButton = styled(BaseButton)`
   margin: 0;
   margin-left: auto;
   grid-column: 2/3;
-  font-size: 1rem;
+  font-size: 1.4rem;
   border-color: ${({ theme }) => theme.color.main.color};
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 `;
 
 const Label = styled.label`

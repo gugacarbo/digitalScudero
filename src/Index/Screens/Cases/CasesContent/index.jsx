@@ -1,15 +1,10 @@
-import { useEffect } from "react";
-import { scroller } from "react-scroll";
+
 import styled from "styled-components";
 import CasesHome from "./CasesHome";
 import Cases from "./Cases";
 
 function CasesContent() {
-  // useEffect(() => {
-  //   scroller.scrollTo("CasesHome", {
-  //     duration: 0,
-  //   });
-  // }, []);
+
 
   return (
     <CasesContainer>
